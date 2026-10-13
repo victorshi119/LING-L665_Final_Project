@@ -45,6 +45,31 @@ Record fields: `arxiv_id, version, title, abstract, authors, published, updated,
 primary_category, categories, doi, journal_ref, comment, abs_url, pdf_url,
 license, matched_queries`.
 
+## PDF → Markdown
+
+`processing/pdf_folder_to_markdown.py` is copied unchanged from the course repo
+(dcavar/L665 `code/Data/slurm_scripts/`, by Damir Cavar). It uses spaCy Layout/Docling
+and writes `foo.md` beside each `foo.pdf`. `slurm/pdf_to_markdown.slurm` is a
+BigRed200 version of the repo's Quartz script: `gpu` partition, one worker per
+allocated GPU, and it refuses paths under the shared L665 folder.
+
+One-time environment setup (already done in `envs/spacy-layout`):
+
+```bash
+module load python/3.12.11
+python3 -m venv $B/envs/spacy-layout && source $B/envs/spacy-layout/bin/activate
+pip install -r $B/code/processing/requirements.txt
+```
+
+```bash
+# short test
+sbatch -p gpu-debug -t 0:30:00 $B/code/slurm/pdf_to_markdown.slurm /N/scratch/$USER/l665_pdf2md_test
+# full run (skips PDFs that already have a .md)
+sbatch $B/code/slurm/pdf_to_markdown.slurm $B/data/raw/arxiv/pdfs
+```
+
+The Docling models are cached in `envs/hf_cache`. The first run downloads them.
+
 ## Licensing
 
 `license` is the license each author chose. Most papers use
