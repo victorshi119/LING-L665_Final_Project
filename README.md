@@ -70,6 +70,18 @@ sbatch $B/code/slurm/pdf_to_markdown.slurm $B/data/raw/arxiv/pdfs
 
 The Docling models are cached in `envs/hf_cache`. The first run downloads them.
 
+## Cleaned corpus
+
+`processing/build_arxiv_corpus.py` combines `metadata.jsonl` with the `.md` files. It removes
+conversion artifacts and reference/acknowledgement sections, counts tokens, and writes
+`data/processed/arxiv_corpus.jsonl` and `arxiv_corpus_stats.json`. `data/CORPUS.md`
+documents the corpus (counts, sources, licensing, known issues).
+
+```bash
+source $B/envs/spacy-layout/bin/activate
+python -I $B/code/processing/build_arxiv_corpus.py $B/data/raw/arxiv $B/data/processed
+```
+
 ## Licensing
 
 `license` is the license each author chose. Most papers use
