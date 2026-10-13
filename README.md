@@ -1,23 +1,38 @@
-# L665 – CP-associated spastic dysarthria corpus (Victor & Shintaro)
+# LING-L665 Final Project – CP-associated spastic dysarthria
 
-Staging area for the L665 corpus-construction phase. Code stays here; only the
-cleaned data is copied to `/N/project/ontology_learning/L665/data/`.
+Victor & Shintaro, L665 (Fall 2026). Course goal: text → information extraction →
+knowledge graph/ontology for cerebral palsy (CP)-associated spastic dysarthria and,
+more broadly, CP-related dysarthria.
+
+This repo holds code only. The data lives on BigRed200:
+
+- working copy: `/N/project/CoRSAL/L665_Victor_Shintaro/` (this repo is checked out as `code/`)
+- shared with the class: `/N/project/ontology_learning/L665/data/CP_Dysarthria/`
+
+The corpus write-up (counts, sources, licensing, known issues) is `data/CORPUS.md` in
+both places.
 
 ## Layout
 
 ```
 L665_Victor_Shintaro/
-├── code/
-│   ├── scrapers/     scrape_arxiv.py, arxiv_queries.json
-│   ├── processing/   (todo) pdf → markdown, cleaning, dedupe, corpus.jsonl
-│   └── slurm/        batch versions of the scrapers
+├── code/                 ← this repo
+│   ├── scrapers/         scrape_arxiv.py, arxiv_queries.json
+│   ├── processing/       build_arxiv_corpus.py, requirements.txt
+│   │                     (+ pdf_folder_to_markdown.py from the course repo, not committed)
+│   └── slurm/            scrape_arxiv.slurm, pdf_to_markdown.slurm
 ├── data/
-│   ├── raw/arxiv/    metadata.jsonl, pdfs/, manifest.json
-│   └── processed/
+│   ├── CORPUS.md
+│   ├── raw/arxiv/        metadata.jsonl, manifest.json, pdfs/ (*.pdf + *.md)
+│   └── processed/        arxiv_corpus.jsonl, arxiv_corpus_stats.json
+├── envs/                 spacy-layout venv, hf_cache
 └── logs/
 ```
 
-## arXiv
+The Slurm scripts use absolute paths under `/N/project/CoRSAL/L665_Victor_Shintaro` and
+the `r01360` allocation. Change `BASE` and `-A` if you run them from somewhere else.
+
+## 1. Scrape arXiv
 
 The search terms are named queries in `scrapers/arxiv_queries.json`. Each paper
 is stored once in `metadata.jsonl`, and its `matched_queries` lists every query
@@ -45,15 +60,22 @@ Record fields: `arxiv_id, version, title, abstract, authors, published, updated,
 primary_category, categories, doi, journal_ref, comment, abs_url, pdf_url,
 license, matched_queries`.
 
-## PDF → Markdown
+## 2. PDF → Markdown
 
-`processing/pdf_folder_to_markdown.py` is copied unchanged from the course repo
-(dcavar/L665 `code/Data/slurm_scripts/`, by Damir Cavar). It uses spaCy Layout/Docling
-and writes `foo.md` beside each `foo.pdf`. `slurm/pdf_to_markdown.slurm` is a
-BigRed200 version of the repo's Quartz script: `gpu` partition, one worker per
-allocated GPU, and it refuses paths under the shared L665 folder.
+The converter is the course's `pdf_folder_to_markdown.py` (spaCy Layout/Docling).
+It writes `foo.md` beside each `foo.pdf`. The course materials are all rights
+reserved, so the converter is **not in this repo**. Copy it in from the course repo
+(dcavar/L665, `code/Data/slurm_scripts/`); `.gitignore` keeps it out of commits:
 
-One-time environment setup (already done in `envs/spacy-layout`):
+```bash
+cp <your L665 clone>/code/Data/slurm_scripts/pdf_folder_to_markdown.py $B/code/processing/
+```
+
+`slurm/pdf_to_markdown.slurm` is our BigRed200 version of the course's Quartz
+script. It uses the `gpu` partition, runs one worker per allocated GPU, makes the
+output group-readable, and refuses any path under the shared L665 folder.
+
+One-time environment setup (already done in `$B/envs/spacy-layout`):
 
 ```bash
 module load python/3.12.11
@@ -64,18 +86,17 @@ pip install -r $B/code/processing/requirements.txt
 ```bash
 # short test
 sbatch -p gpu-debug -t 0:30:00 $B/code/slurm/pdf_to_markdown.slurm /N/scratch/$USER/l665_pdf2md_test
-# full run (skips PDFs that already have a .md)
-sbatch $B/code/slurm/pdf_to_markdown.slurm $B/data/raw/arxiv/pdfs
+# full run (skips PDFs that already have a .md); 321 PDFs took 27 min on one A100
+sbatch -p gpu-interactive -t 2:00:00 $B/code/slurm/pdf_to_markdown.slurm $B/data/raw/arxiv/pdfs
 ```
 
 The Docling models are cached in `envs/hf_cache`. The first run downloads them.
 
-## Cleaned corpus
+## 3. Build the cleaned corpus
 
 `processing/build_arxiv_corpus.py` combines `metadata.jsonl` with the `.md` files. It removes
 conversion artifacts and reference/acknowledgement sections, counts tokens, and writes
-`data/processed/arxiv_corpus.jsonl` and `arxiv_corpus_stats.json`. `data/CORPUS.md`
-documents the corpus (counts, sources, licensing, known issues).
+`data/processed/arxiv_corpus.jsonl` and `arxiv_corpus_stats.json`.
 
 ```bash
 source $B/envs/spacy-layout/bin/activate
@@ -84,7 +105,7 @@ python -I $B/code/processing/build_arxiv_corpus.py $B/data/raw/arxiv $B/data/pro
 
 ## Licensing
 
-`license` is the license each author chose. Most papers use
-`arxiv.org/licenses/nonexclusive-distrib/1.0/`, which lets arXiv distribute the
-paper but does not let us redistribute it. Keep those PDFs within the course
-project folder. Papers under CC BY / CC BY-SA can be shared more freely.
+The code in this repo is MIT-licensed (see `LICENSE`). The corpus is not part of
+the repo. Each paper keeps the license its authors chose (field `license`):
+150 papers use arXiv's non-exclusive license, which does not let us redistribute
+them, and 166 are under Creative Commons. Do not commit or publish corpus files.

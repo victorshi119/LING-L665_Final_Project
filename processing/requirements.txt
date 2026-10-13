@@ -1,0 +1,5 @@
+# PDF -> Markdown environment (Python >= 3.12; versions verified on BigRed200 A100, 2026-10-13)
+torch==2.14.1
+docling==2.138.0
+spacy==3.8.16
+spacy-layout==0.0.12
