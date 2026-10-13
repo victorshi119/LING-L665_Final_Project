@@ -1,0 +1,9 @@
+{
+   "dysarthria": "all:dysarthria",
+   "dysarthric": "all:dysarthric",
+   "cerebral_palsy": "all:\"cerebral palsy\"",
+   "cp_speech": "all:\"cerebral palsy\" AND (all:speech OR all:dysarthria OR all:dysarthric)",
+   "spastic_speech": "all:spastic AND (all:speech OR all:dysarthria)",
+   "motor_speech_disorder": "all:\"motor speech disorder\" OR all:\"motor speech disorders\"",
+   "dysarthric_corpora": "all:UASpeech OR all:TORGO"
+}
