@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "CP-Dysarthria Domain Glossary",
-    "version": "0.1",
+    "version": "0.2",
     "created": "2026-10-29",
     "authors": "Victor & Shintaro (L665, Fall 2026); drafted with Claude Code, to be reviewed by the team",
     "domain": "Cerebral palsy (CP)-associated dysarthria, related motor speech disorders, their clinical assessment and treatment, and dysarthric speech technology.",
@@ -15,8 +15,13 @@
       "DATASET": "A named speech corpus or database used in dysarthric speech research, such as UASpeech or TORGO."
     },
     "acronym_policy": "Acronyms are matched case-sensitively. Acronyms with acronym_requires_long_form=true are only labelled in documents that also contain one of the concept's terms, because they have frequent unrelated readings in the corpus (e.g. FDA = US Food and Drug Administration, SGD = stochastic gradient descent).",
-    "review_status": "Draft: definitions are paraphrased from the cited sources; every source URL was checked to resolve on 2026-10-29 (see glossary_verification.json). Team review pending.",
-    "removed_concepts": "TRT008 selective dorsal rhizotomy and TRT012 nonspeech oral motor exercises were drafted but removed on 2026-10-29 because they never occur in the corpus (the corpus uses 'oral motor' only for tasks/examinations)."
+    "review_status": "Definitions are paraphrased from the cited sources (drafted with Claude Code). v0.2: the team checked that every term belongs in its label (2026-11-03); Victor found three errors, corrected here (see changes). Source URLs re-checked with verify_glossary.py.",
+    "removed_concepts": "TRT008 selective dorsal rhizotomy and TRT012 nonspeech oral motor exercises were drafted but removed on 2026-10-29 because they never occur in the corpus (the corpus uses 'oral motor' only for tasks/examinations).",
+    "changes": [
+      "v0.2 2026-11-03: TEC003 split into CER (TEC003) and phoneme/phone error rate (new TEC024, acronym PER).",
+      "v0.2 2026-11-03: TEC023 lost the ambiguous terms 'severity classification' and 'dysarthria severity assessment'.",
+      "v0.2 2026-11-03: ASM010 split into CAPE-V (ASM010) and GRBAS (new ASM011), each with its own source."
+    ]
   },
   "entries": [
     {
@@ -1084,20 +1089,37 @@
       "id": "ASM010",
       "concept_label": "ASSESSMENT",
       "term": [
-        "Consensus Auditory-Perceptual Evaluation of Voice",
-        "GRBAS scale"
+        "Consensus Auditory-Perceptual Evaluation of Voice"
       ],
       "acronym": [
-        "CAPE-V",
-        "GRBAS"
+        "CAPE-V"
       ],
       "definition": [
-        "Standard perceptual voice rating protocols: CAPE-V rates overall severity, roughness, breathiness, strain, pitch, and loudness; GRBAS rates grade, roughness, breathiness, asthenia, and strain."
+        "A standardized clinical protocol for auditory-perceptual voice rating: overall severity, roughness, breathiness, strain, pitch and loudness, each on a 100-mm visual analog scale."
       ],
       "hypernym": "voice assessment",
       "source_url": [
-        "https://www.asha.org/practice-portal/clinical-topics/voice-disorders/"
-      ]
+        "https://doi.org/10.1044/1058-0360(2008/08-0017)"
+      ],
+      "notes": "GRBAS split off as ASM011 in v0.2 (2026-11-03). Source: Kempster et al. (2009)."
+    },
+    {
+      "id": "ASM011",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "GRBAS scale"
+      ],
+      "acronym": [
+        "GRBAS"
+      ],
+      "definition": [
+        "A perceptual voice rating scale that rates Grade (overall severity), Roughness, Breathiness, Asthenia and Strain, each from 0 (normal) to 3 (severe)."
+      ],
+      "hypernym": "voice assessment",
+      "source_url": [
+        "https://doi.org/10.1016/s0892-1997(99)80006-x"
+      ],
+      "notes": "Split from ASM010 in v0.2 (2026-11-03). Introduced by Hirano (1981), Clinical Examination of Voice (book, no DOI); source cited here: Wuyts et al. (1999), a reliability study of the scale."
     },
     {
       "id": "TRT001",
@@ -1338,15 +1360,13 @@
       "id": "TEC003",
       "concept_label": "SPEECH_TECH",
       "term": [
-        "character error rate",
-        "phoneme error rate",
-        "phone error rate"
+        "character error rate"
       ],
       "acronym": [
         "CER"
       ],
       "definition": [
-        "Error rates computed like WER but over characters or phonemes instead of words; used for languages without word spacing and for sub-word evaluation."
+        "An error rate computed like WER but over characters instead of words; used for languages without word spacing and for character-level evaluation."
       ],
       "hypernym": "evaluation metric",
       "source_url": [
@@ -1686,9 +1706,7 @@
       "term": [
         "dysarthria detection",
         "dysarthria classification",
-        "dysarthria severity classification",
-        "severity classification",
-        "dysarthria severity assessment"
+        "dysarthria severity classification"
       ],
       "acronym": [],
       "definition": [
@@ -1699,7 +1717,28 @@
         "https://pubmed.ncbi.nlm.nih.gov/41223239/",
         "https://pubmed.ncbi.nlm.nih.gov/29184336/"
       ],
-      "notes": "Provenance are corpus documents describing the task."
+      "notes": "Provenance are corpus documents describing the task. v0.2 (2026-11-03): removed 'severity classification' and 'dysarthria severity assessment', which also mean a clinician's severity rating."
+    },
+    {
+      "id": "TEC024",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "phoneme error rate",
+        "phone error rate"
+      ],
+      "acronym": [
+        "PER"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "An error rate computed like WER but over phonemes (or phones) instead of words; the standard metric for phone recognition and for pronunciation-level evaluation."
+      ],
+      "hypernym": "evaluation metric",
+      "source_url": [
+        "https://doi.org/10.1109/29.46546",
+        "https://arxiv.org/abs/2601.21205"
+      ],
+      "notes": "Split from TEC003 (CER) in v0.2 (2026-11-03). Sources: Lee & Hon (1989), phone recognition on TIMIT; a corpus paper that defines PER."
     },
     {
       "id": "DAT001",

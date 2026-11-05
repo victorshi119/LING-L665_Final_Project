@@ -1,0 +1,52 @@
+text,label,count,example_doc,judgment,reason
+hts,SPEECH_TECH,22,arxiv_2408.03399,error,"hierarchical time series, not speech technology"
+asr,SPEECH_TECH,12,arxiv_2606.20266,correct,automatic speech recognition; the rules dropped it because the long form is absent
+mltcs,SPEECH_TECH,5,arxiv_2503.08378,error,"multiple long-term conditions (a comorbidity paper), not speech technology"
+thria,DISORDER,5,pubmed_39682602,error,fragment of 'dysar- thria' split by a line-end hyphen
+moss,SPEECH_TECH,4,pubmed_39682602,correct,plural of MOS
+pc -,DATASET,3,arxiv_2606.20266,partial,part of the dataset name LibriSpeech-PC; span misses 'LibriSpeech' and includes '-'
+ters,SPEECH_TECH,3,pubmed_39682602,error,fragment of 'cen- ters' split by a line-end hyphen
+hypernasal speakers,SPEECH_FEATURE,2,arxiv_1911.11360,error,"speakers, not a speech feature"
+sgd,TREATMENT,2,arxiv_2011.07545,error,stochastic gradient descent labelled TREATMENT
+informer,SPEECH_TECH,2,arxiv_2412.14435,error,"a time-series forecasting model (time-series paper), not speech technology"
+lm,SPEECH_TECH,2,arxiv_2609.28877,correct,language model in ASR decoding (CTC-LM); not in the glossary
+voice synthesis,SPEECH_TECH,2,arxiv_cmp-lg_9506018,correct,synonym of speech synthesis
+dnn-hidden markov model,SPEECH_TECH,1,arxiv_1807.10948,boundary,overlaps a rule span with a different extent (see disagreements.json)
+cerebral vascular,DISORDER,1,arxiv_1807.10948,partial,"right label, span misses 'Accident'"
+cerebral vascular accident,DISORDER,1,arxiv_1905.06533,correct,= stroke
+hmm,SPEECH_TECH,1,arxiv_1905.06533,boundary,overlaps a rule span with a different extent (see disagreements.json)
+motor-speech disorders,DISORDER,1,arxiv_1911.11360,correct,motor speech disorders; not in the glossary
+universal access speech,DATASET,1,arxiv_2201.05562,correct,long name of UASpeech
+speed-perturbation,SPEECH_TECH,1,arxiv_2201.05562,correct,hyphenated variant of speed perturbation
+oracle error rates,SPEECH_FEATURE,1,arxiv_2201.05845,error,an ASR metric labelled SPEECH_FEATURE
+speaker level adaptation,SPEECH_TECH,1,arxiv_2201.05845,correct,speaker adaptation (in a capitalised caption); not in the glossary
+cerebral palsy(cp,DISORDER,1,arxiv_2208.03648,partial,tokenisation glues 'palsy(CP'
+dysarthria,DISORDER,1,arxiv_2209.13260,boundary,overlaps a rule span with a different extent (see disagreements.json)
+f0s,SPEECH_FEATURE,1,arxiv_2209.13260,correct,plural of F0
+v-vectors,SPEECH_TECH,1,arxiv_2306.07090,error,"vectors of a Householder transformation, not a speaker embedding like x-vectors"
+c,SPEECH_TECH,1,arxiv_2306.07090,error,a hyperparameter name ('different C values')
+"articulation,",SPEECH_FEATURE,1,arxiv_2309.09329,boundary,overlaps a rule span with a different extent (see disagreements.json)
+tc,SPEECH_TECH,1,arxiv_2410.09289,error,"temporal convolution layer, a generic network component"
+frequency cepstral coefficients,SPEECH_TECH,1,arxiv_2410.09289,partial,GammaTone frequency cepstral coefficients; span misses 'GammaTone'
+pi-gita,DATASET,1,arxiv_2410.09289,correct,typo of PC-GITA
+ltcs,SPEECH_TECH,1,arxiv_2503.08378,error,"long-term conditions, not speech technology"
+ers,SPEECH_TECH,1,arxiv_2505.22072,error,fragment of 'speak- ers' split by a line-end hyphen
+vc,SPEECH_TECH,1,arxiv_2505.22072,partial,part of the model name DuTa-VC
+mel-spectrogrambased,SPEECH_TECH,1,arxiv_2506.16127,partial,'mel-spectrogram-based' glued in the source; span includes 'based'
+bert,SPEECH_TECH,1,arxiv_2506.16528,error,"a text model, here naming a text-similarity score"
+automatic speech recognizers,SPEECH_TECH,1,arxiv_2601.21205,boundary,overlaps a rule span with a different extent (see disagreements.json)
+updrsspeech,ASSESSMENT,1,arxiv_2601.21205,correct,UPDRS speech item (glued in the source)
+text-speech,SPEECH_TECH,1,arxiv_2606.20266,error,"'text-speech alignment', not an entity"
+-supervised learning,SPEECH_TECH,1,arxiv_2606.20266,boundary,overlaps a rule span with a different extent (see disagreements.json)
+pc,SPEECH_TECH,1,arxiv_2606.20266,error,"part of the dataset name LibriSpeech-PC, labelled SPEECH_TECH"
+pc),DATASET,1,arxiv_2606.20266,partial,part of the dataset name LibriSpeech-PC; span includes ')'
+speaking-,SPEECH_FEATURE,1,arxiv_2608.08976,partial,speaking rate split by a line-end hyphen; span misses 'rate'
+monoprosody,SPEECH_FEATURE,1,arxiv_2609.20875,correct,speech feature; not in the glossary
+imprecise phonation,SPEECH_FEATURE,1,arxiv_2609.20875,boundary,overlaps a rule span with a different extent (see disagreements.json)
+pd,DISORDER,1,arxiv_2609.20875,error,inside a URL
+mds-updrss,ASSESSMENT,1,arxiv_2609.20875,correct,MDS-UPDRS (source typo)
+speech recognition,SPEECH_TECH,1,arxiv_2609.28877,boundary,overlaps a rule span with a different extent (see disagreements.json)
+acquired cerebral palsy,DISORDER,1,pubmed_2629622,boundary,overlaps a rule span with a different extent (see disagreements.json)
+cerebral palsy.⁵,DISORDER,1,pubmed_2629622,partial,span includes a footnote marker
+motor neuron impairment,DISORDER,1,pubmed_39682602,partial,"lower motor neuron impairment, a cause of flaccid dysarthria; span misses 'lower'"
+mel-spectrogramvisualization,SPEECH_TECH,1,pubmed_39682602,partial,glued tokens in a figure caption

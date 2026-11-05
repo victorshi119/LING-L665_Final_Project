@@ -4,3 +4,10 @@ __pycache__/
 *.tmp
 # Course material (dcavar/L665, all rights reserved): copy locally, never commit
 processing/pdf_folder_to_markdown.py
+# NER assignment (ner/): course code, corpus texts/DocBins (licenses) and model weights stay on Quartz
+ner/build_ner_corpus.py
+ner/train_transformer_ner.py
+ner/texts/
+ner/**/*.spacy
+ner/training/**/model-best/
+ner/training/**/model-last/

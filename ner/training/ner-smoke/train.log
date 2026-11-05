@@ -1,0 +1,19 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[38;5;4mℹ Saving to output directory: training/ner-smoke[0m
+[38;5;4mℹ Using GPU: 0[0m
+[1m
+=========================== Initializing pipeline ===========================[0m
+[38;5;2m✔ Initialized pipeline[0m
+[1m
+============================= Training pipeline =============================[0m
+[38;5;4mℹ Pipeline: ['transformer', 'ner'][0m
+[38;5;4mℹ Initial learn rate: 0.0[0m
+E    #       LOSS TRANS...  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE 
+---  ------  -------------  --------  ------  ------  ------  ------
+  0       0        1641.86    707.00    0.50    0.26   16.20    0.01
+  0     100       71418.26  42667.23    0.00    0.00    0.00    0.00
+  0     200        1837.02   2142.47   60.16   63.53   57.14    0.60
+  0     300        3317.31   1464.79   75.44   73.33   77.67    0.75
+[38;5;2m✔ Saved pipeline to output directory[0m
+training/ner-smoke/model-last
