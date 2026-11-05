@@ -1,0 +1,72 @@
+/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy/displacy/__init__.py:214: UserWarning: [W006] No entities to visualize found in Doc object. If this is surprising to you, make sure the Doc was processed using a model that supports named entity recognition, and check the `doc.ents` property manually if necessary.
+  warnings.warn(Warnings.W006)
+# Rule demonstration
+
+Glossary v0.1: 103 concepts. Entities are shown as `[text](LABEL:concept_id)`.
+
+## Corpus passages
+
+### pubmed_34942852
+
+Research on population-based studies around the world has reported that the prevalence estimates of individuals with [cerebral palsy](DISORDER:DIS008) ([CP](DISORDER:DIS008)) range from 2 to 3.9 per 1000 live births or children [1-8]. As [CP](DISORDER:DIS008) can cause disturbances in cognitive development and motor disorders, [dysarthria](DISORDER:DIS001) is one of the problems that [CP](DISORDER:DIS008) speakers frequently suffer from in communication [9-11]. Therefore, research pertaining to [CP](DISORDER:DIS008) speech has focused on a variety of linguistic aspects from a cross-linguistic perspective, including vowels, [speaking rates](SPEECH_FEATURE:SPF004), [prosody](SPEECH_FEATURE:SPF005), segmental error patterns, consonantal productions, literacy development, etc. (c.f., [10,12-18] among many others), with the aim of discovering the defining factors for those patients' [speech intelligibility](SPEECH_FEATURE:SPF001). Results from the endeavor revealed that, among other critical factors, the quality of consonantal productions plays a significant role in the [speech intelligibility](SPEECH_FEATURE:SPF001) of children and adults with [CP](DISORDER:DIS008) [18-26].
+
+Entities: cerebral palsy (DISORDER), CP (DISORDER), CP (DISORDER), dysarthria (DISORDER), CP (DISORDER), CP (DISORDER), speaking rates (SPEECH_FEATURE), prosody (SPEECH_FEATURE), speech intelligibility (SPEECH_FEATURE), speech intelligibility (SPEECH_FEATURE), CP (DISORDER)
+
+### pubmed_36892950
+
+Purpose: Early identification of speech motor involvement (SMI) in children with [cerebral palsy](DISORDER:DIS008) ([CP](DISORDER:DIS008)) is difficult because of overlapping features with many aspects of typical speech development. Quantitative measures of [speech intelligibility](SPEECH_FEATURE:SPF001) have the potential to differentiate between children with SMI and those with no SMI (NSMI). We examined thresholds for [speech intelligibility](SPEECH_FEATURE:SPF001) development in children with [CP](DISORDER:DIS008) relative to the low end of age-specific typical developmental expectations. We sought to determine whether there were [intelligibility](SPEECH_FEATURE:SPF001) differences between children with [CP](DISORDER:DIS008) and NSMI versus typically developing (TD) age-mates across the range of development and whether there were differences between children with [CP](DISORDER:DIS008) who have NSMI and those with [CP](DISORDER:DIS008) who have SMI across the range of development based on [speech intelligibility](SPEECH_FEATURE:SPF001).
+
+Entities: cerebral palsy (DISORDER), CP (DISORDER), speech intelligibility (SPEECH_FEATURE), speech intelligibility (SPEECH_FEATURE), CP (DISORDER), intelligibility (SPEECH_FEATURE), CP (DISORDER), CP (DISORDER), CP (DISORDER), speech intelligibility (SPEECH_FEATURE)
+
+### pubmed_35262181
+
+Children with early [Viking Speech Scale](ASSESSMENT:ASM005) ([VSS](ASSESSMENT:ASM005)) ratings below level IV have a good prognosis for speech improvement. Children with early [VSS](ASSESSMENT:ASM005) level IV ratings are likely to remain at [VSS](ASSESSMENT:ASM005) level IV over time. Children did not show worsening of [VSS](ASSESSMENT:ASM005) level between the ages of 4 and 10 years.
+
+Entities: Viking Speech Scale (ASSESSMENT), VSS (ASSESSMENT), VSS (ASSESSMENT), VSS (ASSESSMENT), VSS (ASSESSMENT)
+
+### arxiv_2204.00770
+
+In this work, we propose a simple yet effective adaptation (finetuning) strategy named "[wav2vec2](SPEECH_TECH:TEC006) adapter" to incorporate [wav2vec2](SPEECH_TECH:TEC006) with [speaker adaptation](SPEECH_TECH:TEC015). Here, we attempt to finetune the [wav2vec2](SPEECH_TECH:TEC006) by feeding speaker information as auxiliary features during fine-tuning to efficiently finetune the [wav2vec2](SPEECH_TECH:TEC006) model parameters. An adapter network containing a bottleneck layer is instilled into the context encoder network of [wav2vec2](SPEECH_TECH:TEC006) model to integrate the auxiliary features and [wav2vec2](SPEECH_TECH:TEC006) outputs. The adapter module is based on the recent works [16, 17] on machine translation to fine-tune pre-trained transformer models. The primary contributions of this work are as follows:
+
+Entities: wav2vec2 (SPEECH_TECH), wav2vec2 (SPEECH_TECH), speaker adaptation (SPEECH_TECH), wav2vec2 (SPEECH_TECH), wav2vec2 (SPEECH_TECH), wav2vec2 (SPEECH_TECH), wav2vec2 (SPEECH_TECH)
+
+### pubmed_40409971
+
+Objectives A consensus study to establish a Core Outcome Set for [dysarthria](DISORDER:DIS001) after [stroke](DISORDER:DIS014) identified four key outcome domains that should be measured in research and clinical practice: (1) [intelligibility](SPEECH_FEATURE:SPF001) of speech, (2) ability to participate in conversations, (3) living well with [dysarthria](DISORDER:DIS001) and (4) communication partners skills and knowledge (where relevant). This review aimed to systematically identify corresponding measurement instruments and to examine their clinical utility and psychometric properties. Design Systematic review conducted in alignment with the Preferred Reporting Items for Systematic Reviews and Meta-­Analyses guidelines.
+
+Entities: dysarthria (DISORDER), stroke (DISORDER), intelligibility (SPEECH_FEATURE), dysarthria (DISORDER)
+
+## Probe sentences
+
+### Acronym needs its long form: FDA kept
+
+Speech was rated with the [Frenchay Dysarthria Assessment](ASSESSMENT:ASM001) ([FDA](ASSESSMENT:ASM001)); [FDA](ASSESSMENT:ASM001) scores correlated with [intelligibility](SPEECH_FEATURE:SPF001).
+
+### Acronym needs its long form: FDA dropped
+
+Riluzole is approved by the FDA for [ALS](DISORDER:DIS012) and slows disease progression.
+
+### Acronym needs its long form: SGD dropped
+
+The [Conformer](SPEECH_TECH:TEC010) model was optimised with SGD and evaluated by [WER](SPEECH_TECH:TEC002) on [TORGO](DATASET:DAT002).
+
+### Case-sensitive acronyms
+
+Children with [CP](DISORDER:DIS008) were recorded; the cp command copied the files, and als was a typo.
+
+### Plurals and alternate names map to one concept id
+
+[MFCCs](SPEECH_TECH:TEC004) and [mel-frequency cepstral coefficients](SPEECH_TECH:TEC004) were compared with [log-mel spectrograms](SPEECH_TECH:TEC005) and [wav2vec2](SPEECH_TECH:TEC006) features.
+
+### Known miss: term not in glossary
+
+Velopharyngeal dysfunction and nasal emission were frequent, and the speakers used eye-gaze systems.
+
+### Known false match: everyday sense
+
+The [articulation](SPEECH_FEATURE:SPF019) of this argument is weak, and a single [stroke](DISORDER:DIS014) of the pen changed the result.
+
+### Known boundary issue: modifier outside the span
+
+Severe [spastic dysarthria](DISORDER:DIS002) and moderate [hypokinetic dysarthria](DISORDER:DIS005) were compared using the [GMFCS](ASSESSMENT:ASM002) level.
+

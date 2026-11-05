@@ -1,0 +1,70 @@
+Thu Oct 29 15:18:11 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:A6:00.0 Off |                    0 |
+| N/A   39C    P0             74W /  550W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[1m
+============================== Info about spaCy ==============================[0m
+
+spaCy version    3.8.16                        
+Location         /N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy
+Platform         Linux-4.18.0-553.172.1.el8_10.x86_64-x86_64-with-glibc2.28
+Python version   3.12.15                       
+Pipelines        en_core_web_sm (3.8.0)        
+
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[38;5;4mℹ Saving to output directory: training/ner-smoke[0m
+[38;5;4mℹ Using GPU: 0[0m
+[1m
+=========================== Initializing pipeline ===========================[0m
+[38;5;2m✔ Initialized pipeline[0m
+[1m
+============================= Training pipeline =============================[0m
+[38;5;4mℹ Pipeline: ['transformer', 'ner'][0m
+[38;5;4mℹ Initial learn rate: 0.0[0m
+E    #       LOSS TRANS...  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE 
+---  ------  -------------  --------  ------  ------  ------  ------
+  0       0        1641.86    707.00    0.50    0.26   16.20    0.01
+  0     100       71418.26  42667.23    0.00    0.00    0.00    0.00
+  0     200        1837.02   2142.47   60.16   63.53   57.14    0.60
+  0     300        3317.31   1464.79   75.44   73.33   77.67    0.75
+[38;5;2m✔ Saved pipeline to output directory[0m
+training/ner-smoke/model-last
+[38;5;4mℹ Using GPU: 0[0m
+[1m
+================================== Results ==================================[0m
+
+TOK     100.00
+NER P   79.31 
+NER R   67.16 
+NER F   72.73 
+SPEED   34751 
+
+[1m
+=============================== NER (per type) ===============================[0m
+
+                     P       R       F
+SPEECH_TECH      72.67   76.63   74.59
+DISORDER         84.76   71.68   77.67
+SPEECH_FEATURE   89.26   62.70   73.66
+DATASET          79.71   38.19   51.64
+TREATMENT         0.00    0.00    0.00
+ASSESSMENT        0.00    0.00    0.00
+
+[38;5;2m✔ Saved results to training/ner-smoke/test_metrics.json[0m

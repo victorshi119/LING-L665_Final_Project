@@ -1,0 +1,150 @@
+kind,doc_id,model_text,model_label,rule_text,rule_label,context
+boundary,arxiv_1807.10948,DNN-hidden Markov model,SPEECH_TECH,hidden Markov model,SPEECH_TECH,"[18], we described a solution to train a better **DNN-hidden Markov model** (HMM) system for the Dutch language, a language that"
+model_new,arxiv_1807.10948,Cerebral Vascular,DISORDER,,,"'s Disease (PD), four patients who have had a **Cerebral Vascular** Accident (CVA), one patient who suffered Traumatic Brain Injury"
+rule_miss,arxiv_1807.10948,,,log-mel filterbank,SPEECH_TECH,on the alignments from the GMM-HMM system. The 40dimensional **log-mel filterbank** (FB) features with the deltas and delta-deltas are
+model_new,arxiv_1905.06533,cerebral vascular accident,DISORDER,,,"of neurological disorders such as Parkinson's disease (PD), **cerebral vascular accident** (CVA or stroke) and traumatic brain injury (TBI)"
+boundary,arxiv_1905.06533,HMM,SPEECH_TECH,GMM-HMM,SPEECH_TECH,"of a speaker-dependent and a speaker-adaptive GMM- **HMM** systems on the Nemours database [46]. Later, Rudzicz"
+model_new,arxiv_1911.11360,motor-speech disorders,DISORDER,,,"the oral and nasal cavities. Hypernasality is a common symptom in **motor-speech disorders** such as Parkinson's Disease (PD), Huntington's Disease"
+model_new,arxiv_1911.11360,hypernasal speakers,SPEECH_FEATURE,,,"of AP(Xpj ) for unvoiced phonemes to be high, whereas for **hypernasal speakers** , we expect it to be lower. Fig. 4"
+model_new,arxiv_1911.11360,hypernasal speakers,SPEECH_FEATURE,,,increases. The results show that for all but the most severely **hypernasal speakers** forced alignment works effectively. These results also indicate that our
+model_new,arxiv_2011.07545,SGD,TREATMENT,,,representations. All networks are trained using the stochastic gradient descent ( **SGD** ) algorithm and the cross-entropy loss. The batch size
+rule_miss,arxiv_2110.08213,,,VOICE CONVERSION,SPEECH_TECH,"TOWARDS IDENTITY PRESERVING NORMAL TO DYSARTHRIC **VOICE CONVERSION** Wen-Chin Huang1*, Bence Mark Halpern2,3,4*,"
+model_new,arxiv_2201.05562,Universal Access Speech,DATASET,,,an extended version of the Kaldi toolkit [35] for the **Universal Access Speech** (UASpeech) database. Learning hidden unit contributions (LHUC
+model_new,arxiv_2201.05562,speed-perturbation,SPEECH_TECH,,,different data augmentation techniques for disordered speech recognition. It suggests that **speed-perturbation** based augmentation produces the largest improvement in system performance despite the huge
+model_new,arxiv_2201.05845,oracle error rates,SPEECH_FEATURE,,,found in UASpeech training data. Similar performance rank in terms of **oracle error rates** (last column in Table II) between the CTC and LAS
+model_new,arxiv_2201.05845,SPEAKER LEVEL ADAPTATION,SPEECH_TECH,,,IN BRACKETS). THE BOLD RESULTS INDICATE THE SMALLEST AMOUNTS OF **SPEAKER LEVEL ADAPTATION** DATA THAT CAN PRODUCE PERFORMANCE IMPROVEMENTS OVER THE UN-ADAPTED SYSTEMS
+rule_miss,arxiv_2201.05845,,,TEMPO PERTURBATION,SPEECH_TECH,"TABLE III COMPARISON OF THE IMPLEMENTATION DOMAIN AND EFFECTS OF VTLP, **TEMPO PERTURBATION** AND SPEED PERTURBATION ON MODIFIED SPEECH SIGNAL. ""3"" INDICATES"
+model_new,arxiv_2208.03648,cerebral palsy(CP,DISORDER,,,"in language, cognition, motor, intelligence, and even cause **cerebral palsy(CP** ) [16]. Diagnoses of CP are critical for early"
+boundary,arxiv_2209.13260,dysarthria,DISORDER,dysarthria severity classification,SPEECH_TECH,"to investigate acoustic indicators with high discrimination power for intelligibility classification ( **dysarthria** severity classification). Features from diverse speech dimensions, such as"
+model_new,arxiv_2209.13260,F0s,SPEECH_FEATURE,,,"Pitch and loudness measurements manifest dysarthric speakers have limitations in producing stable **F0s** and need greater minimum energy for speech production. Lastly, rhythmmeasurements"
+rule_miss,arxiv_2209.13260,,,VSAs,SPEECH_FEATURE,"the opposite trend. English healthy speakers have slightly smaller sizes of **VSAs** and higher FCR, lower VAI, and lower F2Ratio compared to"
+model_new,arxiv_2210.15387,SGD,TREATMENT,,,", relu, logistic, identity function, optimizer between Adam and **SGD** , and learning rate between 10-4 and 10-1"
+model_new,arxiv_2306.07090,v-vectors,SPEECH_TECH,,,"be initialize close to the identity matrix, we use couples of **v-vectors** : <!-- formula-not-decoded -->"
+model_new,arxiv_2306.07090,C,SPEECH_TECH,,,its parameters. Table 2 compares the CER for using different **C** values in model Fusion-WC with the baseline case Fusion-
+rule_miss,arxiv_2306.07090,,,CTC,SPEECH_TECH,"LASR,Trans is the loss from transformer decoder, LASR, **CTC** is the loss fromCTC decoder. If we train the fusion"
+boundary,arxiv_2309.09329,"articulation,",SPEECH_FEATURE,articulation,SPEECH_FEATURE,"sclerosis (ALS). Individuals with dysarthria encounter difficulties related to **articulation,** speech rate, breath control, resonance, and overall communication ["
+rule_miss,arxiv_2309.09329,,,Whisper,SPEECH_TECH,Very-Low ; 2 ; 72 B. Whisper Model **Whisper** [15] is an Automatic Speech Recognition (ASR) system
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,-of-the-art algorithms for hierarchical time series ( **HTS** ) forecasting rely on both the autocorrelation of each time series and
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"correlations [16, 33]. An important characteristic of **HTS** forecasting algorithms is their robustness to changes in time series relationships,"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"number of datasets and metrics, cannot assess the robustness of **HTS** forecasting algorithms in dynamic scenarios where relationships between time series and temporal"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"the concerns about the adequacy of evaluation methods are not limited to **HTS** forecasting. In fact, there is a growing discussion on the"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,RHiOTS) framework. RHiOTS is designed to evaluate the robustness of **HTS** forecasting models and algorithms facing real-world data distribution changes.
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"to make more informed data-driven decisions in selecting and applying **HTS** forecasting algorithms. To illustrate the usefulness of RHiOTS, we"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"We introduce RHiOTS, a novel framework for evaluating the robustness of **HTS** forecasting models and algorithms on real-world datasets. It provides"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,- We present empirical insights into the robustness of five distinct **HTS** models and algorithms. It illustrates the usefulness of RHiOTS as a
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"is z𝑎 𝑡 = �𝑖∈𝑈𝑎 z𝑖𝑡 . The objective of **HTS** forecasting is twofold: firstly, to minimize the forecast error for"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,are common for individual time series analysis and can be used for **HTS** when using simple reconciliation strategies [14]. General approaches like
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,". Alternatively, several methods explicitly model the hierarchical nature of **HTS** datasets. Early approaches by [15], followed by refinements"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,]. Evaluating Hierarchical Time Series Forecasting. The evaluation of **HTS** forecasting models has received limited attention in recent literature. Exceptions.
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"We introduce RHiOTS, a framework designed to assess the robustness of **HTS** forecasting algorithms. Traditional evaluations, which primarily focus on predictive accuracy"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,The next step in RHiOTS is to assess the robustness of **HTS** forecasting models by connecting the variations introduced by time series transformations with
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,both models and algorithms within the context of Hierarchical Time Series ( **HTS** ) forecasting. The first step we are interested in is
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,the distance between time series in the dataset (Q1). **HTS** algorithms rely on these dependencies to improve their univariate estimates.
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,on prediction error (Q2) and how the prediction error of **HTS** forecasting models changes with manipulation of dependencies across time and between series
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,This evaluation process enables researchers to make informed decisions when developing new **HTS** algorithms and dealing with diverse datasets and application requirements. 5.1
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,the distance distributions between the generated and original datasets. Remember that **HTS** algorithms rely on the dependencies between time series to improve the univariate
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,opposite ones. Figure 3 lays out a comparative analysis of different **HTS** forecasting models (columns) in terms of their sensitivity to transformations
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,"an appealing choice for use as a baseline when developing any new **HTS** algorithm. 6 CONCLUSIONS AND FUTUREWORK We propose RHiOTS,"
+model_new,arxiv_2408.03399,HTS,SPEECH_TECH,,,controlled dependencies. We demonstrate its effectiveness in evaluating the performance of **HTS** models and algorithms under various conditions. Our empirical study using RHiOTS
+model_new,arxiv_2410.09289,TC,SPEECH_TECH,,,first embedded by mul- tiple 1-D temporal convolution ( **TC** ) layers to obtain convo- luted unimodal feature sequences with the
+model_new,arxiv_2410.09289,Frequency Cepstral Coefficients,SPEECH_TECH,,,"Mel Spectrogram, Mel Frequency Cepstral Coefficients (MFCC), GammaTone **Frequency Cepstral Coefficients** (GFCC), and Constant Q Cepstral Coefficients (CQCC)"
+model_new,arxiv_2410.09289,PI-GITA,DATASET,,,MM-Score for all datasets and QCP Glottal flow on the **PI-GITA** . This advantage is largely because these baselines neglect the benefits of
+model_new,arxiv_2412.14435,Informer,SPEECH_TECH,,,"cases are included. Other models, such as TCN and **Informer** , exhibit much larger variances, with rankings ranging from 1 to"
+model_new,arxiv_2412.14435,Informer,SPEECH_TECH,,,"cherry-picking on the rankings of NHITS (left), **Informer** (center), and TCN (right). Each subfigure"
+model_new,arxiv_2503.08378,MLTCs,SPEECH_TECH,,,"is a lack of comprehensive studies examining the co-occurrences of **MLTCs** in adults with intellectual disability[4]. Moreover, sex differences in"
+model_new,arxiv_2503.08378,MLTCs,SPEECH_TECH,,,"]. Moreover, sex differences in the prevalence and progression of **MLTCs** in this population have not been thoroughly investigated[13]. Understanding"
+model_new,arxiv_2503.08378,MLTCs,SPEECH_TECH,,,. Understanding the patterns of co-occurrence and progression of **MLTCs** is crucial for developing effective healthcare strategies[14]. It can inform
+model_new,arxiv_2503.08378,MLTCs,SPEECH_TECH,,,"to address these knowledge gaps by examining the distribution and associations of **MLTCs** in adults with intellectual disability, with a focus on sex and"
+model_new,arxiv_2503.08378,LTCs,SPEECH_TECH,,,"patient demographics, and Supp. Table S.0 presents the list of **LTCs** . Data collected at GPs were recorded using Read codes v2,"
+model_new,arxiv_2503.08378,MLTCs,SPEECH_TECH,,,temporal associations between conditions provide a more detailed and comprehensive understanding of **MLTCs** in this population. These disparities which have been reported in the
+model_new,arxiv_2505.22072,ers,SPEECH_TECH,,,dysarthric speech dataset containing 16 dysarthric and 13 control speak- **ers** . It includes 155 common and 300 uncommon words and is
+model_new,arxiv_2505.22072,VC,SPEECH_TECH,,,"offline batch-mode MoE-based method, JHU-2023 DuTa- **VC** (Diffusion) + Conformer [40] 6 The RAB"
+rule_miss,arxiv_2506.01618,,,ASR,SPEECH_TECH,to 5 epochs. There is no additional language model. **ASR** performance is assessed using the word error rate (WER).
+model_new,arxiv_2506.16127,mel-spectrogrambased,SPEECH_TECH,,,"acoustic units in improving intelligibility while achieving faster convergence compared to traditional **mel-spectrogrambased** approaches. Index Terms: dysarthric speech, conditional-flow"
+rule_miss,arxiv_2506.16127,,,WavLM,SPEECH_TECH,"], which require additional enhancement stages before source separation. **WavLM** employs a feature encoder consisting of local temporal convolutional blocks, where"
+rule_miss,arxiv_2506.16127,,,mel-spectrograms,SPEECH_TECH,"show that acoustic discrete units not only achieve significantly faster convergence than **mel-spectrograms** but also produce speech with higher intelligibility. Additionally, we demonstrate"
+model_new,arxiv_2506.16528,BERT,SPEECH_TECH,,,"In contrast, Whisper generates hypotheses with higher lexical semantic similarity ( **BERT** and BLEURT) to the reference transcript but not necessarily with high"
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,23.26 ; 0.9294 ; 0.9748 ; 0.6896 ; -0.1262 ; 0.1031 **Whisper** ; 24.59 ; 0.9269 ; 0.9519 ; 0.7387 ; 0.2098 ; 0.1005
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,-sap1005 ; 51.50 ; 0.9135 ; 0.2969 ; -0.9798 ; 0.3661 **Whisper** ; 68.39 ; 0.8526 ; 0.2370 ; -0.9212 ; 0.4553 M
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,-sap1005 ; 29.84 ; 0.9664 ; 0.6094 ; -0.4109 ; 0.1269 **Whisper** ; 39.29 ; 0.9308 ; 0.6347 ; -0.1155 ; 0.1307 L
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,-sap1005 ; 21.25 ; 0.9773 ; 0.7117 ; -0.0981 ; 0.0761 **Whisper** ; 19.64 ; 0.9566 ; 0.7744 ; 0.2687 ; 0.0646 VL
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,-sap1005 ; 14.74 ; 0.9919 ; 0.8077 ; 0.2034 ; 0.0498 **Whisper** ; 10.72 ; 0.9831 ; 0.8836 ; 0.6015 ; 0.0291 Table
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,Wavllm ; 35.85 ; 0.9718 ; 0.5334 ; -0.5769 ; 0.1976 **Whisper** ; 34.72 ; 0.9387 ; 0.6516 ; 0.0183 ; 0.1700 w/
+rule_miss,arxiv_2506.16528,,,Whisper,SPEECH_TECH,"), suggesting that other factors also play a role. **Whisper** behaved differently than either wav2vec-sap1005 or WavLLM: GPT-4 corrections"
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,"ASR struggles with phoneme misalignment and variability in dysarthric speech. **Whisper** demonstrates a notable improvement over CTCbased models, reducing WER to 0.38"
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,"highlights the effectiveness of linguistic modeling in decoding dysarthric speech. **Whisper** -Vicuna achieves the lowest WER (0.21 TORGO, 0.26 UASpeech"
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,"their phoneme alignment weakens, leading to significantly higher errors. **Whisper** achieves more stable WER due to end-to-end training"
+rule_miss,arxiv_2508.08027,,,CTC,SPEECH_TECH,"tested on the other. As shown in Table 3. **CTC** -based models, particularly HuBERT-CTC, show the highest"
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,Output HuBERT-CTC ; 0.28 ; otl omner shrugg **Whisper** ; 0.18 ; the hotel man HuBERT-BART ; 0.14
+rule_miss,arxiv_2508.08027,,,HuBERT,SPEECH_TECH,otl omner shrugg Whisper ; 0.18 ; the hotel man **HuBERT** -BART ; 0.14 ; The otel owner shrug Whisper-
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,HuBERT-BART ; 0.14 ; The otel owner shrug **Whisper** -Vicuna ; 0.09 ; The hotel owner shrugged Ground Truth
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,Tested on Torgo Hubert-CTC ; 1.56 ; 1.86 **Whisper** ; 1.20 ; 1.10 Hubert-BART ; 0.98 ; 0.99
+rule_miss,arxiv_2508.08027,,,Whisper,SPEECH_TECH,1.20 ; 1.10 Hubert-BART ; 0.98 ; 0.99 **Whisper** -Vicuna ; 0.87 ; 0.88 4. Limitations While
+rule_miss,arxiv_2512.17474,,,Speech Recognition,SPEECH_TECH,Benchmarking Commercial **Speech Recognition** and Multimodal Large Language Models on Dysarthric Speech: SeverityStratified Baselines and
+rule_miss,arxiv_2512.17474,,,speech recognition,SPEECH_TECH,", no, or stop) do not exercise the connected- **speech recognition** that is the focus of this study; (ii) items"
+boundary,arxiv_2601.21205,Automatic speech recognizers,SPEECH_TECH,speech recognizers,SPEECH_TECH,"phone annotations, which are difficult to obtain for dysarthric speech. **Automatic speech recognizers** (ASR) have also been used, with Word Error Rate"
+model_new,arxiv_2601.21205,UPDRSspeech,ASSESSMENT,,,"Participants produced 25 isolated words. Each speaker was evaluated using the **UPDRSspeech** scale, which rates speech impairment severity from 0 (normal)"
+rule_miss,arxiv_2601.21205,,,PER,SPEECH_TECH,KENDALL'S τ BETWEEN BASELINE FEATURES AND INTELLIGIBILITY SCORES. BEST PERFORMANCE **PER** LANGUAGE IS HIGHLIGHTED IN BOLD. Features ; English ; Spanish
+rule_miss,arxiv_2601.21205,,,Whisper,SPEECH_TECH,max.) ; 0.709 ; 0.364 ; 0.585 ; 0.544 **Whisper** -small ; 0.768 ; 0.157 ; 0.594 ; 0.576 Whisper
+rule_miss,arxiv_2601.21205,,,Whisper,SPEECH_TECH,Whisper-small ; 0.768 ; 0.157 ; 0.594 ; 0.576 **Whisper** -medium ; 0.755 ; 0.345 ; 0.638 ; 0.552 For
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"on a reference transcript at inference time, obtained from an external **ASR** system. This dependency makes zero-shot TTS brittle for accented"
+model_new,arxiv_2606.20266,text-speech,SPEECH_TECH,,,-level zero-shot TTS. F5-TTS further improves **text-speech** alignment by refining the padded character sequence with an additional text encoder
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"the reference audio at inference time, typically obtained via an external **ASR** system. For speech with poor articulation, strong accents, or"
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"For speech with poor articulation, strong accents, or dysarthria, **ASR** errors directly degrade the reference conditioning. More fundamentally, we show"
+boundary,arxiv_2606.20266,-supervised learning,SPEECH_TECH,self-supervised learning,SPEECH_TECH,"reference transcripts, we replace text-based reference features with self **-supervised learning** (SSL) speech representations. Given a reference waveform aref ,"
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"F5-TTS baselines using oracle transcripts and Whisper large-v3 **ASR** transcripts. For atypical speakers, we additionally report the WER,"
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"to the pretrained F5-TTS model conditioned on either oracle or **ASR** transcripts. WER denotes word error rate, SIM denotes speaker similarity"
+model_new,arxiv_2606.20266,PC -,DATASET,,,predicted by UTMOS [31]. Model ; LibriSpeech- **PC -** WER↓ ; LibriSpeech-PC - SIM↑ ; LibriSpeech-PC -
+model_new,arxiv_2606.20266,PC -,DATASET,,,. Model ; LibriSpeech-PC - WER↓ ; LibriSpeech- **PC -** SIM↑ ; LibriSpeech-PC - MOS↑ ; SeedTTS - WER↓ ;
+model_new,arxiv_2606.20266,PC -,DATASET,,,PC - WER↓ ; LibriSpeech-PC - SIM↑ ; LibriSpeech- **PC -** MOS↑ ; SeedTTS - WER↓ ; SeedTTS - SIM↑ ; SeedTTS -
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,; 3.83 ; 1.43% ; 0.68 ; 3.66 Baseline ( **ASR** ) ; 2.17% ; 0.68 ; 3.84 ; 1.45% ;
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,; 2.27 ; 2.00% ; 0.59 ; 3.92 Baseline ( **ASR** ) ; 20.46% ; 0.60 ; 2.27 ; 1.99% ;
+model_new,arxiv_2606.20266,PC,SPEECH_TECH,,,"-shot TTS benchmarks with typical speakers. On LibriSpeech- **PC** , RTFree-F5 (Stage 2) achieves a WER of"
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"%, outperforming both the oracle baseline (2.08%) and **ASR** baseline (2.17%). The MOS improves substantially from 3.83"
+model_new,arxiv_2606.20266,PC),DATASET,,,"projector, shows degraded performance (4.68% WER on LibriSpeech- **PC)** , confirming that joint fine-tuning in Stage 2 is essential"
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,"also outperforms both the oracle baseline (2.00%) and the **ASR** baseline (1.99%), demonstrating that SSL-based conditioning"
+model_new,arxiv_2606.20266,ASR,SPEECH_TECH,,,a crucial limitation of text-based reference conditioning that extends beyond **ASR** reliability. Both the oracle baseline and RTFree-F5 use
+model_new,arxiv_2608.08976,speaking-,SPEECH_FEATURE,,,a random partition of the same dataset. A model-free **speaking-** rate marker (syllable nuclei per second [4]) shows
+rule_miss,arxiv_2608.08976,,,HuBERT,SPEECH_TECH,"wav2vec 2.0 (voice) ; +0.28 ; 0.500 ; 0.728 **HuBERT** (voice, used) ; +0.37 ; 0.606 ; 0.765"
+model_new,arxiv_2609.20875,monoprosody,SPEECH_FEATURE,,,"patients with PD [4] and manifests itself as hypophonia, **monoprosody** , reduced articulation rate, and imprecise phonation, often emerging early"
+boundary,arxiv_2609.20875,imprecise phonation,SPEECH_FEATURE,phonation,SPEECH_FEATURE,"manifests itself as hypophonia, monoprosody, reduced articulation rate, and **imprecise phonation** , often emerging early and evolving with disease progression and medication state"
+model_new,arxiv_2609.20875,ASR,SPEECH_TECH,,,"XLS-R [38], a multilingual self-supervised **ASR** model pretrained via contrastive learning; WavLM [39], trained"
+model_new,arxiv_2609.20875,ASR,SPEECH_TECH,,,"; Whisper-v3 [40], a weakly supervised multilingual **ASR** and speech translation model; and OpenL3 [41], an"
+model_new,arxiv_2609.20875,pd,DISORDER,,,visited: 2026-09-15.](https://github.com/simon-hjp/ **pd** -speech-embedding-severity-classification) Fig.
+model_new,arxiv_2609.20875,MDS-UPDRSS,ASSESSMENT,,,"[20]. The top row indicates the ground-truth **MDS-UPDRSS** speech scores, or HC where applicable. Fig. 7"
+boundary,arxiv_2609.28877,SPEECH RECOGNITION,SPEECH_TECH,AUTOMATIC SPEECH RECOGNITION,SPEECH_TECH,LEARNING NEW WORDS FROM UNLABELED TEST DATA IN AUTOMATIC **SPEECH RECOGNITION** Mengqi Wang⋆ Mark A. Hasegawa-Johnson⋆ Haolong Zheng⋆ Chang D.
+model_new,arxiv_2609.28877,LM,SPEECH_TECH,,,hypotheses for an input utterance. Word spans with strong CTC- **LM** preference disagreement are selected as potential OOV regions (one span here
+model_new,arxiv_2609.28877,LM,SPEECH_TECH,,,"process will not be triggered due to the lack of CTC- **LM** disagreement. Even when the OOV spans are correctly localized, the"
+rule_miss,arxiv_2609.28877,,,ASR,SPEECH_TECH,"new token representations and spelling distributions from unlabeled speech data. **ASR** maps from a sequence of speech, x0:T = ["
+rule_miss,arxiv_2609.28877,,,HuBERT,SPEECH_TECH,CER ; SAP-dev OOV subset - OOV-CER **HuBERT** -XLarge ; 28.96 ; 15.94 ; 40.64 + GPT-2 +
+model_new,arxiv_cmp-lg_9506018,voice synthesis,SPEECH_TECH,,,"their speech, etc. For all these people, no **voice synthesis** with an interface based on letter or word selection would make up"
+model_new,arxiv_cmp-lg_9506018,voice synthesis,SPEECH_TECH,,,The sentences are eventually vocalized by a text-to-speech **voice synthesis** device. 6 Interface Some potential users of the PVI
+boundary,pubmed_2629622,Acquired cerebral palsy,DISORDER,cerebral palsy,DISORDER,"**Acquired cerebral palsy** P O D PHAROAH, T COOKE, AND L ROSENBLOOM"
+model_new,pubmed_2629622,cerebral palsy.⁵,DISORDER,,,the insult occurs for differentiating between congenital' and 'acquired' **cerebral palsy.⁵** Blair and Stanley included individuals born free of brain damage who cerebral
+rule_miss,pubmed_2629622,,,spastic quadriplegia,DISORDER,"that was not self propelled. The cases were grouped into **spastic quadriplegia** , spastic hemiplegia, and 'others'. Spastic quadriplegia included"
+rule_miss,pubmed_2629622,,,spastic hemiplegia,DISORDER,"self propelled. The cases were grouped into spastic quadriplegia, **spastic hemiplegia** , and 'others'. Spastic quadriplegia included quadriplegia, double"
+rule_miss,pubmed_2629622,,,Spastic quadriplegia,DISORDER,"into spastic quadriplegia, spastic hemiplegia, and 'others'. **Spastic quadriplegia** included quadriplegia, double hemiplegia, and mixed quadriplegia and double hemiplegia"
+rule_miss,pubmed_2629622,,,Spastic hemiplegia,DISORDER,"quadriplegia, double hemiplegia, and mixed quadriplegia and double hemiplegia. **Spastic hemiplegia** included the mixed hemiplegias. Others included the dyskinesic, ataxic,"
+rule_miss,pubmed_2629622,,,Spastic quadriplegia,DISORDER,is shown in table 1. TYPE OF CEREBRAL PALSY **Spastic quadriplegia** with 76 cases (52%) was the commonest type of
+rule_miss,pubmed_2629622,,,spastic hemiplegia,DISORDER,cerebral palsy. There were 61 cases (41%) of **spastic hemiplegia** . 'Others' included 10 cases which were comprised of ataxia
+rule_miss,pubmed_2629622,,,Spastic hemiplegia,DISORDER,(%) Mental disability ; Type of cerebral palsy - **Spastic hemiplegia** ; Type of cerebral palsy - Spastic quadriplegia ; Type of cerebral
+rule_miss,pubmed_2629622,,,Spastic quadriplegia,DISORDER,of cerebral palsy - Spastic hemiplegia ; Type of cerebral palsy - **Spastic quadriplegia** ; Type of cerebral palsy - Others Normalminimal ; 27 (
+rule_miss,pubmed_2629622,,,Spastic hemiplegia,DISORDER,(%) Motor disability ; Type of cerebral palsy - **Spastic hemiplegia** ; Type of cerebral palsy - Spastic quadriplegia ; Others Minimal
+rule_miss,pubmed_2629622,,,Spastic quadriplegia,DISORDER,of cerebral palsy - Spastic hemiplegia ; Type of cerebral palsy - **Spastic quadriplegia** ; Others Minimal ; 52 (88) ; 10 (
+model_new,pubmed_39682602,MOSs,SPEECH_TECH,,,"phoneme prediction accuracy and overall voice conversion quality. It achieved higher **MOSs** for naturalness, intelligibility, and speaker similarity compared to existing models"
+model_new,pubmed_39682602,motor neuron impairment,DISORDER,,,"-7] 2. Flaccid Dysarthria: Results from lower **motor neuron impairment** , which leads to weakness and reduced muscle tone, affecting speech"
+model_new,pubmed_39682602,thria,DISORDER,,,closely resembles normal speech patterns while effectively mitigating the effects of dysar- **thria** . Figure 1 illustrates the structure of the FEMPPDM-DVC framework
+model_new,pubmed_39682602,thria,DISORDER,,,closely resembles normal speech patterns while effectively mitigating the effects of dysar- **thria** . Figure 1 illustrates the structure of the FEMPPDM-DVC framework
+model_new,pubmed_39682602,thria,DISORDER,,,closely resembles normal speech patterns while effectively mitigating the effects of dysar- **thria** . Figure 1 illustrates the structure of the FEMPPDM-DVC framework
+model_new,pubmed_39682602,ters,SPEECH_TECH,,,:  Calculate the distance between the previous and current cluster cen- **ters** .  If the distance is less than a predefined threshold:
+model_new,pubmed_39682602,ters,SPEECH_TECH,,,:  Calculate the distance between the previous and current cluster cen- **ters** .  If the distance is less than a predefined threshold:
+model_new,pubmed_39682602,ters,SPEECH_TECH,,,:  Calculate the distance between the previous and current cluster cen- **ters** .  If the distance is less than a predefined threshold:
+model_new,pubmed_39682602,thria,DISORDER,,,: closely resembles normal speech patterns while effectively mitigating the effects of **thria** . Figure 1 illustrates the structure of the FEMPPDM-DVC framework
+model_new,pubmed_39682602,thria,DISORDER,,,output closely resembles normal speech patterns while effectively mitigating the effects of **thria** . Figure 1 illustrates the structure of the FEMPPDM-DVC framework
+model_new,pubmed_39682602,MOSs,SPEECH_TECH,,,"will be recruited to evaluate the converted speech, ensuring that the **MOSs** reflect a broad consensus on the quality of the output."
+model_new,pubmed_39682602,Mel-spectrogramVisualization,SPEECH_TECH,,,"of juvenile dysphonia.  Mel-spectrogram Visualization: · **Mel-spectrogramVisualization** Diagnostics 2024, 14, x FOR PEER REVIEW Figure"
+model_new,pubmed_39682602,MOSs,SPEECH_TECH,,,"results for naturalness, intelligibility, and speaker similarity based on the **MOSs** . These scores were averaged across the 25 selected samples from the"
+model_new,pubmed_39682602,MOSs,SPEECH_TECH,,,"results for naturalness, intelligibility, and speaker similarity based on the **MOSs** . These scores were averaged across the 25 selected samples from the"
+rule_miss,pubmed_39682602,,,speech rate,SPEECH_FEATURE,"movements. This type is characterized by irregular articulatory breakdowns, variable **speech rate** , and a jerky, uneven quality of speech [10]"
+rule_miss,pubmed_39682602,,,voice conversion,SPEECH_TECH,"precise and nuanced assessments of dysarthria severity. Recent advancements in **voice conversion** technology have introduced Duta-VC [16], a state"
+rule_miss,pubmed_39682602,,,voice conversion,SPEECH_TECH,WER scores. Figure 6 showcases the WER scores for different **voice conversion** models across mild and severe dysarthria cases. Lower WER scores indicate

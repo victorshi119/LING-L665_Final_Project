@@ -1,0 +1,25 @@
+text,label,count,documents,example_doc,example_context
+whisper,SPEECH_TECH,17,4,arxiv_2309.09329,Very-Low ; 2 ; 72 B. Whisper Model **Whisper** [15] is an Automatic Speech Recognition (ASR) system
+spastic quadriplegia,DISORDER,5,1,pubmed_2629622,"that was not self propelled. The cases were grouped into **spastic quadriplegia** , spastic hemiplegia, and 'others'. Spastic quadriplegia included"
+spastic hemiplegia,DISORDER,5,1,pubmed_2629622,"self propelled. The cases were grouped into spastic quadriplegia, **spastic hemiplegia** , and 'others'. Spastic quadriplegia included quadriplegia, double"
+voice conversion,SPEECH_TECH,3,2,arxiv_2110.08213,"TOWARDS IDENTITY PRESERVING NORMAL TO DYSARTHRIC **VOICE CONVERSION** Wen-Chin Huang1*, Bence Mark Halpern2,3,4*,"
+hubert,SPEECH_TECH,3,3,arxiv_2508.08027,otl omner shrugg Whisper ; 0.18 ; the hotel man **HuBERT** -BART ; 0.14 ; The otel owner shrug Whisper-
+ctc,SPEECH_TECH,2,2,arxiv_2306.07090,"LASR,Trans is the loss from transformer decoder, LASR, **CTC** is the loss fromCTC decoder. If we train the fusion"
+asr,SPEECH_TECH,2,2,arxiv_2506.01618,to 5 epochs. There is no additional language model. **ASR** performance is assessed using the word error rate (WER).
+speech recognition,SPEECH_TECH,2,1,arxiv_2512.17474,Benchmarking Commercial **Speech Recognition** and Multimodal Large Language Models on Dysarthric Speech: SeverityStratified Baselines and
+hidden markov model,SPEECH_TECH,1,1,arxiv_1807.10948,"], we described a solution to train a better DNN- **hidden Markov model** (HMM) system for the Dutch language, a language that"
+log-mel filterbank,SPEECH_TECH,1,1,arxiv_1807.10948,on the alignments from the GMM-HMM system. The 40dimensional **log-mel filterbank** (FB) features with the deltas and delta-deltas are
+gmm-hmm,SPEECH_TECH,1,1,arxiv_1905.06533,"the performance of a speaker-dependent and a speaker-adaptive **GMM-HMM** systems on the Nemours database [46]. Later, Rudzicz"
+tempo perturbation,SPEECH_TECH,1,1,arxiv_2201.05845,"TABLE III COMPARISON OF THE IMPLEMENTATION DOMAIN AND EFFECTS OF VTLP, **TEMPO PERTURBATION** AND SPEED PERTURBATION ON MODIFIED SPEECH SIGNAL. ""3"" INDICATES"
+dysarthria severity classification,SPEECH_TECH,1,1,arxiv_2209.13260,"to investigate acoustic indicators with high discrimination power for intelligibility classification ( **dysarthria severity classification** ). Features from diverse speech dimensions, such as features related"
+vsas,SPEECH_FEATURE,1,1,arxiv_2209.13260,"the opposite trend. English healthy speakers have slightly smaller sizes of **VSAs** and higher FCR, lower VAI, and lower F2Ratio compared to"
+articulation,SPEECH_FEATURE,1,1,arxiv_2309.09329,"sclerosis (ALS). Individuals with dysarthria encounter difficulties related to **articulation** , speech rate, breath control, resonance, and overall communication"
+wavlm,SPEECH_TECH,1,1,arxiv_2506.16127,"], which require additional enhancement stages before source separation. **WavLM** employs a feature encoder consisting of local temporal convolutional blocks, where"
+mel-spectrograms,SPEECH_TECH,1,1,arxiv_2506.16127,"show that acoustic discrete units not only achieve significantly faster convergence than **mel-spectrograms** but also produce speech with higher intelligibility. Additionally, we demonstrate"
+speech recognizers,SPEECH_TECH,1,1,arxiv_2601.21205,"annotations, which are difficult to obtain for dysarthric speech. Automatic **speech recognizers** (ASR) have also been used, with Word Error Rate"
+per,SPEECH_TECH,1,1,arxiv_2601.21205,KENDALL'S τ BETWEEN BASELINE FEATURES AND INTELLIGIBILITY SCORES. BEST PERFORMANCE **PER** LANGUAGE IS HIGHLIGHTED IN BOLD. Features ; English ; Spanish
+self-supervised learning,SPEECH_TECH,1,1,arxiv_2606.20266,"on reference transcripts, we replace text-based reference features with **self-supervised learning** (SSL) speech representations. Given a reference waveform aref ,"
+phonation,SPEECH_FEATURE,1,1,arxiv_2609.20875,"itself as hypophonia, monoprosody, reduced articulation rate, and imprecise **phonation** , often emerging early and evolving with disease progression and medication state"
+automatic speech recognition,SPEECH_TECH,1,1,arxiv_2609.28877,LEARNING NEW WORDS FROM UNLABELED TEST DATA IN **AUTOMATIC SPEECH RECOGNITION** Mengqi Wang⋆ Mark A. Hasegawa-Johnson⋆ Haolong Zheng⋆ Chang D.
+cerebral palsy,DISORDER,1,1,pubmed_2629622,"Acquired **cerebral palsy** P O D PHAROAH, T COOKE, AND L ROSENBLOOM"
+speech rate,SPEECH_FEATURE,1,1,pubmed_39682602,"movements. This type is characterized by irregular articulatory breakdowns, variable **speech rate** , and a jerky, uneven quality of speech [10]"
