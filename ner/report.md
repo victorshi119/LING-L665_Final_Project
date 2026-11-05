@@ -210,7 +210,8 @@ The test run confirmed that the files, labels and GPU setup work. A first full r
 split was cancelled after ~1,000 steps when the leakage was found
 (`training/ner-transformer_cancelled_old_split/`). Full run 1 used glossary v0.1. Full run 2 is
 the same configuration on the DocBins rebuilt with glossary v0.2 (Section 5), and it is the model
-we submit. The two test scores are not strictly comparable, because the corrections changed some
+we submit. Its `model-best` directory (for `DOMAIN_SPECIFIC_MODEL_PATH` in Assignment 2) is
+`/N/u/shinsaka/BigRed200/CP_Dysarthria_Pubmed_md/ner_assignment1/training/ner-transformer/model-best`. The two test scores are not strictly comparable, because the corrections changed some
 test labels.
 
 In full run 2, dev F rose quickly (89.5 at step 1,000, 95.4 at 2,000, 96.9 at 4,000) and peaked at
@@ -259,7 +260,11 @@ On the 39 test documents the rules have 4,409 entities and the final model 4,457
 | TREATMENT | 26 | 92.9 | 100.0 | 96.3 |
 | **All** | **4,409** | **97.7** | **98.8** | **98.2** |
 
-The model reproduces the rules almost exactly. On spans where both found an entity with the same
+The model reproduces the rules almost exactly. 4,354 of its 4,457 test entities match a rule entity
+exactly. Examples with context are in the *Agreements* section of
+[evaluation/examples.md](evaluation/examples.md): *WER* and *ASR* in results sections, *UASpeech*,
+*dysarthria*, *intelligibility*, *phonation*, *speaker adaptation*. (Not every agreement is
+correct: the same list has *Motor Speech Disorders* inside a lab's name.) On spans where both found an entity with the same
 boundaries, the label never differs ([evaluation/confusion.json](evaluation/confusion.json)). The
 disagreements are 103 model-only and 55 rule-only spans (run 1: 84 and 51).
 [analyze_disagreements.py](analyze_disagreements.py) separates them
