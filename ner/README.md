@@ -1,9 +1,8 @@
 # Assignment 1: Domain Glossary and Transformer NER
 
-CP-associated dysarthria. Start with [report.md](report.md): it lists every deliverable, the
-results, and the commands to reproduce them. The labels are described in
-[topic_and_labels.md](topic_and_labels.md), and the glossary is [glossary.json](glossary.json).
-This folder is a copy of `ner_assignment1/` on Quartz, so the paths in the report are relative to it.
+CP-associated dysarthria. The labels are described in [topic_and_labels.md](topic_and_labels.md),
+and the glossary is [glossary.json](glossary.json). This folder is a copy of `ner_assignment1/`
+on Quartz.
 
 Not in this repo:
 
