@@ -103,6 +103,13 @@ source $B/envs/spacy-layout/bin/activate
 python -I $B/code/processing/build_arxiv_corpus.py $B/data/raw/arxiv $B/data/processed
 ```
 
+## Assignment 2
+
+The knowledge-graph code and the teammate replication notes are in
+`assignment2/`. The NER weights and the paper texts are not in this repo.
+See `assignment2/README.md` for the Quartz paths, the six-document sample,
+and the REALLMS client (`qwen3.8-27b`).
+
 ## Licensing
 
 The code in this repo is MIT-licensed (see `LICENSE`). The corpus is not part of

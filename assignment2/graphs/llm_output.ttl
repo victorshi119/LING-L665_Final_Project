@@ -1,0 +1,2777 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/cp-dysarthria/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/cp-dysarthria/stmt/0037a01e3f127795> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Insertion, deletion and repetition of phoneme reduce the intelligibility of speech signal." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/repetition-of-phoneme> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/00b43903f9450b70> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "ASR application becomes limited for individuals with dysarthric speech, as their articulation is more imprecise and less consistent" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/asr> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/00d40e1d0cc26a09> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "including individuals with different type of dysarthria and with both increased and decreased speech rate" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-rate> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/023b3805b8085640> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "In ataxic dysarthria, pitch break was found in 6 out of 7 subjects" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/024e7b788dc093d1> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/046c5d2929f3041e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "the dysarthric speech group presented a mean recognition accuracy of 98.6±5.3% (range 80.0-100%) with mPASS" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/05dbca4c814d0fdf> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "The pitch contour, formant variation, and speech duration of the extracted graphs were analyzed" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-variation> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/acoustic-analysis> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0681f826e331e539> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inappropriate-loudness-levels> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/08c4f83480a2a926> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "the latent space conveys interpretable characteristics of dysarthria, such as intelligibility and fluency of speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/0a5d61baf7cad4d4> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Connor et al. [18] found that F1 and F2 transition rates were flatter in extrapyramidal dysarthria compared to control subjects" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f1-and-f2-transition-rates> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0aeb87b85af1a635> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Flint et al. [15] examined F2 characteristics for PD and normal subjects and found flatter F2 transition rates in the PD patients during sentence reading" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f2-transition-rates> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/pd> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0c822d661d676975> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Fig.1: Hybrid Feature Extraction and Acoustic Modelling ASR for Dysarthric Speaker" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mlp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/0dd6009a0f4b7924> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F0 variability seen in parkinsons disease is seen during prodromal phase of illness" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-variability> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0f0ca4791e043564> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "A Praat script was then employed to automatically extract pause duration from each labeled silence interval" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/0fc621aa527aec83> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "speech waveforms were exported to Praat vocal toolkit version (5.3.53) and pitch F0, formants F1 and F2 and pitch break were considered as deterministic parameters and were extracted for categorizing patients according to different types of dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat-vocal-toolkit> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/12662084aae96bc9> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/133f1674f9fa469e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "This suggests a potential influence of dysarthria on pausing for these speakers." ;
+    ex:extractor "llm" ;
+    ex:modality "might" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/13e51247243ee2e9> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "various articulation, prosody and fluency problems" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fluency> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/14a1f19bcbace6a7> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F0 jitter is found to be associated with spastic dysarthria in 64.3% of cases" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/14b88ad392dd9181> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "spectral and cepstral features that capture various aspects of dysarthric speech such as rhythm, glottal movement or formants" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/rhythm> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/16e9319847d82cfa> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "The pitch contour, formant variation, and speech duration of the extracted graphs were analyzed" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-contour> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/acoustic-analysis> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/17b0ca5ed30e652c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Intelligibility category is assessed during reading and spontaneous speech tasks through the qualitative ratings of the clinician, a caregiver and an external listener." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/rdpint> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/17e3cc3c572687c9> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "[17] has trained fully connected neural networks to classify the severity of the disease, using TORGO and the UASPEECH [18] database." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/torgo> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/fully-connected-neural-networks> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/18e2831edc64dd65> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Speakers with Parkinson's disease (PD) were found to have reduced F1-F2 vowel space, compared to control speakers" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-f1-f2-vowel-space> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/1aa634791e5c583a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "For the implementation of the hybrid HMM/MLP approach acoustic feature vectors [13, 14] are need to extracted from the raw speech file" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/hmm> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/1b032650c0b68637> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F1 and F2 transition rates were flatter in extrapyramidal dysarthria compared to control subjects" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f1-and-f2-transition-rates> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/1bb1af92bac87309> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "with abnormal prosodic patterns, such as very low speech rate or flat intonation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/abnormal-prosodic-patterns> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/1bd0ffd395486a35> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "speech rate, which is frequently reported to be reduced in children with CP" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-rate> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/203d41db51cece14> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "frequent pauses" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/frequent-pauses> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/2111d1112020d028> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "There are three different approaches to the reconstruction of dysarthric speech: voice banking, voice adaptation and voice reconstruction" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/voice-adaptation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/225e80bb18a1f40f> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Insertion, deletion and repetition of phoneme reduce the intelligibility of speech signal." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/insertion-of-phoneme> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/2361cbfee7316ad5> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "pausing behaviors in children with dysarthria and CP" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/254485afbf8c5357> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shallow-irregular-breathing> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/257feee7affc8e4c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "We asked listeners to evaluate the fluency of speech on a scale from 0 to 100." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fluency> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/mushra-perceptual-test> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/271316daf2eb54a0> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/facial-muscles> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/29cc1f4e5d6e130b> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Most of the enrolled individuals with dysarthria showed articulatory imprecision, pneumophonic coordination deficit and harsh voice." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pneumophonic-coordination-deficit> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/2dc0b32640fdcd2d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Speech intelligibility was measured using the Children's Speech Intelligibility Measure (CSIM)" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-intelligibility> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/children-s-speech-intelligibility-measure-csim> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/2f42ef349d210e8d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "to improve articulation, phonation, and resonance" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/resonance> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/2ff9b8101e52c324> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-pitch-variation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/3074c50890caa660> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Formant analysis which is considered as a function of vocal tract can be affected by deficits in articulatory control" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-frequency> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/formant-analysis> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/30c7f987d35efb49> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "There are three different approaches to the reconstruction of dysarthric speech: voice banking, voice adaptation and voice reconstruction" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/voice-banking> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/3259658450f39cf4> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "children with CP paused for longer in each position than the TD children" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause-duration> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/337d2173cbcf0064> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "with inspirational stridency" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inspirational-stridency> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/393fd7d94f38211e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "This paper proposed a novel approach for the detection and reconstruction of dysarthric speech. The encoder-decoder model factorizes speech into a low-dimensional latent space" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/encoder-decoder-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/396a9a268cd1e425> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Most of the current ASR systems for users with dysarthria are speaker-dependent" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-dependent-systems> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/3b7e8459820b8588> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/3d054235b3c77174> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "they experienced problems using intensity and F0 to signal stress, with only duration being used in a way that was comparable to the TD group" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/sentence-stress> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/3e08beb0b93cb2ae> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "found flatter F2 transition rates in the PD patients" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f2-transition-rates> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/430464f2fe8edac1> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Dysarthric speech and normal speech participants utilized the mPASS online platform for the recording and testing of 24 words and 5 sentences in a clinical environment." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/43dad108a45b66d2> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Children with dysarthria due to cerebral palsy (CP) can experience problems manipulating intensity, fundamental frequency, and duration to signal sentence stress in an utterance." ;
+    ex:extractor "llm" ;
+    ex:modality "may" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fundamental-frequency> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/45b35a34708f9e60> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "statistical models based on a fixed vector of handcrafted prosodic and spectral features such as jitter, shimmer, Noise to Harmonic Ratio (NHR) or Mel-Frequency Cepstral Coefficients (MFCC)" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/jitter> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/statistical-models-with-handcrafted-features> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/463d544734401d92> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "a latent layer representing four dimensions of dysarthria: nasality, vocal quality, articulatory precision, and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-precision> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/487acc7c1980bd45> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/respiration> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/4e33399a09e05756> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Children with dysarthria due to cerebral palsy (CP) can experience problems manipulating intensity, fundamental frequency, and duration to signal sentence stress in an utterance." ;
+    ex:extractor "llm" ;
+    ex:modality "may" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/sentence-stress> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/4e9b9ffed1cb3b90> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "spectral and cepstral features that capture various aspects of dysarthric speech such as rhythm, glottal movement or formants" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/glottal-movement> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/511624909f966f04> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "There is associated dystonia" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/dystonia> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/524895c99e96a5f3> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "pitch break with ataxic dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/531dae9d26d3a92a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "mPASS platform is accurate and it could be easily used by individuals with dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass-platform> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/57cd4c772b3dcf71> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "All had been diagnosed with dysarthria by speech and language therapists and received speech and language therapy in the past." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/speech-and-language-therapy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/581f1392b8414419> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Vasquez-Correa et al. [8] uses a mel-spectrogram representation for dysarthria detection" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/vasquez-correa-et-al-mel-spectrogram-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/5bbcfe8f5d944693> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "On an average recognition rate of 71.6% and 63.3% for TIMIT and CTS database is obtained" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/cts> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mlp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/5c229651f8fa671a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "[15] trains various linear classifiers on TORGO and the NKI CCRT corpus [16] to detect dysarthria." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/torgo> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/linear-classifiers> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/5e6972ec14e66b9c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/5e6cdf607ada9c82> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "a proof-of-concept field trial with a voice-controlled mobile texting application was undertaken recruiting one individual with cerebral palsy" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass-platform> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/5f2a9f39de18e6eb> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "various articulation, prosody and fluency problems" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/6117885a5d7675cb> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Assistive technology like Automatic Speech Recognition (ASR) helps in recognition and synthesis of unintelligible speech into intelligible form." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/automatic-speech-recognition-asr> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/6254b882bb9c7ac7> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reflexes> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/633e1f0cfff31adc> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "on monopitch" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monopitch> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/633ff76e7be94af4> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "These systems typically work well only for the person who trains it and usually reach better accuracy rates than speaker-independent software in individuals with severe dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-dependent-asr> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/657f3d15abacf172> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "breathy voice in case of LMN involvement" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-voice> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/mixed-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/69ee3865d2316057> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "can be used as a useful biomarker to evaluate the efficacy of pharmacological interventions in early disease process" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/pharmacological-interventions> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/6e390238a2bb2856> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Comparison of pitch of normal speech with ataxic speech. Demonstrates F0 break" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-break> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/6f3102e3b91b793b> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "This technique aims at restoring damaged speech by tuning parameters representing the glottal source and the vocal tract filter" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/voice-reconstruction-technique> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/709d6ebf2216cca1> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Spastic dysarthria is characterized by the harshness of the vocal quality" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-vocal-quality> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/7250505b9c9fe2f5> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "hoarse speech with low volume" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/7318585454fccbf0> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "In our first model, only dysarthric labels are observed and we achieved an accuracy on the word and speaker levels of 82% and 93% respectively" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-classifier-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/73a2785ebdedad7c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "statistical models based on a fixed vector of handcrafted prosodic and spectral features such as jitter, shimmer, Noise to Harmonic Ratio (NHR) or Mel-Frequency Cepstral Coefficients (MFCC)" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/noise-to-harmonic-ratio-nhr> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/statistical-models-with-handcrafted-features> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/7476aa7c5cbde2ab> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "The elicited phrases were prepared for pausing data analysis using Praat speech analysis software v5.3.39" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat-speech-analysis-software> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/74e4d795c380cc42> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slower-speech-rate> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/75ab41dd0a47d84d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "mPASS, a novel tool for developing speaker-dependent ASR system, in recognizing normal and dysarthric speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/766f0846b8dad21f> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "On an average recognition rate of 71.6% and 63.3% for TIMIT and CTS database is obtained" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/timit> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mlp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/783f597b81c1baa0> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "the commercial ASR software used as a comparison (Pocketsphinx) is not considered the benchmark of speaker-independent ASR software" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/pocketsphinx> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/78db0d54968fe69c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Hyperkinetic dysarthria seen in Huntingtons disease is associated with harsh sounding" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-sounding> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/79f88a092b323ab3> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "[15] trains various linear classifiers on TORGO and the NKI CCRT corpus [16] to detect dysarthria." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/nki-ccrt-corpus> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/linear-classifiers> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/7bcf0b50e9a64661> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "In our experiments we use the UA-Speech database from the University of Illinois" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/ua-speech> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-multi-task-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/7d263e06f0406e48> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Special therapy like principles of motor learning are carried out by speech language pathologist" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/principles-of-motor-learning-therapy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/7d3c4cac4bcbe72e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "to improve articulation, phonation, and resonance" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/7e378a9ac7e6c939> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Various clinical treatments including exercise of motor muscles were carried out to increase the strength in order to improve articulation, phonation, and resonance." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/exercise-of-motor-muscles> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/7ff01a59573dd122> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "[15] trains various linear classifiers on TORGO and the NKI CCRT corpus [16] to detect dysarthria." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/linear-classifiers> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/8050629a82e9e93b> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It can impair all processes involved in speech production including respiration, phonation, articulation, resonance and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "can" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/respiration> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/80935dc7210ef8f8> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/812dd1d17b00c3e4> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Pattern recognition among types of dysarthria with software tool" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/software-tool> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/81c0886a45b03d46> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Different types of dysarthria when analyzed with software tool extracting pitch and formants showed specific patterns which correlated with the clinical diagnosis" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/software-tool-extracting-pitch-and-formants> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/8240645f16369da3> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "tend to place the same excessive stress on all syllables" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/excessive-stress-on-all-syllables> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/838b84823f74a1b7> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Gillespie uses 336 words from the UA-Speech corpus with 12 words per speaker" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/ua-speech> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/gillespie-s-svm-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/87d78d4fde7bdcd5> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "combining Praat's automatic silence detection function (silence threshold 35 dB and silence duration 20 ms) with a manual visual inspection" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/880f387c5d4e75d7> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Pitch break can be seen" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/88a4131cd4729b9a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Background Interpolated (BI) and MAP adaptation are used for the HMM based system using UA Speech database" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/ua-speech-database> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/hmm-based-system> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/8f21539185a41283> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is characterized by the slurred speech along with physical impairment" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slurred-speech> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/91956c42b661018b> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "commercial ASR (Pocketsphinx) when used by individuals with dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/pocketsphinx> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/92231cefbae664f7> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "In this paper we studied that hybridized approach for feature extraction and acoustic modelling technique is found to increase the system performance... there is less variation in WRA among speakers having different severity in dysarthria." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/hybridized-approach-for-feature-extraction-and-acoustic-modelling> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/956e16ff01b72272> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "various articulation, prosody and fluency problems" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/974aede5e982a0ed> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It can impair all processes involved in speech production including respiration, phonation, articulation, resonance and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "can" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/resonance> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/975ff823b782df49> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It can impair all processes involved in speech production including respiration, phonation, articulation, resonance and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "can" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/994138bc2ebf3493> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "compulsive repetition of syllables" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/compulsive-repetition-of-syllables> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/9af053d0a17e2848> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Most of the enrolled individuals with dysarthria showed articulatory imprecision, pneumophonic coordination deficit and harsh voice." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/9d74124ad7e2ad6e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "and monoloudness" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monoloudness> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/9d8afaa9b4b5596a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "pausing behaviors in children with dysarthria and CP" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/a112296c7b4a8137> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Insertion, deletion and repetition of phoneme reduce the intelligibility of speech signal." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/deletion-of-phoneme> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/a24c6ad9018d5038> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "this group of CP children produced longer speech segments during the sentence stress task than the TD children, indicative of a reduced articulation rate" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation-rate> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/a3cdf53c164b6c94> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Krishna reports a 97.5% accuracy on UA-Corpus" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/ua-corpus> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/krishna-s-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/a3d3a1a764a35f99> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Architecture of deep learning model for detection and reconstruction of dysarthric speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/deep-learning-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/aa094fa6df38160c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "with lack of intelligibility" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/lack-of-intelligibility> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/aa75bb8168f8416c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Therapeutic interventions focusing on strategies for more effective stress production, by modifying duration, intensity, and F0, have yielded inconsistent results" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/therapeutic-interventions-for-stress-production> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/ab189e1c7e6a1eac> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "individuals with dysarthria supposed the mPASS platform to be a useful and easy to use tool" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/acb3a3b75be3212c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "statistical models based on a fixed vector of handcrafted prosodic and spectral features such as jitter, shimmer, Noise to Harmonic Ratio (NHR) or Mel-Frequency Cepstral Coefficients (MFCC)" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shimmer> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/statistical-models-with-handcrafted-features> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/add996b5c363d23d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "which motivated using it for the paralinguistic task of dysarthria detection" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/lstm-and-attention-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/ae32cbab1fd75168> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Deep neural networks can automatically detect dysarthric patterns without any prior expert knowledge" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/deep-neural-networks> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/afa7adad12d98313> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "By training the multi-task model, in which both targets, i.e. mel-spectrogram and dysarthric labels, are observed, the accuracy on the word level increased by 3 percents" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-multi-task-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/b2809fd5207bfd0b> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "In our experiments we use the UA-Speech database from the University of Illinois" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/ua-speech> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-classifier-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/b2ef083138ec9866> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F0 flat or motononicity was found in 62.5% of extrapyramidal dysarthria, but only in 4% of spastic dysarthria and 57% of ataxic dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/b3bf684ac3499ed3> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Both adults and children with dysarthria are known to experience problems with stress production due to poor control of the abovementioned parameters." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/problems-with-stress-production> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/b43752f6712773bc> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It can impair all processes involved in speech production including respiration, phonation, articulation, resonance and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "can" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/b4b432b0090b7450> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "shows harsh voice" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/b4bd7d9008f3b73a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It results into slurred speech as articulation is mainly affected." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/b7f7fabcfb19884e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "In pseudobulbar palsy, there is apparent bimodal distribution in F0 range" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/bimodal-distribution-in-f0-range> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/pseudobulbar-palsy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/b80c0decea69be2c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "They also noticed pronounced pitch fluctuations in the pitch contour among patients with ataxic dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pronounced-pitch-fluctuations> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/badaba7454c4edcb> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "We apply this model to dysarthria detection from sentence-level audio recordings." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/proposed-neural-network> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/bba968ada2e55b99> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Patients with dysarthria produce harsh and breathy speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-speech> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/bc593caf22cb7a1a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "replacing them by learnable time-domain filterbanks from [22], we get a gain in accuracy around 10% in absolute when training an identical neural network for dysarthria detection." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/learnable-time-domain-filterbanks> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/bde56f92be350ba4> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "increased pitch levels observed in dysarthric subjects may be related not to altered vocal tension but to altered sensory feedback" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/increased-pitch-levels> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/be20110549eb1d8f> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "the dysarthric speech group presented a mean recognition accuracy of 98.6±5.3% (range 80.0-100%) with mPASS and a mean of 88.6±23.1% (range 20.0-100%) with commercial ASR" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/pocketsphinx> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/bfd2dedce59ea38a> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "dysarthria severity and type of CP did not appear to be determining factors for pause duration either" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause-duration> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/c0f61d6e4966bd37> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "statistical models based on a fixed vector of handcrafted prosodic and spectral features such as jitter, shimmer, Noise to Harmonic Ratio (NHR) or Mel-Frequency Cepstral Coefficients (MFCC)" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/mel-frequency-cepstral-coefficients-mfcc> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/statistical-models-with-handcrafted-features> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/c1f3f43e17cea66f> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "CSIM, Children's Speech Intelligibility Measure (mild, ≥80%; moderate, 50-80%; severe, <50%)" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-intelligibility> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/csim> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/c874572b9440b615> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "a latent layer representing four dimensions of dysarthria: nasality, vocal quality, articulatory precision, and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/cb99eab210dbf9de> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "This finding was most consistent in the reduced intonation in the early phases" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-intonation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/cdff7396934242a0> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Most of the enrolled individuals with dysarthria showed articulatory imprecision, pneumophonic coordination deficit and harsh voice." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-imprecision> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/d076da0d4d339d0f> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "We present a novel deep learning model for the detection and reconstruction of dysarthric speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/proposed-interpretable-deep-learning-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/d0b29f9616b98dd6> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It is comprised of 71 items divided into different categories: respiration, phonation, facial muscles, diadochokinesis, reflexes, articulation, intelligibility and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/diadochokinesis> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/d119fa1a02ca77b1> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "low volume" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d283f43d9038fac0> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "hypernasality" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d294575b25bd76bb> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "all children with CP (except CP7) had mean pause durations above the range of the TD children" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/d419bb9b82e37f65> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Speech waveforms were analyzed using Praat and MATHLAB toolkit" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mathlab-toolkit> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d5a217c34af54ca6> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "harshness of voice in case of UMN involvement" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-voice> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/mixed-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d75ed9992b60ffa6> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Speech waveforms were analyzed using Praat and MATHLAB toolkit" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d8c0109dc7111599> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It can impair all processes involved in speech production including respiration, phonation, articulation, resonance and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "can" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/d9b2d1856475ba42> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "number of subjects diagnosed in all four types of dysarthria in both clinical diagnosis and machine learning group" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/machine-learning> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/da0d8ae09004c58d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "such as very low speech rate or flat intonation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flat-intonation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/db74a55c61bf41bd> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "We carry experiments on the TORGO database [29]" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/torgo> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/lstm-and-attention-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/dc16930157848119> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "a latent layer representing four dimensions of dysarthria: nasality, vocal quality, articulatory precision, and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/nasality> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/dcde2f854858bfa1> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "such as very low speech rate or flat intonation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/very-low-speech-rate> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/de117c46463e61f2> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Comparison of pitch of normal speech with extrapyramidal speech. Demonstrates F0 monotonicity" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/dea4d891dfa3bb1b> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Children with dysarthria due to cerebral palsy (CP) can experience problems manipulating intensity, fundamental frequency, and duration to signal sentence stress in an utterance." ;
+    ex:extractor "llm" ;
+    ex:modality "may" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/duration> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/ded3f68b09a9383e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Children with dysarthria due to cerebral palsy (CP) can experience problems manipulating intensity, fundamental frequency, and duration to signal sentence stress in an utterance." ;
+    ex:extractor "llm" ;
+    ex:modality "may" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intensity> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/deee8996eca157a4> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "children with dysarthria due to CP as well as TD children used pauses to signal the position of stressed words in short utterances" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/df001eb71cb452a6> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F0 flat or motononicity was found in 62.5% of extrapyramidal dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/e0d22c6b02594e6e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "We apply it to dysarthria detection" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/fully-learnable-audio-frontend> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/e13196dfa7ead15d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Here Log RASTA Perceptive Linear Prediction (Log RASTA PLP) hybridized with Artificial Neural Network (ANN) is used for feature extraction" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/log-rasta-plp-ann> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/e1e0c83fd14163e7> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "it was found that formant range and F2/F1 range decrease when severity increases" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-range> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/e47b03df1a669aaf> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Hypokinetic dysarthria seen in parkinsons disease is characterized by hoarse speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hoarse-speech> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/e680faaac9a80085> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "The use of commercially available Automatic Speech Recognition (ASR) software is challenged when dysarthria accompanies a physical disability" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/commercial-asr-software> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/e6ad40fc069b2f4e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "[17] has trained fully connected neural networks to classify the severity of the disease, using TORGO and the UASPEECH [18] database." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/uaspeech> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/fully-connected-neural-networks> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/e76ecdcfd706a364> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "by training a PCEN block on top of mel-filterbanks or replacing them by learnable time-domain filterbanks from [22], we get a gain in accuracy around 10% in absolute when training an identical neural network for dysarthria detection." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/pcen-block> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/e8549af7c1595495> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Articulation category is based on the clinician evaluation of speech-sound accuracy during words and sentences repetition tasks." ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-sound-accuracy> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/rdpart> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/e898151e6b8c8f9e> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Database is developed at the Rehabilitation Education Centre at the University of Illinois at Urbana-Champaign" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/rehabilitation-education-centre-database> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/som-neural-net-hmm-speech-recognition-system> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1506.02170> .
+
+<http://example.org/cp-dysarthria/stmt/ea454ea9304f856c> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Speaker-independent systems are generally considered inadequate for the recognition of dysarthric speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "negative" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-independent-systems> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/eb25626048d9ce64> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "RDP intelligibility score and RDP articulation score showed a weak and moderate positive correlation with accuracy rates" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/rdp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/eb3ea3ae183f0e70> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Narendra et al. achieved 93.06% utterance level accuracy on the TORGO dysarthric speech database" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DATASET/torgo> ;
+    rdf:predicate ex:evaluated_on ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/narendra-s-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/eb470df797489cf1> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-vocal-quality> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/ed2a3415804ab0cd> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "RDP intelligibility score and RDP articulation score showed a weak and moderate positive correlation with accuracy rates" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/rdp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/ee8aadf1149ee1f2> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Patients with dysarthria produce harsh and breathy speech" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-speech> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/f0f0c59815187fb0> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "There are three different approaches to the reconstruction of dysarthric speech: voice banking, voice adaptation and voice reconstruction" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:treats ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/TREATMENT/voice-reconstruction> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/f0f1f9719e7c1227> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "The pitch contour, formant variation, and speech duration of the extracted graphs were analyzed" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-duration> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/acoustic-analysis> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/f28b335faa4ea932> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "a latent layer representing four dimensions of dysarthria: nasality, vocal quality, articulatory precision, and prosody" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/vocal-quality> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/f46c6d7ee264b604> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "long duration in phoneme to phoneme transitions and syllables" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/long-duration-in-phoneme-to-phoneme-transitions> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/f4d1f59e8ec1b762> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Similar pausing behaviors were observed in adults with motor speech disorders" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/motor-speech-disorders> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/f5cc946c76657279> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Common speech characteristics associated with dysarthria due to CP are shallow, irregular breathing, reduced vocal quality, inappropriate loudness levels, reduced pitch variation, hypernasality, a slower speech rate, and imprecise articulation" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/imprecise-articulation> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/f5e2d7eeb82aaf1d> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "It reports a 75.3 and 92.9 accuracy in the dysarthria detection task at the word and speaker levels respectively" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/gillespie-s-svm-model> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/f6c7802e34395036> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "pitch monotonicity with extrapyramidal dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-monotonicity> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/f8211ecf060dc3ab> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F0 jitter is found to be associated with spastic dysarthria in 64.3% of cases and 25% of cases of extrapyramidal dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/faa7bd87c48d43c8> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "Detailed study of extracted features to identify underlying characteristics within types of dysarthria was done using MATLAB toolkit version R2011b" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/matlab-toolkit> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/fada53f4c2f12187> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "spectral and cepstral features that capture various aspects of dysarthric speech such as rhythm, glottal movement or formants" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formants> ;
+    rdf:predicate ex:measures ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1907.04743> .
+
+<http://example.org/cp-dysarthria/stmt/fe04a49dd3ed4179> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "A preliminary study involving five persons with Amyotrophic Lateral Sclerosis (pALS) with moderate mixed dysarthria reported an average of 85% accuracy rate for single words" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/amyotrophic-lateral-sclerosis> ;
+    rdf:predicate ex:applied_to ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass-platform> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_33190131> .
+
+<http://example.org/cp-dysarthria/stmt/ff29f96504a712bc> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "F0 jitter was found in spastic dysarthria" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/ffc9c6caa912c251> a rdf:Statement ;
+    ex:entitySource "llm" ;
+    ex:evidence "We calculated the duration of speech and found that as duration of speech increases, clinical severity also increases" ;
+    ex:extractor "llm" ;
+    ex:modality "" ;
+    ex:polarity "positive" ;
+    rdf:object <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/duration-of-speech> ;
+    rdf:predicate ex:has_feature ;
+    rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/children-s-speech-intelligibility-measure-csim> a ex:ASSESSMENT ;
+    rdfs:label "Children's Speech Intelligibility Measure (CSIM)" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-intelligibility> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/csim> a ex:ASSESSMENT ;
+    rdfs:label "CSIM" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-intelligibility> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/formant-analysis> a ex:ASSESSMENT ;
+    rdfs:label "Formant analysis" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-frequency> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/mushra-perceptual-test> a ex:ASSESSMENT ;
+    rdfs:label "MUSHRA perceptual test" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fluency> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/rdpart> a ex:ASSESSMENT ;
+    rdfs:label "RDPART" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-sound-accuracy> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/rdpint> a ex:ASSESSMENT ;
+    rdfs:label "RDPINT" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/cp> a ex:DISORDER ;
+    rdfs:label "CP" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/motor-speech-disorders> a ex:DISORDER ;
+    rdfs:label "motor speech disorders" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/pd> a ex:DISORDER ;
+    rdfs:label "PD" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f2-transition-rates> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/pseudobulbar-palsy> a ex:DISORDER ;
+    rdfs:label "pseudobulbar palsy" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/bimodal-distribution-in-f0-range> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/duration> a ex:SPEECH_FEATURE ;
+    rdfs:label "duration" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fundamental-frequency> a ex:SPEECH_FEATURE ;
+    rdfs:label "fundamental frequency" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intensity> a ex:SPEECH_FEATURE ;
+    rdfs:label "intensity" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/asr> a ex:SPEECH_TECH ;
+    rdfs:label "ASR" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/automatic-speech-recognition-asr> a ex:SPEECH_TECH ;
+    rdfs:label "Automatic Speech Recognition (ASR)" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/commercial-asr-software> a ex:SPEECH_TECH ;
+    rdfs:label "commercial ASR software" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/deep-learning-model> a ex:SPEECH_TECH ;
+    rdfs:label "deep learning model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/deep-neural-networks> a ex:SPEECH_TECH ;
+    rdfs:label "Deep neural networks" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/encoder-decoder-model> a ex:SPEECH_TECH ;
+    rdfs:label "encoder-decoder model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/fully-learnable-audio-frontend> a ex:SPEECH_TECH ;
+    rdfs:label "fully learnable audio frontend" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/hmm> a ex:SPEECH_TECH ;
+    rdfs:label "HMM" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/hmm-based-system> a ex:SPEECH_TECH ;
+    rdfs:label "HMM-based system" ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/ua-speech-database> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/hybridized-approach-for-feature-extraction-and-acoustic-modelling> a ex:SPEECH_TECH ;
+    rdfs:label "hybridized approach for feature extraction and acoustic modelling" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/krishna-s-model> a ex:SPEECH_TECH ;
+    rdfs:label "Krishna's model" ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/ua-corpus> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/learnable-time-domain-filterbanks> a ex:SPEECH_TECH ;
+    rdfs:label "learnable time-domain filterbanks" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/log-rasta-plp-ann> a ex:SPEECH_TECH ;
+    rdfs:label "Log RASTA PLP/ANN" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/machine-learning> a ex:SPEECH_TECH ;
+    rdfs:label "machine learning" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mathlab-toolkit> a ex:SPEECH_TECH ;
+    rdfs:label "MATHLAB toolkit" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/matlab-toolkit> a ex:SPEECH_TECH ;
+    rdfs:label "MATLAB toolkit" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/narendra-s-model> a ex:SPEECH_TECH ;
+    rdfs:label "Narendra's model" ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/torgo> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/pcen-block> a ex:SPEECH_TECH ;
+    rdfs:label "PCEN block" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat-speech-analysis-software> a ex:SPEECH_TECH ;
+    rdfs:label "Praat speech analysis software" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat-vocal-toolkit> a ex:SPEECH_TECH ;
+    rdfs:label "Praat vocal toolkit" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/proposed-interpretable-deep-learning-model> a ex:SPEECH_TECH ;
+    rdfs:label "Proposed interpretable deep learning model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/proposed-neural-network> a ex:SPEECH_TECH ;
+    rdfs:label "proposed neural network" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/software-tool> a ex:SPEECH_TECH ;
+    rdfs:label "software tool" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/software-tool-extracting-pitch-and-formants> a ex:SPEECH_TECH ;
+    rdfs:label "software tool extracting pitch and formants" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/som-neural-net-hmm-speech-recognition-system> a ex:SPEECH_TECH ;
+    rdfs:label "SOM neural net HMM speech recognition system" ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/rehabilitation-education-centre-database> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-dependent-asr> a ex:SPEECH_TECH ;
+    rdfs:label "speaker-dependent ASR" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-dependent-systems> a ex:SPEECH_TECH ;
+    rdfs:label "speaker-dependent systems" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-independent-systems> a ex:SPEECH_TECH ;
+    rdfs:label "speaker-independent systems" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/vasquez-correa-et-al-mel-spectrogram-model> a ex:SPEECH_TECH ;
+    rdfs:label "Vasquez-Correa et al. mel-spectrogram model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/voice-reconstruction-technique> a ex:SPEECH_TECH ;
+    rdfs:label "voice reconstruction technique" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/exercise-of-motor-muscles> a ex:TREATMENT ;
+    rdfs:label "exercise of motor muscles" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/pharmacological-interventions> a ex:TREATMENT ;
+    rdfs:label "pharmacological interventions" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/principles-of-motor-learning-therapy> a ex:TREATMENT ;
+    rdfs:label "principles of motor learning therapy" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/speech-and-language-therapy> a ex:TREATMENT ;
+    rdfs:label "speech and language therapy" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/therapeutic-interventions-for-stress-production> a ex:TREATMENT ;
+    rdfs:label "therapeutic interventions for stress production" .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/voice-adaptation> a ex:TREATMENT ;
+    rdfs:label "Voice adaptation" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/voice-banking> a ex:TREATMENT ;
+    rdfs:label "Voice banking" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/voice-reconstruction> a ex:TREATMENT ;
+    rdfs:label "Voice reconstruction" ;
+    ex:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/rdp> a ex:ASSESSMENT ;
+    rdfs:label "RDP" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> .
+
+<http://example.org/cp-dysarthria/entity/DATASET/cts> a ex:DATASET ;
+    rdfs:label "CTS" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/nki-ccrt-corpus> a ex:DATASET ;
+    rdfs:label "NKI CCRT corpus" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/rehabilitation-education-centre-database> a ex:DATASET ;
+    rdfs:label "Rehabilitation Education Centre database" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/timit> a ex:DATASET ;
+    rdfs:label "TIMIT" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/ua-corpus> a ex:DATASET ;
+    rdfs:label "UA-Corpus" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/ua-speech-database> a ex:DATASET ;
+    rdfs:label "UA Speech database" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/uaspeech> a ex:DATASET ;
+    rdfs:label "UASPEECH" .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/amyotrophic-lateral-sclerosis> a ex:DISORDER ;
+    rdfs:label "Amyotrophic Lateral Sclerosis" .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/mixed-dysarthria> a ex:DISORDER ;
+    rdfs:label "Mixed dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-voice>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-voice> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/abnormal-prosodic-patterns> a ex:SPEECH_FEATURE ;
+    rdfs:label "abnormal prosodic patterns" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation-rate> a ex:SPEECH_FEATURE ;
+    rdfs:label "articulation rate" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-imprecision> a ex:SPEECH_FEATURE ;
+    rdfs:label "articulatory imprecision" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-precision> a ex:SPEECH_FEATURE ;
+    rdfs:label "articulatory precision" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/bimodal-distribution-in-f0-range> a ex:SPEECH_FEATURE ;
+    rdfs:label "bimodal distribution in F0 range" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-speech> a ex:SPEECH_FEATURE ;
+    rdfs:label "breathy speech" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-voice> a ex:SPEECH_FEATURE ;
+    rdfs:label "breathy voice" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/compulsive-repetition-of-syllables> a ex:SPEECH_FEATURE ;
+    rdfs:label "compulsive repetition of syllables" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/deletion-of-phoneme> a ex:SPEECH_FEATURE ;
+    rdfs:label "deletion of phoneme" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/diadochokinesis> a ex:SPEECH_FEATURE ;
+    rdfs:label "diadochokinesis" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/duration-of-speech> a ex:SPEECH_FEATURE ;
+    rdfs:label "duration of speech" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/dystonia> a ex:SPEECH_FEATURE ;
+    rdfs:label "dystonia" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/excessive-stress-on-all-syllables> a ex:SPEECH_FEATURE ;
+    rdfs:label "excessive stress on all syllables" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-break> a ex:SPEECH_FEATURE ;
+    rdfs:label "F0 break" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-variability> a ex:SPEECH_FEATURE ;
+    rdfs:label "F0 variability" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f1-and-f2-transition-rates> a ex:SPEECH_FEATURE ;
+    rdfs:label "F1 and F2 transition rates" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f2-transition-rates> a ex:SPEECH_FEATURE ;
+    rdfs:label "F2 transition rates" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/facial-muscles> a ex:SPEECH_FEATURE ;
+    rdfs:label "facial muscles" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flat-intonation> a ex:SPEECH_FEATURE ;
+    rdfs:label "flat intonation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f1-and-f2-transition-rates> a ex:SPEECH_FEATURE ;
+    rdfs:label "flatter F1 and F2 transition rates" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f2-transition-rates> a ex:SPEECH_FEATURE ;
+    rdfs:label "flatter F2 transition rates" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-frequency> a ex:SPEECH_FEATURE ;
+    rdfs:label "formant frequency" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-range> a ex:SPEECH_FEATURE ;
+    rdfs:label "formant range" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-variation> a ex:SPEECH_FEATURE ;
+    rdfs:label "formant variation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formants> a ex:SPEECH_FEATURE ;
+    rdfs:label "formants" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/frequent-pauses> a ex:SPEECH_FEATURE ;
+    rdfs:label "frequent pauses" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/glottal-movement> a ex:SPEECH_FEATURE ;
+    rdfs:label "glottal movement" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-sounding> a ex:SPEECH_FEATURE ;
+    rdfs:label "harsh sounding" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-speech> a ex:SPEECH_FEATURE ;
+    rdfs:label "harsh speech" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-vocal-quality> a ex:SPEECH_FEATURE ;
+    rdfs:label "harshness of vocal quality" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-voice> a ex:SPEECH_FEATURE ;
+    rdfs:label "harshness of voice" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hoarse-speech> a ex:SPEECH_FEATURE ;
+    rdfs:label "hoarse speech" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/imprecise-articulation> a ex:SPEECH_FEATURE ;
+    rdfs:label "imprecise articulation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inappropriate-loudness-levels> a ex:SPEECH_FEATURE ;
+    rdfs:label "inappropriate loudness levels" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/increased-pitch-levels> a ex:SPEECH_FEATURE ;
+    rdfs:label "increased pitch levels" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/insertion-of-phoneme> a ex:SPEECH_FEATURE ;
+    rdfs:label "insertion of phoneme" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inspirational-stridency> a ex:SPEECH_FEATURE ;
+    rdfs:label "inspirational stridency" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/jitter> a ex:SPEECH_FEATURE ;
+    rdfs:label "jitter" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/lack-of-intelligibility> a ex:SPEECH_FEATURE ;
+    rdfs:label "lack of intelligibility" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/long-duration-in-phoneme-to-phoneme-transitions> a ex:SPEECH_FEATURE ;
+    rdfs:label "long duration in phoneme to phoneme transitions" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/mel-frequency-cepstral-coefficients-mfcc> a ex:SPEECH_FEATURE ;
+    rdfs:label "Mel-Frequency Cepstral Coefficients (MFCC)" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monoloudness> a ex:SPEECH_FEATURE ;
+    rdfs:label "monoloudness" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monopitch> a ex:SPEECH_FEATURE ;
+    rdfs:label "monopitch" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/nasality> a ex:SPEECH_FEATURE ;
+    rdfs:label "nasality" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/noise-to-harmonic-ratio-nhr> a ex:SPEECH_FEATURE ;
+    rdfs:label "Noise to Harmonic Ratio (NHR)" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-contour> a ex:SPEECH_FEATURE ;
+    rdfs:label "pitch contour" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-monotonicity> a ex:SPEECH_FEATURE ;
+    rdfs:label "pitch monotonicity" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pneumophonic-coordination-deficit> a ex:SPEECH_FEATURE ;
+    rdfs:label "pneumophonic coordination deficit" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/problems-with-stress-production> a ex:SPEECH_FEATURE ;
+    rdfs:label "problems with stress production" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pronounced-pitch-fluctuations> a ex:SPEECH_FEATURE ;
+    rdfs:label "pronounced pitch fluctuations" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-f1-f2-vowel-space> a ex:SPEECH_FEATURE ;
+    rdfs:label "reduced F1-F2 vowel space" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-intonation> a ex:SPEECH_FEATURE ;
+    rdfs:label "reduced intonation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-pitch-variation> a ex:SPEECH_FEATURE ;
+    rdfs:label "reduced pitch variation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-vocal-quality> a ex:SPEECH_FEATURE ;
+    rdfs:label "reduced vocal quality" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reflexes> a ex:SPEECH_FEATURE ;
+    rdfs:label "reflexes" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/repetition-of-phoneme> a ex:SPEECH_FEATURE ;
+    rdfs:label "repetition of phoneme" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/rhythm> a ex:SPEECH_FEATURE ;
+    rdfs:label "rhythm" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shallow-irregular-breathing> a ex:SPEECH_FEATURE ;
+    rdfs:label "shallow, irregular breathing" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shimmer> a ex:SPEECH_FEATURE ;
+    rdfs:label "shimmer" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slower-speech-rate> a ex:SPEECH_FEATURE ;
+    rdfs:label "slower speech rate" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slurred-speech> a ex:SPEECH_FEATURE ;
+    rdfs:label "slurred speech" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-duration> a ex:SPEECH_FEATURE ;
+    rdfs:label "speech duration" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-sound-accuracy> a ex:SPEECH_FEATURE ;
+    rdfs:label "speech-sound accuracy" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/very-low-speech-rate> a ex:SPEECH_FEATURE ;
+    rdfs:label "very low speech rate" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/vocal-quality> a ex:SPEECH_FEATURE ;
+    rdfs:label "vocal quality" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-classifier-model> a ex:SPEECH_TECH ;
+    rdfs:label "Authors' classifier model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/ua-speech> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-multi-task-model> a ex:SPEECH_TECH ;
+    rdfs:label "Authors' multi-task model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/ua-speech> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/fully-connected-neural-networks> a ex:SPEECH_TECH ;
+    rdfs:label "fully connected neural networks" ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/torgo>,
+        <http://example.org/cp-dysarthria/entity/DATASET/uaspeech> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/gillespie-s-svm-model> a ex:SPEECH_TECH ;
+    rdfs:label "Gillespie's SVM model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/ua-speech> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/lstm-and-attention-model> a ex:SPEECH_TECH ;
+    rdfs:label "LSTM and Attention model" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/torgo> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/acoustic-analysis> a ex:ASSESSMENT ;
+    rdfs:label "Acoustic analysis" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-variation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-contour>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-duration> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> a ex:DISORDER ;
+    rdfs:label "Flaccid dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inspirational-stridency>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause-duration> a ex:SPEECH_FEATURE ;
+    rdfs:label "pause duration" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/resonance> a ex:SPEECH_FEATURE ;
+    rdfs:label "resonance" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/respiration> a ex:SPEECH_FEATURE ;
+    rdfs:label "respiration" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/sentence-stress> a ex:SPEECH_FEATURE ;
+    rdfs:label "sentence stress" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/linear-classifiers> a ex:SPEECH_TECH ;
+    rdfs:label "linear classifiers" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/nki-ccrt-corpus>,
+        <http://example.org/cp-dysarthria/entity/DATASET/torgo> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mlp> a ex:SPEECH_TECH ;
+    rdfs:label "MLP" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    ex:evaluated_on <http://example.org/cp-dysarthria/entity/DATASET/cts>,
+        <http://example.org/cp-dysarthria/entity/DATASET/timit> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass-platform> a ex:SPEECH_TECH ;
+    rdfs:label "mPASS platform" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/amyotrophic-lateral-sclerosis>,
+        <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy>,
+        <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/pocketsphinx> a ex:SPEECH_TECH ;
+    rdfs:label "Pocketsphinx" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat> a ex:SPEECH_TECH ;
+    rdfs:label "Praat" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy>,
+        <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/statistical-models-with-handcrafted-features> a ex:ASSESSMENT ;
+    rdfs:label "statistical models with handcrafted features" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/jitter>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/mel-frequency-cepstral-coefficients-mfcc>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/noise-to-harmonic-ratio-nhr>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shimmer> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fluency> a ex:SPEECH_FEATURE ;
+    rdfs:label "fluency" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice> a ex:SPEECH_FEATURE ;
+    rdfs:label "harsh voice" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality> a ex:SPEECH_FEATURE ;
+    rdfs:label "hypernasality" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume> a ex:SPEECH_FEATURE ;
+    rdfs:label "low volume" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause> a ex:SPEECH_FEATURE ;
+    rdfs:label "pause" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-intelligibility> a ex:SPEECH_FEATURE ;
+    rdfs:label "speech intelligibility" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-rate> a ex:SPEECH_FEATURE ;
+    rdfs:label "speech rate" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass> a ex:SPEECH_TECH ;
+    rdfs:label "mPASS" ;
+    ex:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> a ex:DISORDER ;
+    rdfs:label "Hyperkinetic dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/dystonia>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/frequent-pauses>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-sounding>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/lack-of-intelligibility> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> a ex:DISORDER ;
+    rdfs:label "Hypokinetic dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/compulsive-repetition-of-syllables>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hoarse-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monoloudness>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monopitch> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> a ex:DISORDER ;
+    rdfs:label "Spastic dysarthria",
+        "spastic dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-vocal-quality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/long-duration-in-phoneme-to-phoneme-transitions>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter> a ex:SPEECH_FEATURE ;
+    rdfs:label "F0 jitter" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity> a ex:SPEECH_FEATURE ;
+    rdfs:label "F0 monotonicity" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation> a ex:SPEECH_FEATURE ;
+    rdfs:label "phonation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break> a ex:SPEECH_FEATURE ;
+    rdfs:label "pitch break" .
+
+<http://example.org/cp-dysarthria/entity/DATASET/ua-speech> a ex:DATASET ;
+    rdfs:label "UA-Speech" .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> a ex:DISORDER ;
+    rdfs:label "Extrapyramidal dysarthria",
+        "extrapyramidal dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f1-and-f2-transition-rates>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f1-and-f2-transition-rates>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-monotonicity> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/parkinson-s-disease> a ex:DISORDER ;
+    rdfs:label "Parkinson's disease" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-variability>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f2-transition-rates>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-f1-f2-vowel-space>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-intonation> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/tu-ming-et-al-interpretable-objective-evaluation> a ex:ASSESSMENT ;
+    rdfs:label "Tu Ming et al. interpretable objective evaluation" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-precision>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formants>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/glottal-movement>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/nasality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/rhythm>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/vocal-quality> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> a ex:DISORDER ;
+    rdfs:label "Ataxic dysarthria",
+        "ataxic dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/excessive-stress-on-all-syllables>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-break>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/increased-pitch-levels>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pronounced-pitch-fluctuations> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> a ex:DISORDER ;
+    rdfs:label "dysarthria due to CP" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/imprecise-articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inappropriate-loudness-levels>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-pitch-variation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-vocal-quality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shallow-irregular-breathing>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slower-speech-rate> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing> a ex:SPEECH_FEATURE ;
+    rdfs:label "pausing" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody> a ex:SPEECH_FEATURE ;
+    rdfs:label "prosody" .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> a ex:ASSESSMENT ;
+    rdfs:label "Robertson Dysarthria Profile" ;
+    ex:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/diadochokinesis>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/facial-muscles>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reflexes>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/respiration> .
+
+<http://example.org/cp-dysarthria/entity/DATASET/torgo> a ex:DATASET ;
+    rdfs:label "TORGO" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation> a ex:SPEECH_FEATURE ;
+    rdfs:label "articulation" .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility> a ex:SPEECH_FEATURE ;
+    rdfs:label "intelligibility" .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/cerebral-palsy> a ex:DISORDER ;
+    rdfs:label "Cerebral palsy",
+        "cerebral palsy" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation-rate>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause-duration>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/sentence-stress>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-rate> .
+
+<http://example.org/cp-dysarthria/doc/arxiv_1811.11101> a ex:SourceDocument ;
+    rdfs:label "Learning to detect dysarthria from raw speech" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "arxiv_1811.11101" ;
+    dcterms:license "http://arxiv.org/licenses/nonexclusive-distrib/1.0/" ;
+    dcterms:source <http://arxiv.org/abs/1811.11101v2> .
+
+<http://example.org/cp-dysarthria/doc/arxiv_1506.02170> a ex:SourceDocument ;
+    rdfs:label "Hybridized Feature Extraction and Acoustic Modelling Approach for Dysarthric Speech Recognition" ;
+    dcterms:date "2015" ;
+    dcterms:identifier "arxiv_1506.02170" ;
+    dcterms:license "http://arxiv.org/licenses/nonexclusive-distrib/1.0/" ;
+    dcterms:source <http://arxiv.org/abs/1506.02170v1> .
+
+<http://example.org/cp-dysarthria/doc/pubmed_32604092> a ex:SourceDocument ;
+    rdfs:label "Pausing and Sentence Stress in Children with Dysarthria due to Cerebral Palsy" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "pubmed_32604092" ;
+    dcterms:license "cc by-nc" ;
+    dcterms:source <https://pubmed.ncbi.nlm.nih.gov/32604092/> .
+
+<http://example.org/cp-dysarthria/doc/pubmed_33190131> a ex:SourceDocument ;
+    rdfs:label "Evaluation of an Automatic Speech Recognition Platform for Dysarthric Speech" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "pubmed_33190131" ;
+    dcterms:license "publisher copyright (no open license recorded)" ;
+    dcterms:source <https://pubmed.ncbi.nlm.nih.gov/33190131/> .
+
+<http://example.org/cp-dysarthria/doc/arxiv_1907.04743> a ex:SourceDocument ;
+    rdfs:label "Interpretable Deep Learning Model for the Detection and Reconstruction of Dysarthric Speech" ;
+    dcterms:date "2019" ;
+    dcterms:identifier "arxiv_1907.04743" ;
+    dcterms:license "http://arxiv.org/licenses/nonexclusive-distrib/1.0/" ;
+    dcterms:source <http://arxiv.org/abs/1907.04743v1> .
+
+<http://example.org/cp-dysarthria/doc/pubmed_29184336> a ex:SourceDocument ;
+    rdfs:label "Speech Signal Analysis and Pattern Recognition in Diagnosis of Dysarthria" ;
+    dcterms:date "2017" ;
+    dcterms:identifier "pubmed_29184336" ;
+    dcterms:license "cc by-nc-sa" ;
+    dcterms:source <https://pubmed.ncbi.nlm.nih.gov/29184336/> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> a ex:DISORDER ;
+    rdfs:label "Dysarthria",
+        "dysarthria" ;
+    ex:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/abnormal-prosodic-patterns>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-imprecision>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/deletion-of-phoneme>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/duration-of-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flat-intonation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fluency>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-range>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/insertion-of-phoneme>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pneumophonic-coordination-deficit>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/problems-with-stress-production>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/repetition-of-phoneme>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/resonance>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slurred-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-rate>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/very-low-speech-rate> .
+

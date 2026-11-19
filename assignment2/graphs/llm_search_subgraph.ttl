@@ -1,0 +1,596 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://example.org/cp-dysarthria/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-classifier-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/authors-multi-task-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/automatic-speech-recognition-asr> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/commercial-asr-software> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/deep-learning-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/deep-neural-networks> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/encoder-decoder-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/fully-learnable-audio-frontend> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/gillespie-s-svm-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/hmm> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/hybridized-approach-for-feature-extraction-and-acoustic-modelling> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/learnable-time-domain-filterbanks> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/linear-classifiers> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/log-rasta-plp-ann> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/lstm-and-attention-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/machine-learning> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mathlab-toolkit> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/matlab-toolkit> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mlp> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/mpass-platform> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/pcen-block> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/pocketsphinx> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat-speech-analysis-software> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/praat-vocal-toolkit> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/proposed-interpretable-deep-learning-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/proposed-neural-network> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/software-tool> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/software-tool-extracting-pitch-and-formants> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-dependent-asr> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/speaker-dependent-systems> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/vasquez-correa-et-al-mel-spectrogram-model> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/SPEECH_TECH/voice-reconstruction-technique> ns1:applied_to <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/exercise-of-motor-muscles> ns1:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/principles-of-motor-learning-therapy> ns1:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/speech-and-language-therapy> ns1:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/voice-adaptation> ns1:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/voice-banking> ns1:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/entity/TREATMENT/voice-reconstruction> ns1:treats <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/0037a01e3f127795> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/00b43903f9450b70> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/00d40e1d0cc26a09> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/023b3805b8085640> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/024e7b788dc093d1> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/046c5d2929f3041e> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/05dbca4c814d0fdf> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0681f826e331e539> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/08c4f83480a2a926> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/0a5d61baf7cad4d4> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0aeb87b85af1a635> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0c822d661d676975> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/0dd6009a0f4b7924> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/0f0ca4791e043564> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/0fc621aa527aec83> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/12662084aae96bc9> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/133f1674f9fa469e> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/13e51247243ee2e9> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/14a1f19bcbace6a7> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/16e9319847d82cfa> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/17e3cc3c572687c9> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/18e2831edc64dd65> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/1aa634791e5c583a> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/1b032650c0b68637> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/1bb1af92bac87309> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/1bd0ffd395486a35> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/203d41db51cece14> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/2111d1112020d028> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/225e80bb18a1f40f> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/2361cbfee7316ad5> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/254485afbf8c5357> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/271316daf2eb54a0> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/29cc1f4e5d6e130b> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/2dc0b32640fdcd2d> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/2f42ef349d210e8d> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/2ff9b8101e52c324> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/3074c50890caa660> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/30c7f987d35efb49> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/3259658450f39cf4> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/337d2173cbcf0064> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/393fd7d94f38211e> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/396a9a268cd1e425> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/3b7e8459820b8588> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/3d054235b3c77174> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/3e08beb0b93cb2ae> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/430464f2fe8edac1> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/43dad108a45b66d2> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/487acc7c1980bd45> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/4e33399a09e05756> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/511624909f966f04> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/524895c99e96a5f3> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/531dae9d26d3a92a> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/57cd4c772b3dcf71> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/581f1392b8414419> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/5c229651f8fa671a> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/5e6972ec14e66b9c> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/5f2a9f39de18e6eb> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/6117885a5d7675cb> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/6254b882bb9c7ac7> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/633e1f0cfff31adc> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/633ff76e7be94af4> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/657f3d15abacf172> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/mixed-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/69ee3865d2316057> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/6e390238a2bb2856> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/6f3102e3b91b793b> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/709d6ebf2216cca1> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/7250505b9c9fe2f5> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/7318585454fccbf0> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/7476aa7c5cbde2ab> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/74e4d795c380cc42> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/75ab41dd0a47d84d> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/783f597b81c1baa0> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/78db0d54968fe69c> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/79f88a092b323ab3> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/7d263e06f0406e48> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/7d3c4cac4bcbe72e> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/7e378a9ac7e6c939> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/7ff01a59573dd122> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/8050629a82e9e93b> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/80935dc7210ef8f8> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/812dd1d17b00c3e4> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/81c0886a45b03d46> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/8240645f16369da3> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/87d78d4fde7bdcd5> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/880f387c5d4e75d7> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/8f21539185a41283> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/91956c42b661018b> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/92231cefbae664f7> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/956e16ff01b72272> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/974aede5e982a0ed> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/975ff823b782df49> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/994138bc2ebf3493> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/9af053d0a17e2848> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/9d74124ad7e2ad6e> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/9d8afaa9b4b5596a> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/a112296c7b4a8137> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/a24c6ad9018d5038> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/a3d3a1a764a35f99> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/aa094fa6df38160c> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/aa75bb8168f8416c> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/ab189e1c7e6a1eac> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/add996b5c363d23d> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/ae32cbab1fd75168> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/afa7adad12d98313> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/b2ef083138ec9866> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/b3bf684ac3499ed3> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/b43752f6712773bc> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/b4b432b0090b7450> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/b4bd7d9008f3b73a> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/b7f7fabcfb19884e> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/b80c0decea69be2c> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/badaba7454c4edcb> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/bba968ada2e55b99> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/bc593caf22cb7a1a> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/bde56f92be350ba4> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/be20110549eb1d8f> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/bfd2dedce59ea38a> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/c1f3f43e17cea66f> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/cb99eab210dbf9de> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/cdff7396934242a0> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/d076da0d4d339d0f> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/d0b29f9616b98dd6> rdf:subject <http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> .
+
+<http://example.org/cp-dysarthria/stmt/d119fa1a02ca77b1> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d283f43d9038fac0> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d294575b25bd76bb> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/d419bb9b82e37f65> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d5a217c34af54ca6> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/mixed-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d75ed9992b60ffa6> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/d8c0109dc7111599> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/d9b2d1856475ba42> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/da0d8ae09004c58d> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/db74a55c61bf41bd> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/dcde2f854858bfa1> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/de117c46463e61f2> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/dea4d891dfa3bb1b> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/ded3f68b09a9383e> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/deee8996eca157a4> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/df001eb71cb452a6> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/e0d22c6b02594e6e> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/e13196dfa7ead15d> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/e1e0c83fd14163e7> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/e47b03df1a669aaf> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/e680faaac9a80085> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/e6ad40fc069b2f4e> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/e76ecdcfd706a364> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/arxiv_1811.11101> .
+
+<http://example.org/cp-dysarthria/stmt/ea454ea9304f856c> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/eb470df797489cf1> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/ee8aadf1149ee1f2> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/f0f0c59815187fb0> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/f0f1f9719e7c1227> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/f46c6d7ee264b604> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/f4d1f59e8ec1b762> prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/f5cc946c76657279> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_32604092> .
+
+<http://example.org/cp-dysarthria/stmt/f5e2d7eeb82aaf1d> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> .
+
+<http://example.org/cp-dysarthria/stmt/f6c7802e34395036> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/f8211ecf060dc3ab> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/faa7bd87c48d43c8> rdf:object <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/ff29f96504a712bc> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/stmt/ffc9c6caa912c251> rdf:subject <http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> ;
+    prov:wasDerivedFrom <http://example.org/cp-dysarthria/doc/pubmed_29184336> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/mixed-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Mixed dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-voice>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-voice> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/flaccid-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Flaccid dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inspirational-stridency>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/hyperkinetic-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Hyperkinetic dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/dystonia>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/frequent-pauses>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-sounding>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/lack-of-intelligibility> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/hypokinetic-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Hypokinetic dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/compulsive-repetition-of-syllables>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hoarse-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/low-volume>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monoloudness>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/monopitch> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/spastic-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Spastic dysarthria",
+        "spastic dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harshness-of-vocal-quality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/long-duration-in-phoneme-to-phoneme-transitions>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/extrapyramidal-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Extrapyramidal dysarthria",
+        "extrapyramidal dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-jitter>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f1-and-f2-transition-rates>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flatter-f1-and-f2-transition-rates>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-monotonicity> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/ataxic-dysarthria> a ns1:DISORDER ;
+    rdfs:label "Ataxic dysarthria",
+        "ataxic dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/excessive-stress-on-all-syllables>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-break>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/f0-monotonicity>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/increased-pitch-levels>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pitch-break>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pronounced-pitch-fluctuations> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/dysarthria-due-to-cp> a ns1:DISORDER ;
+    rdfs:label "dysarthria due to CP" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/hypernasality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/imprecise-articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/inappropriate-loudness-levels>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-pitch-variation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reduced-vocal-quality>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/shallow-irregular-breathing>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slower-speech-rate> .
+
+<http://example.org/cp-dysarthria/entity/ASSESSMENT/robertson-dysarthria-profile> a ns1:ASSESSMENT ;
+    rdfs:label "Robertson Dysarthria Profile" ;
+    ns1:measures <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/diadochokinesis>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/facial-muscles>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/reflexes>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/respiration> .
+
+<http://example.org/cp-dysarthria/doc/arxiv_1811.11101> a ns1:SourceDocument ;
+    rdfs:label "Learning to detect dysarthria from raw speech" ;
+    dcterms:date "2018" ;
+    dcterms:identifier "arxiv_1811.11101" ;
+    dcterms:license "http://arxiv.org/licenses/nonexclusive-distrib/1.0/" ;
+    dcterms:source <http://arxiv.org/abs/1811.11101v2> .
+
+<http://example.org/cp-dysarthria/doc/pubmed_32604092> a ns1:SourceDocument ;
+    rdfs:label "Pausing and Sentence Stress in Children with Dysarthria due to Cerebral Palsy" ;
+    dcterms:date "2021" ;
+    dcterms:identifier "pubmed_32604092" ;
+    dcterms:license "cc by-nc" ;
+    dcterms:source <https://pubmed.ncbi.nlm.nih.gov/32604092/> .
+
+<http://example.org/cp-dysarthria/doc/pubmed_29184336> a ns1:SourceDocument ;
+    rdfs:label "Speech Signal Analysis and Pattern Recognition in Diagnosis of Dysarthria" ;
+    dcterms:date "2017" ;
+    dcterms:identifier "pubmed_29184336" ;
+    dcterms:license "cc by-nc-sa" ;
+    dcterms:source <https://pubmed.ncbi.nlm.nih.gov/29184336/> .
+
+<http://example.org/cp-dysarthria/entity/DISORDER/dysarthria> a ns1:DISORDER ;
+    rdfs:label "Dysarthria",
+        "dysarthria" ;
+    ns1:has_feature <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/abnormal-prosodic-patterns>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/articulatory-imprecision>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/breathy-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/deletion-of-phoneme>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/duration-of-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/flat-intonation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/fluency>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/formant-range>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/harsh-voice>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/insertion-of-phoneme>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/intelligibility>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pause>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pausing>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/phonation>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/pneumophonic-coordination-deficit>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/problems-with-stress-production>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/prosody>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/repetition-of-phoneme>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/resonance>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/slurred-speech>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/speech-rate>,
+        <http://example.org/cp-dysarthria/entity/SPEECH_FEATURE/very-low-speech-rate> .
+

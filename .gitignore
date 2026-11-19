@@ -2,5 +2,8 @@ __pycache__/
 *.pyc
 *.part
 *.tmp
+.env
 # Course material (dcavar/L665, all rights reserved): copy locally, never commit
 processing/pdf_folder_to_markdown.py
+# Assignment 2 weights and paper texts live outside this repo
+assignment2/local/
