@@ -1,0 +1,78 @@
+Thu Oct 29 15:10:55 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:A6:00.0 Off |                    0 |
+| N/A   41C    P0            124W /  550W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[1m
+============================== Info about spaCy ==============================[0m
+
+spaCy version    3.8.16                        
+Location         /N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy
+Platform         Linux-4.18.0-553.172.1.el8_10.x86_64-x86_64-with-glibc2.28
+Python version   3.12.15                       
+Pipelines        en_core_web_sm (3.8.0)        
+
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1m
+============================ Data file validation ============================[0m
+[38;5;2m✔ Pipeline can be initialized with data[0m
+[38;5;2m✔ Corpus is loadable[0m
+[1m
+=============================== Training stats ===============================[0m
+Language: en
+Training pipeline: transformer, ner
+126443 training docs
+13282 evaluation docs
+[38;5;3m⚠ 358 training examples also in evaluation data[0m
+[1m
+============================== Vocab & Vectors ==============================[0m
+[38;5;4mℹ 2224244 total word(s) in the data (69964 unique)[0m
+[38;5;4mℹ No word vectors present in the package[0m
+[1m
+========================== Named Entity Recognition ==========================[0m
+[38;5;4mℹ 6 label(s)[0m
+0 missing value(s) (tokens with '-' label)
+[38;5;2m✔ Good amount of examples for all labels[0m
+[38;5;2m✔ Examples without occurrences available for all labels[0m
+[38;5;2m✔ No entities consisting of or starting/ending with whitespace[0m
+[38;5;2m✔ No entities crossing sentence boundaries[0m
+[1m
+================================== Summary ==================================[0m
+[38;5;2m✔ 6 checks passed[0m
+[38;5;3m⚠ 1 warning[0m
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[38;5;4mℹ Saving to output directory: training/ner-transformer[0m
+[38;5;4mℹ Using GPU: 0[0m
+[1m
+=========================== Initializing pipeline ===========================[0m
+[38;5;2m✔ Initialized pipeline[0m
+[1m
+============================= Training pipeline =============================[0m
+[38;5;4mℹ Pipeline: ['transformer', 'ner'][0m
+[38;5;4mℹ Initial learn rate: 0.0[0m
+E    #       LOSS TRANS...  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE 
+---  ------  -------------  --------  ------  ------  ------  ------
+  0       0        1641.86    707.00    0.50    0.26   16.20    0.01
+  0     200       73185.05  44819.66   60.61   70.19   53.33    0.61
+  0     400        5541.08   2483.44   72.35   64.60   82.22    0.72
+  0     600         477.14   1099.13   90.15   90.77   89.53    0.90
+  0     800         894.69    830.72   92.57   90.01   95.29    0.93
+  0    1000         730.93    724.84   95.46   95.16   95.77    0.95
+  0    1200         237.66    480.82   93.66   91.01   96.47    0.94

@@ -1,0 +1,255 @@
+{
+ "counts": {
+  "boundary": 9,
+  "model_new": 94,
+  "rule_miss": 46
+ },
+ "in_capitals": {
+  "model_new": 4,
+  "rule_miss": 2
+ },
+ "examples": {
+  "boundary": [
+   [
+    "model [DNN-hidden Markov model] SPEECH_TECH / rules [hidden Markov model] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [HMM] SPEECH_TECH / rules [GMM-HMM] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [dysarthria] DISORDER / rules [dysarthria severity classification] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [articulation,] SPEECH_FEATURE / rules [articulation] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "model [Automatic speech recognizers] SPEECH_TECH / rules [speech recognizers] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [-supervised learning] SPEECH_TECH / rules [self-supervised learning] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [imprecise phonation] SPEECH_FEATURE / rules [phonation] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "model [SPEECH RECOGNITION] SPEECH_TECH / rules [AUTOMATIC SPEECH RECOGNITION] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [Acquired cerebral palsy] DISORDER / rules [cerebral palsy] DISORDER",
+    1
+   ]
+  ],
+  "model_new": [
+   [
+    "[HTS] SPEECH_TECH",
+    22
+   ],
+   [
+    "[ASR] SPEECH_TECH",
+    12
+   ],
+   [
+    "[MLTCs] SPEECH_TECH",
+    5
+   ],
+   [
+    "[thria] DISORDER",
+    5
+   ],
+   [
+    "[MOSs] SPEECH_TECH",
+    4
+   ],
+   [
+    "[PC -] DATASET",
+    3
+   ],
+   [
+    "[ters] SPEECH_TECH",
+    3
+   ],
+   [
+    "[hypernasal speakers] SPEECH_FEATURE",
+    2
+   ],
+   [
+    "[SGD] TREATMENT",
+    2
+   ],
+   [
+    "[Informer] SPEECH_TECH",
+    2
+   ],
+   [
+    "[LM] SPEECH_TECH",
+    2
+   ],
+   [
+    "[voice synthesis] SPEECH_TECH",
+    2
+   ],
+   [
+    "[Cerebral Vascular] DISORDER",
+    1
+   ],
+   [
+    "[cerebral vascular accident] DISORDER",
+    1
+   ],
+   [
+    "[motor-speech disorders] DISORDER",
+    1
+   ],
+   [
+    "[Universal Access Speech] DATASET",
+    1
+   ],
+   [
+    "[speed-perturbation] SPEECH_TECH",
+    1
+   ],
+   [
+    "[oracle error rates] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[SPEAKER LEVEL ADAPTATION] SPEECH_TECH",
+    1
+   ],
+   [
+    "[cerebral palsy(CP] DISORDER",
+    1
+   ],
+   [
+    "[F0s] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[v-vectors] SPEECH_TECH",
+    1
+   ],
+   [
+    "[C] SPEECH_TECH",
+    1
+   ],
+   [
+    "[TC] SPEECH_TECH",
+    1
+   ],
+   [
+    "[Frequency Cepstral Coefficients] SPEECH_TECH",
+    1
+   ]
+  ],
+  "rule_miss": [
+   [
+    "[Whisper] SPEECH_TECH (arxiv_2506.16528)",
+    7
+   ],
+   [
+    "[Whisper] SPEECH_TECH (arxiv_2508.08027)",
+    7
+   ],
+   [
+    "[Spastic quadriplegia] DISORDER (pubmed_2629622)",
+    4
+   ],
+   [
+    "[Spastic hemiplegia] DISORDER (pubmed_2629622)",
+    3
+   ],
+   [
+    "[Whisper] SPEECH_TECH (arxiv_2601.21205)",
+    2
+   ],
+   [
+    "[spastic hemiplegia] DISORDER (pubmed_2629622)",
+    2
+   ],
+   [
+    "[voice conversion] SPEECH_TECH (pubmed_39682602)",
+    2
+   ],
+   [
+    "[log-mel filterbank] SPEECH_TECH (arxiv_1807.10948)",
+    1
+   ],
+   [
+    "[VOICE CONVERSION] SPEECH_TECH (arxiv_2110.08213)",
+    1
+   ],
+   [
+    "[TEMPO PERTURBATION] SPEECH_TECH (arxiv_2201.05845)",
+    1
+   ],
+   [
+    "[VSAs] SPEECH_FEATURE (arxiv_2209.13260)",
+    1
+   ],
+   [
+    "[CTC] SPEECH_TECH (arxiv_2306.07090)",
+    1
+   ],
+   [
+    "[Whisper] SPEECH_TECH (arxiv_2309.09329)",
+    1
+   ],
+   [
+    "[ASR] SPEECH_TECH (arxiv_2506.01618)",
+    1
+   ],
+   [
+    "[WavLM] SPEECH_TECH (arxiv_2506.16127)",
+    1
+   ],
+   [
+    "[mel-spectrograms] SPEECH_TECH (arxiv_2506.16127)",
+    1
+   ],
+   [
+    "[CTC] SPEECH_TECH (arxiv_2508.08027)",
+    1
+   ],
+   [
+    "[HuBERT] SPEECH_TECH (arxiv_2508.08027)",
+    1
+   ],
+   [
+    "[Speech Recognition] SPEECH_TECH (arxiv_2512.17474)",
+    1
+   ],
+   [
+    "[speech recognition] SPEECH_TECH (arxiv_2512.17474)",
+    1
+   ],
+   [
+    "[PER] SPEECH_TECH (arxiv_2601.21205)",
+    1
+   ],
+   [
+    "[HuBERT] SPEECH_TECH (arxiv_2608.08976)",
+    1
+   ],
+   [
+    "[ASR] SPEECH_TECH (arxiv_2609.28877)",
+    1
+   ],
+   [
+    "[HuBERT] SPEECH_TECH (arxiv_2609.28877)",
+    1
+   ],
+   [
+    "[spastic quadriplegia] DISORDER (pubmed_2629622)",
+    1
+   ]
+  ]
+ }
+}

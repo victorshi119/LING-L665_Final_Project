@@ -1,0 +1,104 @@
+id,concept_label,preferred_term,n_terms,n_acronyms,n_sources,mesh_id,term_mentions,acronym_mentions,documents
+DIS001,DISORDER,dysarthria,2,0,2,D004401,4801,0,259
+DIS002,DISORDER,spastic dysarthria,1,0,2,,75,0,23
+DIS003,DISORDER,flaccid dysarthria,1,0,2,,74,0,11
+DIS004,DISORDER,ataxic dysarthria,1,0,2,,58,0,15
+DIS005,DISORDER,hypokinetic dysarthria,1,0,2,,96,0,30
+DIS006,DISORDER,hyperkinetic dysarthria,1,0,2,,69,0,9
+DIS007,DISORDER,mixed dysarthria,1,0,1,,51,0,13
+DIS008,DISORDER,cerebral palsy,1,1,2,D002547,803,1409,192
+DIS009,DISORDER,spastic cerebral palsy,5,0,2,D002547,46,0,13
+DIS010,DISORDER,dyskinetic cerebral palsy,4,0,2,D002547,6,0,3
+DIS011,DISORDER,Parkinson's disease,3,1,1,D010300,364,985,136
+DIS012,DISORDER,amyotrophic lateral sclerosis,2,1,1,D000690,294,1284,119
+DIS013,DISORDER,multiple sclerosis,1,1,1,D009103,53,111,23
+DIS014,DISORDER,stroke,2,0,1,D020521,570,0,112
+DIS015,DISORDER,traumatic brain injury,1,1,1,D000070642,21,8,17
+DIS016,DISORDER,apraxia of speech,3,1,2,D001072,153,21,20
+DIS017,DISORDER,childhood apraxia of speech,2,1,1,,25,229,11
+DIS018,DISORDER,motor speech disorder,2,1,2,D013064,292,316,114
+DIS019,DISORDER,aphasia,1,0,2,D001037,135,0,18
+DIS020,DISORDER,dysphagia,3,0,2,D003680,195,0,19
+DIS021,DISORDER,dysphonia,2,0,2,D055154,236,0,29
+DIS022,DISORDER,Down syndrome,2,0,1,D004314,33,0,16
+DIS023,DISORDER,Huntington's disease,2,0,1,D006816,25,0,14
+DIS024,DISORDER,spasticity,2,0,1,D009128,164,0,30
+DIS025,DISORDER,dystonia,1,0,1,D004421,73,0,13
+DIS026,DISORDER,ataxia,1,0,1,D001259,144,0,26
+DIS027,DISORDER,motor neuron disease,2,1,1,D016472,39,23,18
+DIS028,DISORDER,ataxic cerebral palsy,2,0,2,D002547,2,0,1
+SPF001,SPEECH_FEATURE,speech intelligibility,2,0,2,D013065,2446,0,191
+SPF002,SPEECH_FEATURE,hypernasality,3,0,2,D014681,219,0,35
+SPF003,SPEECH_FEATURE,imprecise consonants,2,0,2,,94,0,51
+SPF004,SPEECH_FEATURE,speech rate,4,0,1,,450,0,99
+SPF005,SPEECH_FEATURE,prosody,1,0,1,,503,0,111
+SPF006,SPEECH_FEATURE,monopitch,1,0,2,,37,0,13
+SPF007,SPEECH_FEATURE,monoloudness,1,0,2,,36,0,12
+SPF008,SPEECH_FEATURE,breathiness,2,0,2,D014833,54,0,32
+SPF009,SPEECH_FEATURE,harshness,4,0,2,D014833,57,0,21
+SPF010,SPEECH_FEATURE,voice quality,1,0,1,D014833,196,0,51
+SPF011,SPEECH_FEATURE,fundamental frequency,1,1,2,D013061,98,300,52
+SPF012,SPEECH_FEATURE,formant,2,0,2,,308,0,56
+SPF013,SPEECH_FEATURE,vowel space area,1,1,1,,16,103,13
+SPF014,SPEECH_FEATURE,jitter,1,0,1,,115,0,39
+SPF015,SPEECH_FEATURE,shimmer,1,0,1,,92,0,32
+SPF016,SPEECH_FEATURE,harmonics-to-noise ratio,2,1,2,,22,51,16
+SPF017,SPEECH_FEATURE,diadochokinetic rate,4,1,2,,51,132,23
+SPF018,SPEECH_FEATURE,maximum phonation time,1,1,1,,41,80,12
+SPF019,SPEECH_FEATURE,articulation,2,0,2,D013060,916,0,178
+SPF020,SPEECH_FEATURE,phonation,1,0,1,D010699,294,0,81
+SPF021,SPEECH_FEATURE,voice onset time,1,1,1,,8,13,7
+SPF022,SPEECH_FEATURE,speech naturalness,2,0,1,,341,0,44
+ASM001,ASSESSMENT,Frenchay Dysarthria Assessment,2,2,1,,36,113,25
+ASM002,ASSESSMENT,Gross Motor Function Classification System,2,2,1,,18,105,16
+ASM003,ASSESSMENT,Manual Ability Classification System,2,1,2,,2,3,2
+ASM004,ASSESSMENT,Communication Function Classification System,1,1,2,,2,4,2
+ASM005,ASSESSMENT,Viking Speech Scale,1,1,1,,11,179,3
+ASM006,ASSESSMENT,Assessment of Intelligibility of Dysarthric Speech,2,2,1,,5,9,4
+ASM007,ASSESSMENT,Unified Parkinson's Disease Rating Scale,2,2,1,,20,74,15
+ASM008,ASSESSMENT,ALS Functional Rating Scale,3,2,1,,13,71,15
+ASM009,ASSESSMENT,auditory-perceptual assessment,5,0,1,,121,0,46
+ASM010,ASSESSMENT,Consensus Auditory-Perceptual Evaluation of Voice,2,2,1,,4,17,6
+TRT001,TREATMENT,speech therapy,5,1,2,D013070,200,14,56
+TRT002,TREATMENT,augmentative and alternative communication,2,1,1,D003143,30,89,26
+TRT003,TREATMENT,speech-generating device,3,2,2,D003143,31,35,16
+TRT004,TREATMENT,LSVT LOUD,2,1,1,,7,8,4
+TRT005,TREATMENT,botulinum toxin,3,1,1,D001905,13,0,5
+TRT006,TREATMENT,baclofen,2,0,1,D001418,5,0,3
+TRT007,TREATMENT,deep brain stimulation,1,1,1,D046690,2,3,2
+TRT009,TREATMENT,physical therapy,2,0,1,D026741,26,0,15
+TRT010,TREATMENT,occupational therapy,1,0,1,D009788,7,0,3
+TRT011,TREATMENT,biofeedback,2,0,1,D001676,7,0,4
+TEC001,SPEECH_TECH,automatic speech recognition,6,2,2,D049250,1265,3325,202
+TEC002,SPEECH_TECH,word error rate,1,1,1,,265,2197,133
+TEC003,SPEECH_TECH,character error rate,3,1,1,,92,492,62
+TEC004,SPEECH_TECH,mel-frequency cepstral coefficients,3,2,1,,78,555,79
+TEC005,SPEECH_TECH,mel spectrogram,5,0,1,,471,0,71
+TEC006,SPEECH_TECH,wav2vec 2.0,3,0,1,,972,0,97
+TEC007,SPEECH_TECH,HuBERT,1,0,1,,696,0,58
+TEC008,SPEECH_TECH,WavLM,1,0,1,,172,0,31
+TEC009,SPEECH_TECH,Whisper,1,0,1,,887,0,71
+TEC010,SPEECH_TECH,Conformer,1,0,1,,547,0,41
+TEC011,SPEECH_TECH,connectionist temporal classification,1,1,1,,49,460,65
+TEC012,SPEECH_TECH,hidden Markov model,1,3,1,,43,199,62
+TEC013,SPEECH_TECH,voice conversion,1,1,2,,289,644,56
+TEC014,SPEECH_TECH,text-to-speech,3,1,2,D003143,286,661,85
+TEC015,SPEECH_TECH,speaker adaptation,2,0,2,,370,0,43
+TEC016,SPEECH_TECH,speed perturbation,2,0,1,,216,0,35
+TEC017,SPEECH_TECH,self-supervised learning,1,1,2,,101,623,62
+TEC018,SPEECH_TECH,forced alignment,1,0,1,,82,0,25
+TEC019,SPEECH_TECH,x-vector,2,0,1,,114,0,22
+TEC020,SPEECH_TECH,i-vector,2,0,1,,121,0,28
+TEC021,SPEECH_TECH,goodness of pronunciation,1,1,1,,53,115,12
+TEC022,SPEECH_TECH,mean opinion score,1,1,1,,39,182,28
+TEC023,SPEECH_TECH,dysarthria detection,5,0,2,,580,0,64
+DAT001,DATASET,UASpeech,3,0,2,,1285,0,117
+DAT002,DATASET,TORGO,2,0,2,,1161,0,116
+DAT003,DATASET,Nemours database,2,0,1,,30,0,18
+DAT004,DATASET,EasyCall,2,0,1,,61,0,18
+DAT005,DATASET,Speech Accessibility Project,1,1,2,,65,343,23
+DAT006,DATASET,LibriSpeech,1,0,2,,300,0,70
+DAT007,DATASET,PC-GITA,1,0,2,,139,0,24
+DAT008,DATASET,Chinese Dysarthria Speech Database,1,1,1,,10,71,9
+DAT009,DATASET,Common Voice,2,0,1,,39,0,15
+DAT010,DATASET,Dysarthric Expressed Emotional Database,1,1,1,,3,67,2

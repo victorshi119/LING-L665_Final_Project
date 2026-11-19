@@ -1,0 +1,46 @@
+{
+ "test_documents": 39,
+ "reference": "rule-generated weak labels (not human gold)",
+ "rule_entities": 4409,
+ "predicted_entities": 4457,
+ "ents_p": 0.9768902849450303,
+ "ents_r": 0.9875255159900204,
+ "ents_f": 0.9821791112113694,
+ "ents_per_type": {
+  "SPEECH_TECH": {
+   "p": 0.9691035683202786,
+   "r": 0.9823555359505955,
+   "f": 0.9756845564074481
+  },
+  "TREATMENT": {
+   "p": 0.9285714285714286,
+   "r": 1.0,
+   "f": 0.962962962962963
+  },
+  "DISORDER": {
+   "p": 0.984180790960452,
+   "r": 0.9875283446712018,
+   "f": 0.9858517260894171
+  },
+  "SPEECH_FEATURE": {
+   "p": 0.9909502262443439,
+   "r": 0.9954545454545455,
+   "f": 0.9931972789115646
+  },
+  "DATASET": {
+   "p": 0.9819277108433735,
+   "r": 1.0,
+   "f": 0.9908814589665653
+  },
+  "ASSESSMENT": {
+   "p": 0.9333333333333333,
+   "r": 1.0,
+   "f": 0.9655172413793104
+  }
+ },
+ "exact_span_label_conflicts": 0,
+ "model_only_spans": 103,
+ "model_only_distinct": 51,
+ "rule_only_spans": 55,
+ "rule_only_distinct": 24
+}

@@ -1,0 +1,56 @@
+{
+ "seed": 665,
+ "glossary_version": "0.1",
+ "docbin_attrs": [
+  "ORTH",
+  "SPACY",
+  "ENT_IOB",
+  "ENT_TYPE",
+  "ENT_ID",
+  "SENT_START"
+ ],
+ "splits": {
+  "train": {
+   "documents": 301,
+   "tokens": 2226259,
+   "entities": 32793,
+   "entities_per_label": {
+    "ASSESSMENT": 624,
+    "DATASET": 2937,
+    "DISORDER": 10372,
+    "SPEECH_FEATURE": 5317,
+    "SPEECH_TECH": 13106,
+    "TREATMENT": 437
+   },
+   "distinct_concepts": 103
+  },
+  "dev": {
+   "documents": 38,
+   "tokens": 237139,
+   "entities": 3202,
+   "entities_per_label": {
+    "ASSESSMENT": 144,
+    "DATASET": 216,
+    "DISORDER": 1045,
+    "SPEECH_FEATURE": 662,
+    "SPEECH_TECH": 1121,
+    "TREATMENT": 14
+   },
+   "distinct_concepts": 79
+  },
+  "test": {
+   "documents": 39,
+   "tokens": 239782,
+   "entities": 4382,
+   "entities_per_label": {
+    "ASSESSMENT": 28,
+    "DATASET": 326,
+    "DISORDER": 882,
+    "SPEECH_FEATURE": 880,
+    "SPEECH_TECH": 2240,
+    "TREATMENT": 26
+   },
+   "distinct_concepts": 79
+  }
+ }
+}

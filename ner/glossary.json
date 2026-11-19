@@ -1,0 +1,1912 @@
+{
+  "metadata": {
+    "title": "CP-Dysarthria Domain Glossary",
+    "version": "0.2",
+    "created": "2026-10-29",
+    "authors": "Victor & Shintaro (L665, Fall 2026); drafted with Claude Code, to be reviewed by the team",
+    "domain": "Cerebral palsy (CP)-associated dysarthria, related motor speech disorders, their clinical assessment and treatment, and dysarthric speech technology.",
+    "format": "Compatible with the course build_ner_corpus.py loader (entries[].concept_label/term/acronym). Extra fields: id (stable concept identifier), hypernym, mesh_id, acronym_requires_long_form, notes.",
+    "labels": {
+      "DISORDER": "A disease, disorder, or clinical motor sign: dysarthria and its subtypes, cerebral palsy and its subtypes, other neurological conditions that cause dysarthria (Parkinson's disease, ALS, stroke, ...), and related speech, language, and swallowing disorders.",
+      "SPEECH_FEATURE": "A perceptual or acoustic property of speech that is affected in dysarthria or used to describe it, such as intelligibility, hypernasality, speech rate, or jitter. Not the disorder itself and not the test used to measure it.",
+      "ASSESSMENT": "A named clinical instrument, rating scale, or classification system used to evaluate speech, communication, or motor function, such as the Frenchay Dysarthria Assessment or GMFCS.",
+      "TREATMENT": "A clinical intervention, therapy, device, or drug used to manage dysarthria, communication impairment, or the underlying motor disorder.",
+      "SPEECH_TECH": "A speech-technology task, model, acoustic representation, or evaluation metric used to process, recognize, synthesize, or analyse (dysarthric) speech, such as ASR, wav2vec 2.0, MFCC, or WER.",
+      "DATASET": "A named speech corpus or database used in dysarthric speech research, such as UASpeech or TORGO."
+    },
+    "acronym_policy": "Acronyms are matched case-sensitively. Acronyms with acronym_requires_long_form=true are only labelled in documents that also contain one of the concept's terms, because they have frequent unrelated readings in the corpus (e.g. FDA = US Food and Drug Administration, SGD = stochastic gradient descent).",
+    "review_status": "Definitions are paraphrased from the cited sources (drafted with Claude Code). v0.2: the team checked that every term belongs in its label (2026-11-03); Victor found three errors, corrected here (see changes). Source URLs re-checked with verify_glossary.py.",
+    "removed_concepts": "TRT008 selective dorsal rhizotomy and TRT012 nonspeech oral motor exercises were drafted but removed on 2026-10-29 because they never occur in the corpus (the corpus uses 'oral motor' only for tasks/examinations).",
+    "changes": [
+      "v0.2 2026-11-03: TEC003 split into CER (TEC003) and phoneme/phone error rate (new TEC024, acronym PER).",
+      "v0.2 2026-11-03: TEC023 lost the ambiguous terms 'severity classification' and 'dysarthria severity assessment'.",
+      "v0.2 2026-11-03: ASM010 split into CAPE-V (ASM010) and GRBAS (new ASM011), each with its own source."
+    ]
+  },
+  "entries": [
+    {
+      "id": "DIS001",
+      "concept_label": "DISORDER",
+      "term": [
+        "dysarthria",
+        "dysarthrias"
+      ],
+      "acronym": [],
+      "definition": [
+        "A motor speech disorder in which weakness, slowness, or poor coordination of the speech muscles, caused by damage to the central or peripheral nervous system, impairs respiration, phonation, resonance, articulation, and/or prosody, while language itself is intact."
+      ],
+      "hypernym": "motor speech disorder",
+      "mesh_id": "D004401",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D004401"
+      ]
+    },
+    {
+      "id": "DIS002",
+      "concept_label": "DISORDER",
+      "term": [
+        "spastic dysarthria"
+      ],
+      "acronym": [],
+      "definition": [
+        "Dysarthria caused by bilateral upper motor neuron damage, typically with strained-strangled voice, slow rate, hypernasality, and imprecise consonants; the dysarthria type most often associated with spastic cerebral palsy."
+      ],
+      "hypernym": "dysarthria",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://doi.org/10.1044/jshr.1202.246"
+      ]
+    },
+    {
+      "id": "DIS003",
+      "concept_label": "DISORDER",
+      "term": [
+        "flaccid dysarthria"
+      ],
+      "acronym": [],
+      "definition": [
+        "Dysarthria caused by lower motor neuron damage (cranial or spinal nerves), characterized by weakness, breathiness, hypernasality, and nasal emission."
+      ],
+      "hypernym": "dysarthria",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D004401"
+      ]
+    },
+    {
+      "id": "DIS004",
+      "concept_label": "DISORDER",
+      "term": [
+        "ataxic dysarthria"
+      ],
+      "acronym": [],
+      "definition": [
+        "Dysarthria caused by cerebellar damage, with irregular articulatory breakdowns, excess and equal stress, and poorly coordinated, scanning speech."
+      ],
+      "hypernym": "dysarthria",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://doi.org/10.1044/jshr.1202.246"
+      ]
+    },
+    {
+      "id": "DIS005",
+      "concept_label": "DISORDER",
+      "term": [
+        "hypokinetic dysarthria"
+      ],
+      "acronym": [],
+      "definition": [
+        "Dysarthria associated with basal ganglia control-circuit damage, typically in Parkinson's disease, with reduced loudness, monopitch, short rushes of speech, and imprecise consonants."
+      ],
+      "hypernym": "dysarthria",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://doi.org/10.1044/jshr.1202.246"
+      ]
+    },
+    {
+      "id": "DIS006",
+      "concept_label": "DISORDER",
+      "term": [
+        "hyperkinetic dysarthria"
+      ],
+      "acronym": [],
+      "definition": [
+        "Dysarthria caused by involuntary movements from basal ganglia disorders (e.g., chorea, dystonia), producing variable rate, loudness, and articulation."
+      ],
+      "hypernym": "dysarthria",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://doi.org/10.1044/jshr.1202.246"
+      ]
+    },
+    {
+      "id": "DIS007",
+      "concept_label": "DISORDER",
+      "term": [
+        "mixed dysarthria"
+      ],
+      "acronym": [],
+      "definition": [
+        "Dysarthria combining features of two or more single dysarthria types, as in ALS (spastic-flaccid) or multiple sclerosis (ataxic-spastic)."
+      ],
+      "hypernym": "dysarthria",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "DIS008",
+      "concept_label": "DISORDER",
+      "term": [
+        "cerebral palsy"
+      ],
+      "acronym": [
+        "CP"
+      ],
+      "definition": [
+        "A group of permanent, non-progressive disorders of movement and posture caused by injury to or abnormal development of the immature brain before, during, or shortly after birth; speech is frequently affected by dysarthria."
+      ],
+      "hypernym": "neurodevelopmental motor disorder",
+      "mesh_id": "D002547",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D002547",
+        "https://medlineplus.gov/cerebralpalsy.html"
+      ],
+      "notes": "CP is unambiguous in this corpus (spot-checked 2026-10-29)."
+    },
+    {
+      "id": "DIS009",
+      "concept_label": "DISORDER",
+      "term": [
+        "spastic cerebral palsy",
+        "spastic CP",
+        "spastic diplegia",
+        "spastic quadriplegia",
+        "spastic hemiplegia"
+      ],
+      "acronym": [],
+      "definition": [
+        "The most common subtype of cerebral palsy, marked by increased muscle tone (spasticity); classified by the limbs involved (diplegia, hemiplegia, quadriplegia)."
+      ],
+      "hypernym": "cerebral palsy",
+      "mesh_id": "D002547",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D002547",
+        "https://medlineplus.gov/cerebralpalsy.html"
+      ]
+    },
+    {
+      "id": "DIS010",
+      "concept_label": "DISORDER",
+      "term": [
+        "dyskinetic cerebral palsy",
+        "athetoid cerebral palsy",
+        "dyskinetic CP",
+        "athetoid CP"
+      ],
+      "acronym": [],
+      "definition": [
+        "A subtype of cerebral palsy with involuntary, uncontrolled movements (athetosis, chorea, dystonia) caused mainly by basal ganglia injury."
+      ],
+      "hypernym": "cerebral palsy",
+      "mesh_id": "D002547",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D002547",
+        "https://medlineplus.gov/cerebralpalsy.html"
+      ]
+    },
+    {
+      "id": "DIS011",
+      "concept_label": "DISORDER",
+      "term": [
+        "Parkinson's disease",
+        "Parkinson disease",
+        "Parkinsons disease"
+      ],
+      "acronym": [
+        "PD"
+      ],
+      "definition": [
+        "A progressive neurodegenerative disease caused by loss of dopamine-producing neurons in the substantia nigra, with tremor, rigidity, slowness of movement, and often hypokinetic dysarthria."
+      ],
+      "hypernym": "neurodegenerative disease",
+      "mesh_id": "D010300",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D010300"
+      ]
+    },
+    {
+      "id": "DIS012",
+      "concept_label": "DISORDER",
+      "term": [
+        "amyotrophic lateral sclerosis",
+        "Lou Gehrig's disease"
+      ],
+      "acronym": [
+        "ALS"
+      ],
+      "definition": [
+        "A progressive, usually fatal degeneration of upper and lower motor neurons causing weakness, atrophy, dysphagia, and mixed spastic-flaccid dysarthria."
+      ],
+      "hypernym": "motor neuron disease",
+      "mesh_id": "D000690",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D000690"
+      ]
+    },
+    {
+      "id": "DIS013",
+      "concept_label": "DISORDER",
+      "term": [
+        "multiple sclerosis"
+      ],
+      "acronym": [
+        "MS"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "An autoimmune disease in which demyelination of the central nervous system causes variable neurological symptoms, including ataxic and spastic dysarthria."
+      ],
+      "hypernym": "demyelinating disease",
+      "mesh_id": "D009103",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D009103"
+      ],
+      "notes": "MS also occurs as author initials and abbreviations in the corpus."
+    },
+    {
+      "id": "DIS014",
+      "concept_label": "DISORDER",
+      "term": [
+        "stroke",
+        "cerebrovascular accident"
+      ],
+      "acronym": [],
+      "definition": [
+        "Sudden loss of neurological function caused by interrupted blood supply (ischemia) or bleeding in the brain; a frequent cause of acquired dysarthria and aphasia in adults."
+      ],
+      "hypernym": "cerebrovascular disorder",
+      "mesh_id": "D020521",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D020521"
+      ],
+      "notes": "Also matches 'stroke' in non-medical senses (e.g. pen stroke); rare in this corpus."
+    },
+    {
+      "id": "DIS015",
+      "concept_label": "DISORDER",
+      "term": [
+        "traumatic brain injury"
+      ],
+      "acronym": [
+        "TBI"
+      ],
+      "definition": [
+        "Brain damage caused by an external mechanical force, such as a blow to the head; a cause of acquired dysarthria."
+      ],
+      "hypernym": "brain injury",
+      "mesh_id": "D000070642",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D000070642"
+      ]
+    },
+    {
+      "id": "DIS016",
+      "concept_label": "DISORDER",
+      "term": [
+        "apraxia of speech",
+        "acquired apraxia of speech",
+        "verbal apraxia"
+      ],
+      "acronym": [
+        "AOS"
+      ],
+      "definition": [
+        "A motor speech disorder in which the planning or programming of speech movements is impaired, without weakness of the speech muscles."
+      ],
+      "hypernym": "motor speech disorder",
+      "mesh_id": "D001072",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/acquired-apraxia-of-speech/",
+        "https://www.nidcd.nih.gov/health/apraxia-speech"
+      ]
+    },
+    {
+      "id": "DIS017",
+      "concept_label": "DISORDER",
+      "term": [
+        "childhood apraxia of speech",
+        "developmental apraxia of speech"
+      ],
+      "acronym": [
+        "CAS"
+      ],
+      "definition": [
+        "A pediatric motor speech disorder affecting the precision and consistency of speech movements because of impaired motor planning, in the absence of neuromuscular deficits."
+      ],
+      "hypernym": "motor speech disorder",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/childhood-apraxia-of-speech/"
+      ]
+    },
+    {
+      "id": "DIS018",
+      "concept_label": "DISORDER",
+      "term": [
+        "motor speech disorder",
+        "motor speech impairment"
+      ],
+      "acronym": [
+        "MSD"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "A speech disorder caused by impaired planning, programming, control, or execution of speech movements; the two main types are dysarthria and apraxia of speech."
+      ],
+      "hypernym": "speech disorder",
+      "mesh_id": "D013064",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://www.asha.org/practice-portal/clinical-topics/childhood-apraxia-of-speech/"
+      ]
+    },
+    {
+      "id": "DIS019",
+      "concept_label": "DISORDER",
+      "term": [
+        "aphasia"
+      ],
+      "acronym": [],
+      "definition": [
+        "An acquired language disorder, usually after left-hemisphere damage, impairing the comprehension and/or production of spoken or written language; distinct from dysarthria, which affects speech motor control."
+      ],
+      "hypernym": "language disorder",
+      "mesh_id": "D001037",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/aphasia/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D001037"
+      ]
+    },
+    {
+      "id": "DIS020",
+      "concept_label": "DISORDER",
+      "term": [
+        "dysphagia",
+        "swallowing disorder",
+        "deglutition disorder"
+      ],
+      "acronym": [],
+      "definition": [
+        "Difficulty swallowing, often co-occurring with dysarthria because both involve the oral and pharyngeal musculature."
+      ],
+      "hypernym": "swallowing disorder",
+      "mesh_id": "D003680",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/adult-dysphagia/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D003680"
+      ]
+    },
+    {
+      "id": "DIS021",
+      "concept_label": "DISORDER",
+      "term": [
+        "dysphonia",
+        "voice disorder"
+      ],
+      "acronym": [],
+      "definition": [
+        "Impaired voice production, with abnormal pitch, loudness, or voice quality, resulting from structural, neurological, or functional causes."
+      ],
+      "hypernym": "voice disorder",
+      "mesh_id": "D055154",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/voice-disorders/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D055154"
+      ]
+    },
+    {
+      "id": "DIS022",
+      "concept_label": "DISORDER",
+      "term": [
+        "Down syndrome",
+        "trisomy 21"
+      ],
+      "acronym": [],
+      "definition": [
+        "A chromosomal disorder caused by an extra copy of chromosome 21, associated with hypotonia, intellectual disability, and frequent speech and motor speech disorders."
+      ],
+      "hypernym": "chromosomal disorder",
+      "mesh_id": "D004314",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D004314"
+      ]
+    },
+    {
+      "id": "DIS023",
+      "concept_label": "DISORDER",
+      "term": [
+        "Huntington's disease",
+        "Huntington disease"
+      ],
+      "acronym": [],
+      "definition": [
+        "An inherited neurodegenerative disease causing chorea, cognitive decline, and hyperkinetic dysarthria."
+      ],
+      "hypernym": "neurodegenerative disease",
+      "mesh_id": "D006816",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D006816"
+      ]
+    },
+    {
+      "id": "DIS024",
+      "concept_label": "DISORDER",
+      "term": [
+        "spasticity",
+        "muscle spasticity"
+      ],
+      "acronym": [],
+      "definition": [
+        "Velocity-dependent increase in muscle tone caused by upper motor neuron damage; the defining motor sign of spastic cerebral palsy and spastic dysarthria."
+      ],
+      "hypernym": "motor sign",
+      "mesh_id": "D009128",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D009128"
+      ]
+    },
+    {
+      "id": "DIS025",
+      "concept_label": "DISORDER",
+      "term": [
+        "dystonia"
+      ],
+      "acronym": [],
+      "definition": [
+        "A movement disorder with sustained or intermittent involuntary muscle contractions causing abnormal postures or twisting movements; common in dyskinetic cerebral palsy."
+      ],
+      "hypernym": "movement disorder",
+      "mesh_id": "D004421",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D004421"
+      ]
+    },
+    {
+      "id": "DIS026",
+      "concept_label": "DISORDER",
+      "term": [
+        "ataxia"
+      ],
+      "acronym": [],
+      "definition": [
+        "Impaired coordination of voluntary movement, usually from cerebellar damage; in speech it produces ataxic dysarthria."
+      ],
+      "hypernym": "movement disorder",
+      "mesh_id": "D001259",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D001259"
+      ]
+    },
+    {
+      "id": "DIS027",
+      "concept_label": "DISORDER",
+      "term": [
+        "motor neuron disease",
+        "motor neurone disease"
+      ],
+      "acronym": [
+        "MND"
+      ],
+      "definition": [
+        "A group of diseases in which upper and/or lower motor neurons degenerate, including ALS; often causes spastic and/or flaccid dysarthria."
+      ],
+      "hypernym": "neurodegenerative disease",
+      "mesh_id": "D016472",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D016472"
+      ]
+    },
+    {
+      "id": "DIS028",
+      "concept_label": "DISORDER",
+      "term": [
+        "ataxic cerebral palsy",
+        "ataxic CP"
+      ],
+      "acronym": [],
+      "definition": [
+        "A subtype of cerebral palsy caused mainly by cerebellar injury, with impaired balance and coordination; speech may show ataxic features."
+      ],
+      "hypernym": "cerebral palsy",
+      "mesh_id": "D002547",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D002547",
+        "https://medlineplus.gov/cerebralpalsy.html"
+      ]
+    },
+    {
+      "id": "SPF001",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "speech intelligibility",
+        "intelligibility"
+      ],
+      "acronym": [],
+      "definition": [
+        "The degree to which a speaker's intended message is understood by a listener; the primary functional outcome measure in dysarthria."
+      ],
+      "hypernym": "speech outcome",
+      "mesh_id": "D013065",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D013065",
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF002",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "hypernasality",
+        "hypernasal speech",
+        "hypernasal resonance"
+      ],
+      "acronym": [],
+      "definition": [
+        "Excessive nasal resonance on oral speech sounds because the velopharyngeal port does not close adequately; common in spastic and flaccid dysarthria."
+      ],
+      "hypernym": "resonance",
+      "mesh_id": "D014681",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/resonance-disorders/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D014681"
+      ]
+    },
+    {
+      "id": "SPF003",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "imprecise consonants",
+        "imprecise articulation"
+      ],
+      "acronym": [],
+      "definition": [
+        "Consonants produced with reduced accuracy or distorted place or manner of articulation; one of the most frequent perceptual features across dysarthria types."
+      ],
+      "hypernym": "articulation",
+      "source_url": [
+        "https://doi.org/10.1044/jshr.1202.246",
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF004",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "speech rate",
+        "speaking rate",
+        "rate of speech",
+        "articulation rate"
+      ],
+      "acronym": [],
+      "definition": [
+        "How fast a person speaks, usually measured in syllables or words per unit time (articulation rate excludes pauses); typically reduced in spastic dysarthria."
+      ],
+      "hypernym": "prosody",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF005",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "prosody"
+      ],
+      "acronym": [],
+      "definition": [
+        "The rhythm, stress, and intonation patterns of speech, carried by variations in pitch, loudness, and duration; often reduced or disrupted in dysarthria."
+      ],
+      "hypernym": "speech subsystem",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF006",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "monopitch"
+      ],
+      "acronym": [],
+      "definition": [
+        "Reduced pitch variation, making speech sound flat; a characteristic of hypokinetic and spastic dysarthria."
+      ],
+      "hypernym": "prosody",
+      "source_url": [
+        "https://doi.org/10.1044/jshr.1202.246",
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF007",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "monoloudness"
+      ],
+      "acronym": [],
+      "definition": [
+        "Reduced variation in loudness across an utterance."
+      ],
+      "hypernym": "prosody",
+      "source_url": [
+        "https://doi.org/10.1044/jshr.1202.246",
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF008",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "breathiness",
+        "breathy voice"
+      ],
+      "acronym": [],
+      "definition": [
+        "A voice quality with audible air escape caused by incomplete vocal fold closure; typical of flaccid dysarthria."
+      ],
+      "hypernym": "voice quality",
+      "mesh_id": "D014833",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D014833",
+        "https://doi.org/10.1044/jshr.1202.246"
+      ]
+    },
+    {
+      "id": "SPF009",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "harshness",
+        "harsh voice",
+        "strained-strangled voice",
+        "strained voice"
+      ],
+      "acronym": [],
+      "definition": [
+        "A rough, effortful voice quality caused by excessive laryngeal tension; strained-strangled voice is a hallmark of spastic dysarthria."
+      ],
+      "hypernym": "voice quality",
+      "mesh_id": "D014833",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D014833",
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "SPF010",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "voice quality"
+      ],
+      "acronym": [],
+      "definition": [
+        "The characteristic sound of a speaker's voice apart from pitch and loudness, shaped by phonation and resonance (e.g., breathy, harsh, hoarse)."
+      ],
+      "hypernym": "phonation",
+      "mesh_id": "D014833",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D014833"
+      ]
+    },
+    {
+      "id": "SPF011",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "fundamental frequency"
+      ],
+      "acronym": [
+        "F0"
+      ],
+      "definition": [
+        "The rate of vocal fold vibration, the main acoustic correlate of perceived pitch; its mean and variability are standard acoustic measures in dysarthria."
+      ],
+      "hypernym": "acoustic feature",
+      "mesh_id": "D013061",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/voice-disorders/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D013061"
+      ]
+    },
+    {
+      "id": "SPF012",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "formant",
+        "formant frequency"
+      ],
+      "acronym": [],
+      "definition": [
+        "A resonance peak of the vocal tract (F1, F2, ...) that determines vowel quality; formant patterns reflect tongue and jaw movement."
+      ],
+      "hypernym": "acoustic feature",
+      "source_url": [
+        "https://doi.org/10.1515/9783110873429",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D013061"
+      ]
+    },
+    {
+      "id": "SPF013",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "vowel space area"
+      ],
+      "acronym": [
+        "VSA"
+      ],
+      "definition": [
+        "The area of the polygon formed by the first two formant frequencies of the corner vowels; a smaller vowel space indicates reduced articulatory range and lower intelligibility."
+      ],
+      "hypernym": "acoustic feature",
+      "source_url": [
+        "https://doi.org/10.1121/1.2942775"
+      ]
+    },
+    {
+      "id": "SPF014",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "jitter"
+      ],
+      "acronym": [],
+      "definition": [
+        "Cycle-to-cycle variation in the period of vocal fold vibration (frequency perturbation); a measure of voice instability."
+      ],
+      "hypernym": "acoustic feature",
+      "source_url": [
+        "https://doi.org/10.1016/j.protcy.2013.12.124"
+      ],
+      "notes": "Rarely used in its everyday sense in this corpus."
+    },
+    {
+      "id": "SPF015",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "shimmer"
+      ],
+      "acronym": [],
+      "definition": [
+        "Cycle-to-cycle variation in the amplitude of vocal fold vibration (amplitude perturbation)."
+      ],
+      "hypernym": "acoustic feature",
+      "source_url": [
+        "https://doi.org/10.1016/j.protcy.2013.12.124"
+      ]
+    },
+    {
+      "id": "SPF016",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "harmonics-to-noise ratio",
+        "harmonic-to-noise ratio"
+      ],
+      "acronym": [
+        "HNR"
+      ],
+      "definition": [
+        "The ratio of periodic (harmonic) to aperiodic (noise) energy in the voice signal; lower values indicate a breathier or hoarser voice."
+      ],
+      "hypernym": "acoustic feature",
+      "source_url": [
+        "https://doi.org/10.1016/j.protcy.2013.12.124",
+        "https://doi.org/10.1001/archotol.1983.00800150052010"
+      ]
+    },
+    {
+      "id": "SPF017",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "diadochokinetic rate",
+        "diadochokinesis",
+        "alternating motion rate",
+        "sequential motion rate"
+      ],
+      "acronym": [
+        "DDK"
+      ],
+      "definition": [
+        "The speed and regularity of rapidly repeated syllables such as /pa/, /ta/, /ka/ or /pataka/; used to assess oral motor speech control."
+      ],
+      "hypernym": "speech motor measure",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://www.asha.org/practice-portal/clinical-topics/childhood-apraxia-of-speech/"
+      ]
+    },
+    {
+      "id": "SPF018",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "maximum phonation time"
+      ],
+      "acronym": [
+        "MPT"
+      ],
+      "definition": [
+        "The longest time a person can sustain a vowel on one breath; reflects respiratory and laryngeal efficiency."
+      ],
+      "hypernym": "phonation",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/voice-disorders/"
+      ]
+    },
+    {
+      "id": "SPF019",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "articulation",
+        "speech articulation"
+      ],
+      "acronym": [],
+      "definition": [
+        "The production of speech sounds by movements of the lips, tongue, jaw, and velum; one of the speech subsystems affected in dysarthria."
+      ],
+      "hypernym": "speech subsystem",
+      "mesh_id": "D013060",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D013060"
+      ],
+      "notes": "Also used in non-speech senses (e.g. articulation of a theory); rare in this corpus."
+    },
+    {
+      "id": "SPF020",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "phonation"
+      ],
+      "acronym": [],
+      "definition": [
+        "The production of voice by vibration of the vocal folds driven by exhaled air; one of the speech subsystems affected in dysarthria."
+      ],
+      "hypernym": "speech subsystem",
+      "mesh_id": "D010699",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D010699"
+      ]
+    },
+    {
+      "id": "SPF021",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "voice onset time"
+      ],
+      "acronym": [
+        "VOT"
+      ],
+      "definition": [
+        "The interval between the release of a stop consonant and the onset of vocal fold vibration; distinguishes voiced from voiceless stops and is often disrupted in dysarthria."
+      ],
+      "hypernym": "acoustic feature",
+      "source_url": [
+        "https://doi.org/10.1177/002383096701000101"
+      ]
+    },
+    {
+      "id": "SPF022",
+      "concept_label": "SPEECH_FEATURE",
+      "term": [
+        "speech naturalness",
+        "naturalness"
+      ],
+      "acronym": [],
+      "definition": [
+        "How normal or typical speech sounds to listeners, independent of intelligibility; often reduced by prosodic abnormalities in dysarthria."
+      ],
+      "hypernym": "speech outcome",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "ASM001",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Frenchay Dysarthria Assessment",
+        "Frenchay Dysarthria Assessment-2"
+      ],
+      "acronym": [
+        "FDA",
+        "FDA-2"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "A standardized clinical test that rates reflexes, respiration, lips, palate, laryngeal function, tongue, and intelligibility to describe the severity and type of dysarthria."
+      ],
+      "hypernym": "dysarthria assessment",
+      "source_url": [
+        "https://doi.org/10.3109/13682828009112541"
+      ],
+      "notes": "FDA also denotes the US Food and Drug Administration in some documents; hence the long-form requirement."
+    },
+    {
+      "id": "ASM002",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Gross Motor Function Classification System",
+        "Gross Motor Function Classification Scale"
+      ],
+      "acronym": [
+        "GMFCS",
+        "GMFCS-E&R"
+      ],
+      "definition": [
+        "A five-level system that classifies the self-initiated gross motor function (sitting, walking, mobility) of children and young people with cerebral palsy."
+      ],
+      "hypernym": "functional classification system",
+      "source_url": [
+        "https://doi.org/10.1111/j.1469-8749.1997.tb07414.x"
+      ]
+    },
+    {
+      "id": "ASM003",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Manual Ability Classification System",
+        "Manual Ability Classification Scale"
+      ],
+      "acronym": [
+        "MACS"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "A five-level system that classifies how children with cerebral palsy use their hands to handle objects in daily activities."
+      ],
+      "hypernym": "functional classification system",
+      "source_url": [
+        "https://doi.org/10.1017/S0012162206001162",
+        "https://www.macs.nu/"
+      ],
+      "notes": "The corpus also uses the variant name 'Manual Ability Classification Scale'."
+    },
+    {
+      "id": "ASM004",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Communication Function Classification System"
+      ],
+      "acronym": [
+        "CFCS"
+      ],
+      "definition": [
+        "A five-level system that classifies the everyday communication performance of people with cerebral palsy as senders and receivers of messages."
+      ],
+      "hypernym": "functional classification system",
+      "source_url": [
+        "https://doi.org/10.1111/j.1469-8749.2011.03996.x",
+        "http://cfcs.us/"
+      ]
+    },
+    {
+      "id": "ASM005",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Viking Speech Scale"
+      ],
+      "acronym": [
+        "VSS"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "A four-level scale that classifies the speech production of children with cerebral palsy, from no apparent speech impairment to no understandable speech."
+      ],
+      "hypernym": "functional classification system",
+      "source_url": [
+        "https://doi.org/10.1016/j.ridd.2013.06.035"
+      ]
+    },
+    {
+      "id": "ASM006",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Assessment of Intelligibility of Dysarthric Speech",
+        "Computerized Assessment of Intelligibility of Dysarthric Speech"
+      ],
+      "acronym": [
+        "AIDS",
+        "CAIDS"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "A standardized test in which listeners transcribe a speaker's single words and sentences to quantify intelligibility and speaking rate in dysarthria (Yorkston & Beukelman)."
+      ],
+      "hypernym": "intelligibility test",
+      "source_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/40409971/"
+      ],
+      "notes": "Provenance is a corpus document (systematic review of dysarthria outcome measures) that describes the instrument; the original 1981 manual is not online. AIDS requires the long form (acquired immunodeficiency syndrome)."
+    },
+    {
+      "id": "ASM007",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Unified Parkinson's Disease Rating Scale",
+        "MDS Unified Parkinson's Disease Rating Scale"
+      ],
+      "acronym": [
+        "UPDRS",
+        "MDS-UPDRS"
+      ],
+      "definition": [
+        "A clinical rating scale for the severity of Parkinson's disease covering non-motor and motor experiences of daily living, a motor examination (including speech), and motor complications."
+      ],
+      "hypernym": "clinical rating scale",
+      "source_url": [
+        "https://doi.org/10.1002/mds.22340"
+      ]
+    },
+    {
+      "id": "ASM008",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "ALS Functional Rating Scale",
+        "revised ALS Functional Rating Scale",
+        "ALS Functional Rating Scale-Revised"
+      ],
+      "acronym": [
+        "ALSFRS",
+        "ALSFRS-R"
+      ],
+      "definition": [
+        "A 12-item questionnaire rating bulbar (including speech), fine motor, gross motor, and respiratory function in amyotrophic lateral sclerosis."
+      ],
+      "hypernym": "clinical rating scale",
+      "source_url": [
+        "https://doi.org/10.1016/s0022-510x(99)00210-5"
+      ]
+    },
+    {
+      "id": "ASM009",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "auditory-perceptual assessment",
+        "perceptual assessment",
+        "perceptual evaluation",
+        "auditory-perceptual evaluation",
+        "perceptual rating"
+      ],
+      "acronym": [],
+      "definition": [
+        "Clinical judgement of speech characteristics by trained listeners, the reference standard for describing dysarthria type and severity."
+      ],
+      "hypernym": "dysarthria assessment",
+      "source_url": [
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ]
+    },
+    {
+      "id": "ASM010",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "Consensus Auditory-Perceptual Evaluation of Voice"
+      ],
+      "acronym": [
+        "CAPE-V"
+      ],
+      "definition": [
+        "A standardized clinical protocol for auditory-perceptual voice rating: overall severity, roughness, breathiness, strain, pitch and loudness, each on a 100-mm visual analog scale."
+      ],
+      "hypernym": "voice assessment",
+      "source_url": [
+        "https://doi.org/10.1044/1058-0360(2008/08-0017)"
+      ],
+      "notes": "GRBAS split off as ASM011 in v0.2 (2026-11-03). Source: Kempster et al. (2009)."
+    },
+    {
+      "id": "ASM011",
+      "concept_label": "ASSESSMENT",
+      "term": [
+        "GRBAS scale"
+      ],
+      "acronym": [
+        "GRBAS"
+      ],
+      "definition": [
+        "A perceptual voice rating scale that rates Grade (overall severity), Roughness, Breathiness, Asthenia and Strain, each from 0 (normal) to 3 (severe)."
+      ],
+      "hypernym": "voice assessment",
+      "source_url": [
+        "https://doi.org/10.1016/s0892-1997(99)80006-x"
+      ],
+      "notes": "Split from ASM010 in v0.2 (2026-11-03). Introduced by Hirano (1981), Clinical Examination of Voice (book, no DOI); source cited here: Wuyts et al. (1999), a reliability study of the scale."
+    },
+    {
+      "id": "TRT001",
+      "concept_label": "TREATMENT",
+      "term": [
+        "speech therapy",
+        "speech and language therapy",
+        "speech-language therapy",
+        "speech language therapy",
+        "speech treatment"
+      ],
+      "acronym": [
+        "SLT"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "Treatment by a speech-language pathologist to improve speech, language, or communication, e.g. exercises for respiration, phonation, articulation, and prosody, and compensatory strategies."
+      ],
+      "hypernym": "rehabilitation",
+      "mesh_id": "D013070",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D013070",
+        "https://www.asha.org/practice-portal/clinical-topics/dysarthria-in-adults/"
+      ],
+      "notes": "SLT also names the IEEE Spoken Language Technology workshop."
+    },
+    {
+      "id": "TRT002",
+      "concept_label": "TREATMENT",
+      "term": [
+        "augmentative and alternative communication",
+        "alternative and augmentative communication"
+      ],
+      "acronym": [
+        "AAC"
+      ],
+      "definition": [
+        "Methods and tools (signs, picture boards, speech-generating devices) that supplement or replace natural speech for people with severe communication impairment."
+      ],
+      "hypernym": "communication intervention",
+      "mesh_id": "D003143",
+      "source_url": [
+        "https://www.asha.org/practice-portal/professional-issues/augmentative-and-alternative-communication/"
+      ]
+    },
+    {
+      "id": "TRT003",
+      "concept_label": "TREATMENT",
+      "term": [
+        "speech-generating device",
+        "voice output communication aid",
+        "communication aid"
+      ],
+      "acronym": [
+        "SGD",
+        "VOCA"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "An electronic AAC device that produces synthesized or recorded speech output for the user."
+      ],
+      "hypernym": "augmentative and alternative communication",
+      "mesh_id": "D003143",
+      "source_url": [
+        "https://www.asha.org/practice-portal/professional-issues/augmentative-and-alternative-communication/",
+        "https://www.asha.org/practice-portal/clinical-topics/childhood-apraxia-of-speech/"
+      ],
+      "notes": "SGD also means stochastic gradient descent in the ML papers; hence the long-form requirement."
+    },
+    {
+      "id": "TRT004",
+      "concept_label": "TREATMENT",
+      "term": [
+        "LSVT LOUD",
+        "Lee Silverman Voice Treatment"
+      ],
+      "acronym": [
+        "LSVT"
+      ],
+      "definition": [
+        "An intensive, standardized voice treatment that trains increased vocal loudness, developed for hypokinetic dysarthria in Parkinson's disease and also applied in cerebral palsy."
+      ],
+      "hypernym": "speech therapy",
+      "source_url": [
+        "https://www.lsvtglobal.com/LSVTLoud"
+      ]
+    },
+    {
+      "id": "TRT005",
+      "concept_label": "TREATMENT",
+      "term": [
+        "botulinum toxin",
+        "botulinum neurotoxin",
+        "Botox"
+      ],
+      "acronym": [
+        "BoNT"
+      ],
+      "definition": [
+        "A neurotoxin injected into overactive muscles to reduce spasticity or dystonia, used in cerebral palsy and in some voice disorders."
+      ],
+      "hypernym": "drug",
+      "mesh_id": "D001905",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D001905"
+      ]
+    },
+    {
+      "id": "TRT006",
+      "concept_label": "TREATMENT",
+      "term": [
+        "baclofen",
+        "intrathecal baclofen"
+      ],
+      "acronym": [],
+      "definition": [
+        "A GABA-B receptor agonist muscle relaxant, given orally or intrathecally, used to reduce spasticity."
+      ],
+      "hypernym": "drug",
+      "mesh_id": "D001418",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D001418"
+      ]
+    },
+    {
+      "id": "TRT007",
+      "concept_label": "TREATMENT",
+      "term": [
+        "deep brain stimulation"
+      ],
+      "acronym": [
+        "DBS"
+      ],
+      "definition": [
+        "Surgical implantation of electrodes that deliver electrical stimulation to deep brain structures to treat movement disorders such as Parkinson's disease and dystonia."
+      ],
+      "hypernym": "neurosurgical intervention",
+      "mesh_id": "D046690",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D046690"
+      ]
+    },
+    {
+      "id": "TRT009",
+      "concept_label": "TREATMENT",
+      "term": [
+        "physical therapy",
+        "physiotherapy"
+      ],
+      "acronym": [],
+      "definition": [
+        "Rehabilitation using exercise and physical methods to improve movement, strength, posture, and mobility."
+      ],
+      "hypernym": "rehabilitation",
+      "mesh_id": "D026741",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D026741"
+      ]
+    },
+    {
+      "id": "TRT010",
+      "concept_label": "TREATMENT",
+      "term": [
+        "occupational therapy"
+      ],
+      "acronym": [],
+      "definition": [
+        "Rehabilitation that helps people perform everyday activities, including fine motor and self-care skills."
+      ],
+      "hypernym": "rehabilitation",
+      "mesh_id": "D009788",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D009788"
+      ]
+    },
+    {
+      "id": "TRT011",
+      "concept_label": "TREATMENT",
+      "term": [
+        "biofeedback",
+        "visual biofeedback"
+      ],
+      "acronym": [],
+      "definition": [
+        "A technique that gives a person real-time information about a physiological signal (e.g., loudness, pitch, or articulator movement) so they can learn to control it."
+      ],
+      "hypernym": "therapy technique",
+      "mesh_id": "D001676",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D001676"
+      ]
+    },
+    {
+      "id": "TEC001",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "automatic speech recognition",
+        "speech recognition",
+        "speech recogniser",
+        "speech recognizer",
+        "voice recognition",
+        "dysarthric speech recognition"
+      ],
+      "acronym": [
+        "ASR",
+        "DSR"
+      ],
+      "definition": [
+        "Technology that automatically converts spoken audio into text; standard systems perform poorly on dysarthric speech, motivating adaptation research."
+      ],
+      "hypernym": "speech technology",
+      "mesh_id": "D049250",
+      "source_url": [
+        "https://meshb.nlm.nih.gov/record/ui?ui=D049250",
+        "https://web.stanford.edu/~jurafsky/slp3/"
+      ],
+      "acronym_requires_long_form": true,
+      "notes": "ASR is unambiguous here, but DSR could mean distant speech recognition, so acronyms require a long form in the document; ASR is defined in practically every ASR paper."
+    },
+    {
+      "id": "TEC002",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "word error rate"
+      ],
+      "acronym": [
+        "WER"
+      ],
+      "definition": [
+        "The standard ASR evaluation metric: the number of word substitutions, deletions, and insertions divided by the number of words in the reference transcript."
+      ],
+      "hypernym": "evaluation metric",
+      "source_url": [
+        "https://web.stanford.edu/~jurafsky/slp3/"
+      ]
+    },
+    {
+      "id": "TEC003",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "character error rate"
+      ],
+      "acronym": [
+        "CER"
+      ],
+      "definition": [
+        "An error rate computed like WER but over characters instead of words; used for languages without word spacing and for character-level evaluation."
+      ],
+      "hypernym": "evaluation metric",
+      "source_url": [
+        "https://web.stanford.edu/~jurafsky/slp3/"
+      ]
+    },
+    {
+      "id": "TEC004",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "mel-frequency cepstral coefficients",
+        "mel frequency cepstral coefficients",
+        "mel-frequency cepstral coefficient"
+      ],
+      "acronym": [
+        "MFCC",
+        "MFCCs"
+      ],
+      "definition": [
+        "A compact spectral representation of speech computed from the cepstrum of a mel-scaled filterbank; a standard input feature for speech recognition and dysarthria classification."
+      ],
+      "hypernym": "acoustic representation",
+      "source_url": [
+        "https://doi.org/10.1109/tassp.1980.1163420"
+      ]
+    },
+    {
+      "id": "TEC005",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "mel spectrogram",
+        "mel-spectrogram",
+        "log-mel spectrogram",
+        "log mel spectrogram",
+        "log-mel filterbank"
+      ],
+      "acronym": [],
+      "definition": [
+        "A time-frequency representation of audio whose frequency axis is warped to the mel scale (often log-compressed); the standard input to neural speech models."
+      ],
+      "hypernym": "acoustic representation",
+      "source_url": [
+        "https://web.stanford.edu/~jurafsky/slp3/"
+      ]
+    },
+    {
+      "id": "TEC006",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "wav2vec 2.0",
+        "wav2vec2",
+        "wav2vec"
+      ],
+      "acronym": [],
+      "definition": [
+        "A self-supervised speech representation model that learns from raw audio by contrastive prediction of masked latent units, then is fine-tuned for ASR or classification."
+      ],
+      "hypernym": "self-supervised speech model",
+      "source_url": [
+        "https://arxiv.org/abs/2006.11477"
+      ]
+    },
+    {
+      "id": "TEC007",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "HuBERT"
+      ],
+      "acronym": [],
+      "definition": [
+        "Hidden-Unit BERT: a self-supervised speech model trained to predict masked cluster labels of the audio."
+      ],
+      "hypernym": "self-supervised speech model",
+      "source_url": [
+        "https://arxiv.org/abs/2106.07447"
+      ]
+    },
+    {
+      "id": "TEC008",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "WavLM"
+      ],
+      "acronym": [],
+      "definition": [
+        "A self-supervised speech model trained with masked speech prediction and denoising for full-stack speech processing tasks."
+      ],
+      "hypernym": "self-supervised speech model",
+      "source_url": [
+        "https://arxiv.org/abs/2110.13900"
+      ]
+    },
+    {
+      "id": "TEC009",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "Whisper"
+      ],
+      "acronym": [],
+      "definition": [
+        "OpenAI's encoder-decoder speech recognition model trained with large-scale weak supervision on multilingual web audio."
+      ],
+      "hypernym": "speech recognition model",
+      "source_url": [
+        "https://arxiv.org/abs/2212.04356"
+      ],
+      "notes": "Lower-case 'whisper' in this corpus almost always also refers to the model (e.g. whisper-small)."
+    },
+    {
+      "id": "TEC010",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "Conformer"
+      ],
+      "acronym": [],
+      "definition": [
+        "A convolution-augmented Transformer architecture for speech recognition that models both local and global dependencies."
+      ],
+      "hypernym": "neural network architecture",
+      "source_url": [
+        "https://arxiv.org/abs/2005.08100"
+      ]
+    },
+    {
+      "id": "TEC011",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "connectionist temporal classification"
+      ],
+      "acronym": [
+        "CTC"
+      ],
+      "definition": [
+        "A training objective and decoding method that lets neural networks map unsegmented audio to label sequences without frame-level alignment."
+      ],
+      "hypernym": "training objective",
+      "source_url": [
+        "https://doi.org/10.1145/1143844.1143891"
+      ]
+    },
+    {
+      "id": "TEC012",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "hidden Markov model"
+      ],
+      "acronym": [
+        "HMM",
+        "GMM-HMM",
+        "DNN-HMM"
+      ],
+      "definition": [
+        "A statistical sequence model with hidden states; the basis of classical ASR systems (GMM-HMM, hybrid DNN-HMM)."
+      ],
+      "hypernym": "statistical model",
+      "source_url": [
+        "https://doi.org/10.1109/5.18626"
+      ]
+    },
+    {
+      "id": "TEC013",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "voice conversion"
+      ],
+      "acronym": [
+        "VC"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "Transforming speech so that it sounds like another speaker or speaking style while keeping the content; used to convert dysarthric to typical speech or to generate training data."
+      ],
+      "hypernym": "speech technology",
+      "source_url": [
+        "https://arxiv.org/abs/2110.08213",
+        "https://arxiv.org/abs/2106.08427"
+      ],
+      "notes": "Provenance: corpus papers on dysarthric voice conversion. VC requires the long form because it is a short, generic abbreviation."
+    },
+    {
+      "id": "TEC014",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "text-to-speech",
+        "speech synthesis",
+        "text to speech"
+      ],
+      "acronym": [
+        "TTS"
+      ],
+      "definition": [
+        "Technology that generates spoken audio from text; used in AAC devices and for synthesizing dysarthric training data."
+      ],
+      "hypernym": "speech technology",
+      "mesh_id": "D003143",
+      "source_url": [
+        "https://web.stanford.edu/~jurafsky/slp3/",
+        "https://meshb.nlm.nih.gov/record/ui?ui=D003143"
+      ]
+    },
+    {
+      "id": "TEC015",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "speaker adaptation",
+        "speaker-dependent adaptation"
+      ],
+      "acronym": [],
+      "definition": [
+        "Adjusting a speech recognition model to an individual speaker's voice with a small amount of their data, a key strategy for dysarthric ASR."
+      ],
+      "hypernym": "model adaptation",
+      "source_url": [
+        "https://arxiv.org/abs/2204.00770",
+        "https://arxiv.org/abs/2202.10290"
+      ]
+    },
+    {
+      "id": "TEC016",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "speed perturbation",
+        "tempo perturbation"
+      ],
+      "acronym": [],
+      "definition": [
+        "Data augmentation that resamples or time-stretches training audio to create faster or slower copies; tempo perturbation is used to simulate slow dysarthric speech."
+      ],
+      "hypernym": "data augmentation",
+      "source_url": [
+        "https://doi.org/10.21437/interspeech.2015-711"
+      ]
+    },
+    {
+      "id": "TEC017",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "self-supervised learning"
+      ],
+      "acronym": [
+        "SSL"
+      ],
+      "definition": [
+        "Learning representations from unlabeled data by solving pretext tasks (e.g., predicting masked audio); the training paradigm of wav2vec 2.0, HuBERT, and WavLM."
+      ],
+      "hypernym": "machine learning paradigm",
+      "source_url": [
+        "https://arxiv.org/abs/2006.11477",
+        "https://arxiv.org/abs/2106.07447"
+      ]
+    },
+    {
+      "id": "TEC018",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "forced alignment"
+      ],
+      "acronym": [],
+      "definition": [
+        "Automatically aligning a known transcript to audio to obtain word or phone boundaries."
+      ],
+      "hypernym": "speech processing task",
+      "source_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/38139496/"
+      ],
+      "notes": "Provenance is a corpus document on forced alignment for speech-language pathology."
+    },
+    {
+      "id": "TEC019",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "x-vector",
+        "x-vectors"
+      ],
+      "acronym": [],
+      "definition": [
+        "Fixed-length speaker embeddings extracted from a deep neural network, used for speaker recognition and as features for dysarthria detection."
+      ],
+      "hypernym": "speaker embedding",
+      "source_url": [
+        "https://doi.org/10.1109/icassp.2018.8461375"
+      ]
+    },
+    {
+      "id": "TEC020",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "i-vector",
+        "i-vectors"
+      ],
+      "acronym": [],
+      "definition": [
+        "Low-dimensional speaker and channel representations from total variability factor analysis, used for speaker verification and adaptation."
+      ],
+      "hypernym": "speaker embedding",
+      "source_url": [
+        "https://doi.org/10.1109/tasl.2010.2064307"
+      ]
+    },
+    {
+      "id": "TEC021",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "goodness of pronunciation"
+      ],
+      "acronym": [
+        "GOP"
+      ],
+      "definition": [
+        "A phone-level score, derived from ASR posteriors, of how closely a pronunciation matches the canonical one; used to assess atypical speech."
+      ],
+      "hypernym": "evaluation metric",
+      "source_url": [
+        "https://doi.org/10.1016/s0167-6393(99)00044-8"
+      ]
+    },
+    {
+      "id": "TEC022",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "mean opinion score"
+      ],
+      "acronym": [
+        "MOS"
+      ],
+      "definition": [
+        "The average of listener ratings (usually on a 1-5 scale) of speech quality or naturalness, used to evaluate synthesized or converted speech."
+      ],
+      "hypernym": "evaluation metric",
+      "source_url": [
+        "https://www.itu.int/rec/T-REC-P.800.1"
+      ]
+    },
+    {
+      "id": "TEC023",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "dysarthria detection",
+        "dysarthria classification",
+        "dysarthria severity classification"
+      ],
+      "acronym": [],
+      "definition": [
+        "Automatic classification of speech recordings as dysarthric vs. typical, or into severity levels, from acoustic features or learned representations."
+      ],
+      "hypernym": "speech processing task",
+      "source_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/41223239/",
+        "https://pubmed.ncbi.nlm.nih.gov/29184336/"
+      ],
+      "notes": "Provenance are corpus documents describing the task. v0.2 (2026-11-03): removed 'severity classification' and 'dysarthria severity assessment', which also mean a clinician's severity rating."
+    },
+    {
+      "id": "TEC024",
+      "concept_label": "SPEECH_TECH",
+      "term": [
+        "phoneme error rate",
+        "phone error rate"
+      ],
+      "acronym": [
+        "PER"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "An error rate computed like WER but over phonemes (or phones) instead of words; the standard metric for phone recognition and for pronunciation-level evaluation."
+      ],
+      "hypernym": "evaluation metric",
+      "source_url": [
+        "https://doi.org/10.1109/29.46546",
+        "https://arxiv.org/abs/2601.21205"
+      ],
+      "notes": "Split from TEC003 (CER) in v0.2 (2026-11-03). Sources: Lee & Hon (1989), phone recognition on TIMIT; a corpus paper that defines PER."
+    },
+    {
+      "id": "DAT001",
+      "concept_label": "DATASET",
+      "term": [
+        "UASpeech",
+        "UA-Speech",
+        "UA Speech"
+      ],
+      "acronym": [],
+      "definition": [
+        "A dysarthric speech database recorded at the University of Illinois with isolated-word audio from speakers with dysarthria, most of them with cerebral palsy, and control speakers."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://www.isca-archive.org/interspeech_2008/kim08c_interspeech.html",
+        "https://doi.org/10.21437/interspeech.2008-480"
+      ]
+    },
+    {
+      "id": "DAT002",
+      "concept_label": "DATASET",
+      "term": [
+        "TORGO",
+        "TORGO database"
+      ],
+      "acronym": [],
+      "definition": [
+        "A database of acoustic and articulatory (EMA) speech from speakers with dysarthria due to cerebral palsy or ALS and matched controls, recorded at the University of Toronto."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://doi.org/10.1007/s10579-011-9145-0",
+        "https://www.cs.toronto.edu/~complingweb/data/TORGO/torgo.html"
+      ]
+    },
+    {
+      "id": "DAT003",
+      "concept_label": "DATASET",
+      "term": [
+        "Nemours database",
+        "Nemours"
+      ],
+      "acronym": [],
+      "definition": [
+        "An early database of nonsense sentences read by male speakers with dysarthria, with phonetic transcriptions."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://doi.org/10.1109/icslp.1996.608020"
+      ]
+    },
+    {
+      "id": "DAT004",
+      "concept_label": "DATASET",
+      "term": [
+        "EasyCall",
+        "EasyCall corpus"
+      ],
+      "acronym": [],
+      "definition": [
+        "An Italian dysarthric speech corpus of voice commands from speakers with dysarthria and healthy controls."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://arxiv.org/abs/2104.02542"
+      ]
+    },
+    {
+      "id": "DAT005",
+      "concept_label": "DATASET",
+      "term": [
+        "Speech Accessibility Project"
+      ],
+      "acronym": [
+        "SAP"
+      ],
+      "acronym_requires_long_form": true,
+      "definition": [
+        "A large, community-supported collection of speech from people with Parkinson's disease, ALS, cerebral palsy, Down syndrome, and stroke, created to improve ASR accessibility."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://speechaccessibilityproject.beckman.illinois.edu/",
+        "https://doi.org/10.1044/2024_jslhr-24-00122"
+      ]
+    },
+    {
+      "id": "DAT006",
+      "concept_label": "DATASET",
+      "term": [
+        "LibriSpeech"
+      ],
+      "acronym": [],
+      "definition": [
+        "A 1000-hour corpus of read English audiobook speech from typical speakers, widely used to pre-train or benchmark ASR."
+      ],
+      "hypernym": "speech corpus",
+      "source_url": [
+        "https://doi.org/10.1109/icassp.2015.7178964",
+        "https://www.openslr.org/12/"
+      ]
+    },
+    {
+      "id": "DAT007",
+      "concept_label": "DATASET",
+      "term": [
+        "PC-GITA"
+      ],
+      "acronym": [],
+      "definition": [
+        "A Colombian Spanish speech corpus of people with Parkinson's disease and matched healthy controls."
+      ],
+      "hypernym": "pathological speech corpus",
+      "source_url": [
+        "https://doi.org/10.63317/3c643i6hcfzo",
+        "http://www.lrec-conf.org/proceedings/lrec2014/pdf/7_Paper.pdf"
+      ]
+    },
+    {
+      "id": "DAT008",
+      "concept_label": "DATASET",
+      "term": [
+        "Chinese Dysarthria Speech Database"
+      ],
+      "acronym": [
+        "CDSD"
+      ],
+      "definition": [
+        "A Mandarin Chinese speech database of speakers with dysarthria, used for dysarthric ASR research."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://arxiv.org/abs/2310.15930"
+      ]
+    },
+    {
+      "id": "DAT009",
+      "concept_label": "DATASET",
+      "term": [
+        "Common Voice",
+        "Mozilla Common Voice"
+      ],
+      "acronym": [],
+      "definition": [
+        "A crowd-sourced, multilingual corpus of read speech released by Mozilla."
+      ],
+      "hypernym": "speech corpus",
+      "source_url": [
+        "https://arxiv.org/abs/1912.06670"
+      ]
+    },
+    {
+      "id": "DAT010",
+      "concept_label": "DATASET",
+      "term": [
+        "Dysarthric Expressed Emotional Database"
+      ],
+      "acronym": [
+        "DEED"
+      ],
+      "definition": [
+        "An audio-visual database of British English emotional speech from speakers with dysarthria and typical speakers."
+      ],
+      "hypernym": "dysarthric speech corpus",
+      "source_url": [
+        "https://pubmed.ncbi.nlm.nih.gov/37549162/"
+      ]
+    }
+  ]
+}

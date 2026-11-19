@@ -1,0 +1,3 @@
+Token indices sequence length is longer than the specified maximum sequence length for this model (547 > 512). Running this sequence through the model will result in indexing errors
+/var/spool/slurm/d/job12530352/slurm_script: line 28: 1511446 Killed                  python predict.py --gpu-id 0
+[2026-10-29T17:43:01.931] error: Detected 1 oom_kill event in StepId=12530352.batch. Some of the step tasks have been OOM Killed.

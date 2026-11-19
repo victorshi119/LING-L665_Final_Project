@@ -1,0 +1,7 @@
+{
+ "model_name": "pipeline",
+ "model_version": "0.0.0",
+ "model_path": "/geode3/home/u080/shinsaka/BigRed200/CP_Dysarthria_Pubmed_md/ner_assignment1/training/ner-transformer/model-best",
+ "spacy_version": "3.8.16",
+ "predicted_at": "2026-11-03T20:21:31+00:00"
+}

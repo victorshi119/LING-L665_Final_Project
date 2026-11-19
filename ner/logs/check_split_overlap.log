@@ -1,0 +1,6 @@
+112 (dev/test doc, train doc) pairs share >= 8-word sentences
+dev  arxiv_2007.08646     ~ arxiv_2210.08054       10/148   (6.8%)
+dev  arxiv_2606.13253     ~ arxiv_2506.11069       10/174   (5.8%)
+test arxiv_1908.02221     ~ arxiv_2010.06752        3/90    (3.3%)
+test arxiv_2201.05562     ~ arxiv_2108.00899        5/169   (3.0%)
+dev  arxiv_2110.03283     ~ arxiv_2108.11153        4/149   (2.7%)

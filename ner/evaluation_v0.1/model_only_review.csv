@@ -1,0 +1,38 @@
+text,label,count,example_doc,judgment,reason
+hts,SPEECH_TECH,22,arxiv_2408.03399,error,"hierarchical time series, not speech technology"
+asr,SPEECH_TECH,12,arxiv_2606.20266,correct,automatic speech recognition; the rules dropped it because the long form is absent
+moss,SPEECH_TECH,4,pubmed_39682602,correct,plural of MOS
+thria,DISORDER,4,pubmed_39682602,error,fragment of 'dysar- thria' split by a line-end hyphen
+pc,DISORDER,3,arxiv_2606.20266,error,part of the dataset name LibriSpeech-PC
+cerebral vascular,DISORDER,2,arxiv_1807.10948,partial,"right label, span misses 'Accident'"
+imprecise speakers,SPEECH_FEATURE,2,arxiv_1911.11360,error,not a speech feature
+imprecise segmentation,SPEECH_FEATURE,2,arxiv_2506.01618,error,not a speech feature
+text-speech,SPEECH_TECH,2,arxiv_2606.20266,error,"'text-speech alignment', not an entity"
+speech recognition,SPEECH_TECH,2,arxiv_2609.28877,boundary,overlaps a rule span with a different extent (see disagreements.json)
+voice synthesis,SPEECH_TECH,2,arxiv_cmp-lg_9506018,correct,synonym of speech synthesis
+text-tospeech (,SPEECH_TECH,2,pubmed_38606392,partial,"TTS (typo in source), span includes '('"
+dnn-hidden markov model,SPEECH_TECH,1,arxiv_1807.10948,boundary,overlaps a rule span with a different extent (see disagreements.json)
+cerebral vascular accident,DISORDER,1,arxiv_1905.06533,correct,= stroke
+formant amplitude,SPEECH_FEATURE,1,arxiv_1911.11360,boundary,overlaps a rule span with a different extent (see disagreements.json)
+perceptual hypernasality,ASSESSMENT,1,arxiv_1911.11360,boundary,overlaps a rule span with a different extent (see disagreements.json)
+speed-perturbation,SPEECH_TECH,1,arxiv_2201.05562,correct,hyphenated variant of speed perturbation
+oracle error rates,SPEECH_FEATURE,1,arxiv_2201.05845,error,an ASR metric labelled SPEECH_FEATURE
+imprecise articulators,SPEECH_FEATURE,1,arxiv_2201.05845,error,not a speech feature
+cerebral palsy(cp,DISORDER,1,arxiv_2208.03648,partial,tokenisation glues 'palsy(CP'
+f0s,SPEECH_FEATURE,1,arxiv_2209.13260,correct,plural of F0
+sgd,TREATMENT,1,arxiv_2210.15387,error,stochastic gradient descent labelled TREATMENT
+strangled voice,SPEECH_FEATURE,1,arxiv_2306.10588,correct,strained-strangled voice quality
+speed rate,SPEECH_TECH,1,arxiv_2306.10588,correct,speed perturbation for data augmentation
+pi-gita,DATASET,1,arxiv_2410.09289,correct,typo of PC-GITA
+vc,SPEECH_TECH,1,arxiv_2505.22072,partial,part of the model name DuTa-VC
+imprecise pronunciation,SPEECH_FEATURE,1,arxiv_2506.16127,correct,speech feature
+self-supervised asr,SPEECH_TECH,1,arxiv_2508.08027,boundary,overlaps a rule span with a different extent (see disagreements.json)
+automatic speech recognizers,SPEECH_TECH,1,arxiv_2601.21205,boundary,overlaps a rule span with a different extent (see disagreements.json)
+librispeechpc,DATASET,1,arxiv_2606.20266,correct,LibriSpeech-PC dataset
+imprecise phonation,SPEECH_FEATURE,1,arxiv_2609.20875,boundary,overlaps a rule span with a different extent (see disagreements.json)
+pd,DISORDER,1,arxiv_2609.20875,error,inside a URL
+mds-updrss,ASSESSMENT,1,arxiv_2609.20875,correct,MDS-UPDRS (source typo)
+acquired cerebral palsy,DISORDER,1,pubmed_2629622,boundary,overlaps a rule span with a different extent (see disagreements.json)
+cerebral palsy.⁵,DISORDER,1,pubmed_2629622,partial,span includes a footnote marker
+audibility,SPEECH_FEATURE,1,pubmed_38606392,correct,speech property
+mel-spectrogramvisualization,SPEECH_TECH,1,pubmed_39682602,partial,glued tokens in a figure caption

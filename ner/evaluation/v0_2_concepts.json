@@ -1,0 +1,171 @@
+{
+ "rules": {
+  "changed_forms": {
+   "dev\tCER\tSPEECH_TECH": 19,
+   "dev\tcharacter error rate\tSPEECH_TECH": 2,
+   "test\tCER\tSPEECH_TECH": 68,
+   "test\tCharacter Error Rate\tSPEECH_TECH": 4,
+   "test\tPER\tSPEECH_TECH": 44,
+   "test\tPhoneme Error Rate\tSPEECH_TECH": 3,
+   "test\tPhoneme error rate\tSPEECH_TECH": 2,
+   "test\tcharacter error rate\tSPEECH_TECH": 4,
+   "test\tphone error rate\tSPEECH_TECH": 1,
+   "test\tphoneme error rate\tSPEECH_TECH": 3,
+   "train\tCAPE-V\tASSESSMENT": 4,
+   "train\tCER\tSPEECH_TECH": 337,
+   "train\tCHARACTER ERROR RATE\tSPEECH_TECH": 1,
+   "train\tCharacter Error Rate\tSPEECH_TECH": 13,
+   "train\tCharacter Error Rates\tSPEECH_TECH": 2,
+   "train\tConsensus Auditory-Perceptual Evaluation of Voice\tASSESSMENT": 1,
+   "train\tGRBAS\tASSESSMENT": 10,
+   "train\tGRBAS scale\tASSESSMENT": 2,
+   "train\tPER\tSPEECH_TECH": 120,
+   "train\tPhoneme Error Rate\tSPEECH_TECH": 7,
+   "train\tPhoneme Error Rates\tSPEECH_TECH": 1,
+   "train\tPhoneme error rate\tSPEECH_TECH": 2,
+   "train\tcharacter error rate\tSPEECH_TECH": 22,
+   "train\tcharacter error rates\tSPEECH_TECH": 3,
+   "train\tphone error rate\tSPEECH_TECH": 1,
+   "train\tphoneme error rate\tSPEECH_TECH": 17,
+   "train\tphoneme error rates\tSPEECH_TECH": 3
+  },
+  "spans_with_severity": {
+   "train\tdysarthria severity classification\tSPEECH_TECH": 76,
+   "train\tDysarthria Severity Classification\tSPEECH_TECH": 11,
+   "test\tdysarthria severity classification\tSPEECH_TECH": 4,
+   "train\tdysarthria severity classifications\tSPEECH_TECH": 1,
+   "train\tDysarthria severity classification\tSPEECH_TECH": 1,
+   "train\tDYSARTHRIA SEVERITY CLASSIFICATION\tSPEECH_TECH": 1,
+   "test\tDysarthria Severity Classification\tSPEECH_TECH": 1
+  }
+ },
+ "model": {
+  "changed_forms": {
+   "dev\tCER\tSPEECH_TECH": 19,
+   "dev\tcharacter error rate\tSPEECH_TECH": 2,
+   "test\tCER\tSPEECH_TECH": 68,
+   "test\tCharacter Error Rate\tSPEECH_TECH": 4,
+   "test\tPER\tSPEECH_TECH": 43,
+   "test\tPhoneme Error Rate\tSPEECH_TECH": 3,
+   "test\tPhoneme error rate\tSPEECH_TECH": 2,
+   "test\tcharacter error rate\tSPEECH_TECH": 4,
+   "test\tphone error rate\tSPEECH_TECH": 1,
+   "test\tphoneme error rate\tSPEECH_TECH": 3,
+   "train\tCER\tSPEECH_TECH": 337,
+   "train\tCHARACTER ERROR RATE\tSPEECH_TECH": 1,
+   "train\tCharacter Error Rate\tSPEECH_TECH": 13,
+   "train\tCharacter Error Rates\tSPEECH_TECH": 2,
+   "train\tGRBAS\tASSESSMENT": 13,
+   "train\tPER\tSPEECH_TECH": 124,
+   "train\tPhoneme Error Rate\tSPEECH_TECH": 7,
+   "train\tPhoneme Error Rates\tSPEECH_TECH": 1,
+   "train\tPhoneme error rate\tSPEECH_TECH": 2,
+   "train\tcharacter error rate\tSPEECH_TECH": 22,
+   "train\tcharacter error rates\tSPEECH_TECH": 3,
+   "train\tphone error rate\tSPEECH_TECH": 1,
+   "train\tphoneme error rate\tSPEECH_TECH": 17,
+   "train\tphoneme error rates\tSPEECH_TECH": 3
+  },
+  "spans_with_severity": {
+   "train\tdysarthria severity classification\tSPEECH_TECH": 76,
+   "train\tDysarthria Severity Classification\tSPEECH_TECH": 11,
+   "test\tdysarthria severity classification\tSPEECH_TECH": 3,
+   "test\tDysarthria Severity Classification\tSPEECH_TECH": 1,
+   "dev\tDysarthria severity level classification\tSPEECH_TECH": 1,
+   "train\tDysarthria severity classification\tSPEECH_TECH": 1,
+   "train\tdysarthria speech severity classification\tSPEECH_TECH": 1
+  }
+ },
+ "rules_PER_in_capitals": [
+  {
+   "doc_id": "arxiv_2201.04908",
+   "split": "train",
+   "context": "phoneme error rate; [PER] ) (RQ2",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2209.06265",
+   "split": "train",
+   "context": "Phoneme Error Rate ( [PER] ). MPFA",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2401.17796",
+   "split": "train",
+   "context": "%\nF04 ; [PER] ; - ;",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2504.12279",
+   "split": "train",
+   "context": ", WER VARIANCE AND [PER] ACROSS DIFFERENT DATASETS",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2504.12279",
+   "split": "train",
+   "context": "TABLE II WER AND [PER] ON PROBLEMATIC SAMPLES",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "pubmed_38139496",
+   "split": "train",
+   "context": "Model ; Source ; [PER] \nMLP (",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "pubmed_39604526",
+   "split": "train",
+   "context": "WER, CER, [PER] , Precision,",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "pubmed_39604526",
+   "split": "train",
+   "context": "WER, CER, [PER] ) for Proposed",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2110.08213",
+   "split": "test",
+   "context": "0.94 ; 0.90\n [PER] VTN ; 58.7",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2110.08213",
+   "split": "test",
+   "context": "0.83 ; 0.70\n [PER] VTN-VAE",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2110.08213",
+   "split": "test",
+   "context": "stage. However, [PER] VTN-VAE",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2601.21205",
+   "split": "test",
+   "context": "the three metrics ( [PER] , PFER,",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2601.21205",
+   "split": "test",
+   "context": "SCORES. BEST PERFORMANCE [PER] LANGUAGE IS HIGHLIGHTED",
+   "model_labels_it": false
+  },
+  {
+   "doc_id": "arxiv_2601.21205",
+   "split": "test",
+   "context": "-C demonstrates that [PER] , PFER,",
+   "model_labels_it": true
+  },
+  {
+   "doc_id": "arxiv_2601.21205",
+   "split": "test",
+   "context": "C.\n\n1) [PER] analysis: While",
+   "model_labels_it": true
+  }
+ ]
+}

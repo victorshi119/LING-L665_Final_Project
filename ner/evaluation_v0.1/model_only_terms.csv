@@ -1,0 +1,38 @@
+text,label,count,documents,example_doc,example_context
+hts,SPEECH_TECH,22,1,arxiv_2408.03399,-of-the-art algorithms for hierarchical time series ( **HTS** ) forecasting rely on both the autocorrelation of each time series and
+asr,SPEECH_TECH,12,2,arxiv_2606.20266,"on a reference transcript at inference time, obtained from an external **ASR** system. This dependency makes zero-shot TTS brittle for accented"
+moss,SPEECH_TECH,4,1,pubmed_39682602,"phoneme prediction accuracy and overall voice conversion quality. It achieved higher **MOSs** for naturalness, intelligibility, and speaker similarity compared to existing models"
+thria,DISORDER,4,1,pubmed_39682602,closely resembles normal speech patterns while effectively mitigating the effects of dysar- **thria** . Figure 1 illustrates the structure of the FEMPPDM-DVC framework
+pc,DISORDER,3,1,arxiv_2606.20266,predicted by UTMOS [31]. Model ; LibriSpeech- **PC** - WER↓ ; LibriSpeech-PC - SIM↑ ; LibriSpeech-PC
+cerebral vascular,DISORDER,2,2,arxiv_1807.10948,"'s Disease (PD), four patients who have had a **Cerebral Vascular** Accident (CVA), one patient who suffered Traumatic Brain Injury"
+imprecise speakers,SPEECH_FEATURE,2,1,arxiv_1911.11360,These results also indicate that our objective hypernasality ratings for the most **imprecise speakers** are not reliable. While this is a limitation of the approach
+imprecise segmentation,SPEECH_FEATURE,2,1,arxiv_2506.01618,"approach used was not specifically adapted to dysarthric speech, resulting in **imprecise segmentation** and rhythm modification. Furthermore, while ASR performance improved, it"
+text-speech,SPEECH_TECH,2,1,arxiv_2606.20266,"14, 15]. A major challenge for these models is **text-speech** alignment: parallel generation requires inferring phoneme durations to align text with"
+speech recognition,SPEECH_TECH,2,2,arxiv_2609.28877,LEARNING NEW WORDS FROM UNLABELED TEST DATA IN AUTOMATIC **SPEECH RECOGNITION** Mengqi Wang⋆ Mark A. Hasegawa-Johnson⋆ Haolong Zheng⋆ Chang D.
+voice synthesis,SPEECH_TECH,2,1,arxiv_cmp-lg_9506018,"their speech, etc. For all these people, no **voice synthesis** with an interface based on letter or word selection would make up"
+text-tospeech (,SPEECH_TECH,2,1,pubmed_38606392,"individuals following standard clinical procedures, or that have been synthesized using **text-tospeech (** TTS). Particularly, we hypothesize that 1) fine-"
+dnn-hidden markov model,SPEECH_TECH,1,1,arxiv_1807.10948,"[18], we described a solution to train a better **DNN-hidden Markov model** (HMM) system for the Dutch language, a language that"
+cerebral vascular accident,DISORDER,1,1,arxiv_1905.06533,"of neurological disorders such as Parkinson's disease (PD), **cerebral vascular accident** (CVA or stroke) and traumatic brain injury (TBI)"
+formant amplitude,SPEECH_FEATURE,1,1,arxiv_1911.11360,"[70]. These formant features (FF) included F1 **formant amplitude** , P0 nasality peak amplitude, and normalized and raw A1 -"
+perceptual hypernasality,ASSESSMENT,1,1,arxiv_1911.11360,", when evaluated on disordered speech, track the expected trends in **perceptual hypernasality** ratings, and can be used with ridge regression to estimate a"
+speed-perturbation,SPEECH_TECH,1,1,arxiv_2201.05562,different data augmentation techniques for disordered speech recognition. It suggests that **speed-perturbation** based augmentation produces the largest improvement in system performance despite the huge
+oracle error rates,SPEECH_FEATURE,1,1,arxiv_2201.05845,found in UASpeech training data. Similar performance rank in terms of **oracle error rates** (last column in Table II) between the CTC and LAS
+imprecise articulators,SPEECH_FEATURE,1,1,arxiv_2201.05845,the spectral envelope to simulate different vocal tract lengths potentially resulted from **imprecise articulators** ' movements while keeping the speech duration fixed; ii) tempo
+cerebral palsy(cp,DISORDER,1,1,arxiv_2208.03648,"in language, cognition, motor, intelligence, and even cause **cerebral palsy(CP** ) [16]. Diagnoses of CP are critical for early"
+f0s,SPEECH_FEATURE,1,1,arxiv_2209.13260,"Pitch and loudness measurements manifest dysarthric speakers have limitations in producing stable **F0s** and need greater minimum energy for speech production. Lastly, rhythmmeasurements"
+sgd,TREATMENT,1,1,arxiv_2210.15387,", relu, logistic, identity function, optimizer between Adam and **SGD** , and learning rate between 10-4 and 10-1"
+strangled voice,SPEECH_FEATURE,1,1,arxiv_2306.10588,"quality, harsh voice, hoarse voice, breathiness, strained/ **strangled voice** , stoppages and flutter. The ratings ranged between 0 and 4"
+speed rate,SPEECH_TECH,1,1,arxiv_2306.10588,"we added random Gaussian noises, SpecAugment [30] and changed **speed rate** with ratio {0.9, 1.0, 1.1} for data augmentation"
+pi-gita,DATASET,1,1,arxiv_2410.09289,MM-Score for all datasets and QCP Glottal flow on the **PI-GITA** . This advantage is largely because these baselines neglect the benefits of
+vc,SPEECH_TECH,1,1,arxiv_2505.22072,"offline batch-mode MoE-based method, JHU-2023 DuTa- **VC** (Diffusion) + Conformer [40] 6 The RAB"
+imprecise pronunciation,SPEECH_FEATURE,1,1,arxiv_2506.16127,". As a result, affected individuals may experience slurred articulation, **imprecise pronunciation** , reduced speech volume, and altered speech rhythm, making verbal"
+self-supervised asr,SPEECH_TECH,1,1,arxiv_2508.08027,"ASR) particularly challenging [1, 2, 3]. **Self-supervised ASR** models such as HuBERT [4], and Wav2Vec 2.0 ["
+automatic speech recognizers,SPEECH_TECH,1,1,arxiv_2601.21205,"phone annotations, which are difficult to obtain for dysarthric speech. **Automatic speech recognizers** (ASR) have also been used, with Word Error Rate"
+librispeechpc,DATASET,1,1,arxiv_2606.20266,". For typical speakers, we use test-clean split of **LibriSpeechPC** [25] and test-en split of SeedTTS [26"
+imprecise phonation,SPEECH_FEATURE,1,1,arxiv_2609.20875,"manifests itself as hypophonia, monoprosody, reduced articulation rate, and **imprecise phonation** , often emerging early and evolving with disease progression and medication state"
+pd,DISORDER,1,1,arxiv_2609.20875,visited: 2026-09-15.](https://github.com/simon-hjp/ **pd** -speech-embedding-severity-classification) Fig.
+mds-updrss,ASSESSMENT,1,1,arxiv_2609.20875,"[20]. The top row indicates the ground-truth **MDS-UPDRSS** speech scores, or HC where applicable. Fig. 7"
+acquired cerebral palsy,DISORDER,1,1,pubmed_2629622,"**Acquired cerebral palsy** P O D PHAROAH, T COOKE, AND L ROSENBLOOM"
+cerebral palsy.⁵,DISORDER,1,1,pubmed_2629622,the insult occurs for differentiating between congenital' and 'acquired' **cerebral palsy.⁵** Blair and Stanley included individuals born free of brain damage who cerebral
+audibility,SPEECH_FEATURE,1,1,pubmed_38606392,"24]. Factors such as speech variability, articulation, **audibility** , and accent can manifest different impacts on the performance of ASR"
+mel-spectrogramvisualization,SPEECH_TECH,1,1,pubmed_39682602,"of juvenile dysphonia.  Mel-spectrogram Visualization: · **Mel-spectrogramVisualization** Diagnostics 2024, 14, x FOR PEER REVIEW Figure"

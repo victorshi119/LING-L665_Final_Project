@@ -1,0 +1,71 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+thread '<unnamed>' panicked at /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rayon-core-1.12.1/src/registry.rs:168:10:
+The global thread pool has not been initialized.: ThreadPoolBuildError { kind: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" }) }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy/__main__.py", line 4, in <module>
+    setup_cli()
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy/cli/_util.py", line 78, in setup_cli
+    command(prog_name=COMMAND)
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/_click/core.py", line 802, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/core.py", line 1197, in main
+    return _main(
+           ^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/core.py", line 187, in _main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/core.py", line 1119, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/core.py", line 1119, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/_click/core.py", line 741, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/_click/core.py", line 483, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/typer/main.py", line 1524, in wrapper
+    return callback(**use_params)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy/cli/debug_data.py", line 113, in debug_data_cli
+    debug_data(
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy/cli/debug_data.py", line 153, in debug_data
+    nlp.initialize(lambda: train_corpus(nlp))
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy/language.py", line 1353, in initialize
+    proc.initialize(get_examples, nlp=self, **p_settings)
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy_transformers/pipeline_component.py", line 351, in initialize
+    self.model.initialize(X=docs)
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/thinc/model.py", line 318, in initialize
+    self.init(self, X=X, Y=Y)
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy_transformers/layers/transformer_model.py", line 144, in init
+    token_data = huggingface_tokenize(tokenizer, [span.text for span in flat_spans])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy_transformers/layers/transformer_model.py", line 286, in huggingface_tokenize
+    token_data = tokenizer(
+                 ^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/transformers/tokenization_utils_base.py", line 2877, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/transformers/tokenization_utils_base.py", line 2965, in _call_one
+    return self.batch_encode_plus(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/transformers/tokenization_utils_base.py", line 3167, in batch_encode_plus
+    return self._batch_encode_plus(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/transformers/models/roberta/tokenization_roberta_fast.py", line 217, in _batch_encode_plus
+    return super()._batch_encode_plus(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/transformers/tokenization_utils_fast.py", line 539, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyo3_runtime.PanicException: The global thread pool has not been initialized.: ThreadPoolBuildError { kind: IOError(Os { code: 11, kind: WouldBlock, message: "Resource temporarily unavailable" }) }
+[1m
+============================ Data file validation ============================[0m

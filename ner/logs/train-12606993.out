@@ -1,0 +1,135 @@
+Tue Nov  3 13:03:42 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:06:00.0 Off |                    0 |
+| N/A   38C    P0             70W /  550W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[1m
+============================== Info about spaCy ==============================[0m
+
+spaCy version    3.8.16                        
+Location         /N/slate/shinsaka/envs/spacy-ner/lib64/python3.12/site-packages/spacy
+Platform         Linux-4.18.0-553.172.1.el8_10.x86_64-x86_64-with-glibc2.28
+Python version   3.12.15                       
+Pipelines        en_core_web_sm (3.8.0)        
+
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[1m
+============================ Data file validation ============================[0m
+[38;5;2m✔ Pipeline can be initialized with data[0m
+[38;5;2m✔ Corpus is loadable[0m
+[1m
+=============================== Training stats ===============================[0m
+Language: en
+Training pipeline: transformer, ner
+125778 training docs
+13362 evaluation docs
+[38;5;3m⚠ 326 training examples also in evaluation data[0m
+[1m
+============================== Vocab & Vectors ==============================[0m
+[38;5;4mℹ 2225618 total word(s) in the data (70220 unique)[0m
+[38;5;3m⚠ 1 misaligned tokens in the training data[0m
+[38;5;4mℹ No word vectors present in the package[0m
+[1m
+========================== Named Entity Recognition ==========================[0m
+[38;5;4mℹ 6 label(s)[0m
+0 missing value(s) (tokens with '-' label)
+[38;5;2m✔ Good amount of examples for all labels[0m
+[38;5;2m✔ Examples without occurrences available for all labels[0m
+[38;5;2m✔ No entities consisting of or starting/ending with whitespace[0m
+[38;5;2m✔ No entities crossing sentence boundaries[0m
+[1m
+================================== Summary ==================================[0m
+[38;5;2m✔ 6 checks passed[0m
+[38;5;3m⚠ 2 warnings[0m
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[38;5;4mℹ Saving to output directory: training/ner-transformer[0m
+[38;5;4mℹ Using GPU: 0[0m
+[1m
+=========================== Initializing pipeline ===========================[0m
+[38;5;2m✔ Initialized pipeline[0m
+[1m
+============================= Training pipeline =============================[0m
+[38;5;4mℹ Pipeline: ['transformer', 'ner'][0m
+[38;5;4mℹ Initial learn rate: 0.0[0m
+E    #       LOSS TRANS...  LOSS NER  ENTS_F  ENTS_P  ENTS_R  SCORE 
+---  ------  -------------  --------  ------  ------  ------  ------
+  0       0        5316.56    630.70    0.45    0.23   16.38    0.00
+  0     200       76391.64  46576.42   62.84   66.94   59.22    0.63
+  0     400        2282.45   2124.30   85.37   84.51   86.25    0.85
+  0     600         484.22   1004.92   91.32   91.87   90.78    0.91
+  0     800        1346.15    874.53   91.03   88.51   93.69    0.91
+  0    1000         692.69    638.05   89.48   85.74   93.56    0.89
+  0    1200         668.93    555.49   95.12   94.26   96.00    0.95
+  0    1400         315.54    462.78   93.25   91.14   95.47    0.93
+  0    1600         208.70    381.67   96.28   95.45   97.12    0.96
+  0    1800         232.35    311.39   96.12   95.05   97.22    0.96
+  1    2000         178.65    303.50   95.35   93.17   97.62    0.95
+  1    2200         145.57    209.16   97.09   96.31   97.88    0.97
+  1    2400         148.16    243.98   96.99   95.79   98.22    0.97
+  1    2600         129.72    198.98   97.11   96.17   98.06    0.97
+  1    2800         143.86    212.59   95.89   93.58   98.31    0.96
+  1    3000         157.30    227.96   97.13   95.89   98.41    0.97
+  1    3200         129.48    205.34   96.90   96.18   97.62    0.97
+  1    3400         132.73    189.97   97.60   96.89   98.31    0.98
+  1    3600          94.95    145.80   96.38   94.94   97.88    0.96
+  1    3800         452.74    222.16   97.41   96.73   98.09    0.97
+  2    4000          85.86    141.43   96.90   95.31   98.53    0.97
+  2    4200         516.98    175.83   97.49   96.77   98.22    0.97
+  2    4400         320.66    171.04   97.15   96.40   97.91    0.97
+  2    4600         118.17    124.61   98.24   97.71   98.78    0.98
+  2    4800          81.80    104.11   97.81   97.43   98.19    0.98
+  2    5000         106.35    124.30   98.14   97.59   98.69    0.98
+  2    5200          78.01    101.67   97.90   96.85   98.97    0.98
+  2    5400          89.75    116.58   98.05   97.23   98.88    0.98
+  2    5600          73.30     94.78   97.82   96.87   98.78    0.98
+  3    5800          65.45     97.39   98.21   97.92   98.50    0.98
+  3    6000          67.35     81.55   98.54   98.14   98.94    0.99
+  3    6200          59.67     74.52   98.21   97.77   98.66    0.98
+  3    6400          59.80     73.53   98.31   98.19   98.44    0.98
+  3    6600          68.02     82.79   97.66   96.89   98.44    0.98
+  3    6800          76.63    102.12   97.82   96.93   98.72    0.98
+  3    7000          73.23     91.84   98.42   98.26   98.59    0.98
+  3    7200          58.41     70.39   97.14   95.61   98.72    0.97
+  3    7400          82.08     90.46   97.00   95.41   98.66    0.97
+  3    7600          56.57     70.94   97.73   96.75   98.72    0.98
+[38;5;2m✔ Saved pipeline to output directory[0m
+training/ner-transformer/model-last
+[38;5;4mℹ Using GPU: 0[0m
+[1m
+================================== Results ==================================[0m
+
+TOK     100.00
+NER P   97.69 
+NER R   98.75 
+NER F   98.22 
+SPEED   22972 
+
+[1m
+=============================== NER (per type) ===============================[0m
+
+                     P        R       F
+SPEECH_TECH      96.91    98.24   97.57
+DISORDER         98.42    98.75   98.59
+TREATMENT        92.86   100.00   96.30
+SPEECH_FEATURE   99.10    99.55   99.32
+DATASET          98.19   100.00   99.09
+ASSESSMENT       93.33   100.00   96.55
+
+[38;5;2m✔ Saved results to training/ner-transformer/test_metrics.json[0m

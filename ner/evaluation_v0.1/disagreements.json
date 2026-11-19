@@ -1,0 +1,251 @@
+{
+ "counts": {
+  "boundary": 9,
+  "model_new": 75,
+  "rule_miss": 42
+ },
+ "in_capitals": {
+  "model_new": 2,
+  "rule_miss": 8
+ },
+ "examples": {
+  "boundary": [
+   [
+    "model [SPEECH RECOGNITION] SPEECH_TECH / rules [AUTOMATIC SPEECH RECOGNITION] SPEECH_TECH",
+    2
+   ],
+   [
+    "model [DNN-hidden Markov model] SPEECH_TECH / rules [hidden Markov model] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [formant amplitude] SPEECH_FEATURE / rules [formant] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "model [perceptual hypernasality] ASSESSMENT / rules [hypernasality] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "model [Self-supervised ASR] SPEECH_TECH / rules [ASR] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [Automatic speech recognizers] SPEECH_TECH / rules [speech recognizers] SPEECH_TECH",
+    1
+   ],
+   [
+    "model [imprecise phonation] SPEECH_FEATURE / rules [phonation] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "model [Acquired cerebral palsy] DISORDER / rules [cerebral palsy] DISORDER",
+    1
+   ]
+  ],
+  "model_new": [
+   [
+    "[HTS] SPEECH_TECH",
+    22
+   ],
+   [
+    "[ASR] SPEECH_TECH",
+    12
+   ],
+   [
+    "[MOSs] SPEECH_TECH",
+    4
+   ],
+   [
+    "[thria] DISORDER",
+    4
+   ],
+   [
+    "[PC] DISORDER",
+    3
+   ],
+   [
+    "[Cerebral Vascular] DISORDER",
+    2
+   ],
+   [
+    "[imprecise speakers] SPEECH_FEATURE",
+    2
+   ],
+   [
+    "[imprecise segmentation] SPEECH_FEATURE",
+    2
+   ],
+   [
+    "[text-speech] SPEECH_TECH",
+    2
+   ],
+   [
+    "[voice synthesis] SPEECH_TECH",
+    2
+   ],
+   [
+    "[text-tospeech (] SPEECH_TECH",
+    2
+   ],
+   [
+    "[cerebral vascular accident] DISORDER",
+    1
+   ],
+   [
+    "[speed-perturbation] SPEECH_TECH",
+    1
+   ],
+   [
+    "[oracle error rates] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[imprecise articulators] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[cerebral palsy(CP] DISORDER",
+    1
+   ],
+   [
+    "[F0s] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[SGD] TREATMENT",
+    1
+   ],
+   [
+    "[strangled voice] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[speed rate] SPEECH_TECH",
+    1
+   ],
+   [
+    "[PI-GITA] DATASET",
+    1
+   ],
+   [
+    "[VC] SPEECH_TECH",
+    1
+   ],
+   [
+    "[imprecise pronunciation] SPEECH_FEATURE",
+    1
+   ],
+   [
+    "[LibriSpeechPC] DATASET",
+    1
+   ],
+   [
+    "[pd] DISORDER",
+    1
+   ]
+  ],
+  "rule_miss": [
+   [
+    "[Spastic quadriplegia] DISORDER (pubmed_2629622)",
+    4
+   ],
+   [
+    "[Spastic hemiplegia] DISORDER (pubmed_2629622)",
+    3
+   ],
+   [
+    "[hypernasal speech] SPEECH_FEATURE (arxiv_1911.11360)",
+    2
+   ],
+   [
+    "[Speech Accessibility Project] DATASET (arxiv_2506.16127)",
+    2
+   ],
+   [
+    "[severity classifications] SPEECH_TECH (arxiv_2512.17474)",
+    2
+   ],
+   [
+    "[spastic hemiplegia] DISORDER (pubmed_2629622)",
+    2
+   ],
+   [
+    "[voice conversion] SPEECH_TECH (pubmed_39682602)",
+    2
+   ],
+   [
+    "[GMM-HMM] SPEECH_TECH (arxiv_1905.06533)",
+    1
+   ],
+   [
+    "[PC-GITA] DATASET (arxiv_2011.07545)",
+    1
+   ],
+   [
+    "[VOICE CONVERSION] SPEECH_TECH (arxiv_2110.08213)",
+    1
+   ],
+   [
+    "[speed perturbation] SPEECH_TECH (arxiv_2201.05562)",
+    1
+   ],
+   [
+    "[Nemours] DATASET (arxiv_2201.05845)",
+    1
+   ],
+   [
+    "[TEMPO PERTURBATION] SPEECH_TECH (arxiv_2201.05845)",
+    1
+   ],
+   [
+    "[SPEED PERTURBATION] SPEECH_TECH (arxiv_2201.05845)",
+    1
+   ],
+   [
+    "[I-VECTOR] SPEECH_TECH (arxiv_2201.05845)",
+    1
+   ],
+   [
+    "[i-vector] SPEECH_TECH (arxiv_2201.05845)",
+    1
+   ],
+   [
+    "[HNR] SPEECH_FEATURE (arxiv_2209.13260)",
+    1
+   ],
+   [
+    "[VSAs] SPEECH_FEATURE (arxiv_2209.13260)",
+    1
+   ],
+   [
+    "[SEVERITY CLASSIFICATION] SPEECH_TECH (arxiv_2210.15387)",
+    1
+   ],
+   [
+    "[phone error rate] SPEECH_TECH (arxiv_2210.15387)",
+    1
+   ],
+   [
+    "[CTC] SPEECH_TECH (arxiv_2306.07090)",
+    1
+   ],
+   [
+    "[PARKINSON DISEASE] DISORDER (arxiv_2410.09289)",
+    1
+   ],
+   [
+    "[i-vector] SPEECH_TECH (arxiv_2505.22072)",
+    1
+   ],
+   [
+    "[x-vector] SPEECH_TECH (arxiv_2505.22072)",
+    1
+   ],
+   [
+    "[mel-spectrograms] SPEECH_TECH (arxiv_2506.16127)",
+    1
+   ]
+  ]
+ }
+}
